@@ -1,0 +1,14 @@
+#QuestionsContainer {
+  align-items: center;
+  justify-content: center;
+}
+
+.questionForm {
+  display: flex;
+  flex-flow:row wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 4em;
+}
+
+    
