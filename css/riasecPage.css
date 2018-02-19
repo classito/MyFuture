@@ -11,4 +11,15 @@
   min-height: 4em;
 }
 
-    
+fieldset {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 10%;
+  text-align: center;
+  border: 0;
+}
+
+input {
+  display:inline;
+  text-align: center;
+}
+
