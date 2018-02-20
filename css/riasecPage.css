@@ -1,0 +1,31 @@
+#QuestionsContainer {
+  align-items: center;
+  justify-content: center;
+}
+
+.questionForm {
+  display: flex;
+  flex-flow:row wrap;
+  align-items: center;
+  justify-content: center;
+  min-height: 4em;
+}
+
+button {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+}
+
+fieldset {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  margin-bottom: 10%;
+  text-align: center;
+  border: 0;
+}
+
+input {
+  display:inline;
+  text-align: center;
+}
+
