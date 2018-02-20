@@ -299,7 +299,6 @@ var RIASEC =
 
 var counter = 0;
 var question = [ ];
-
 function createQuestion(question, id, classCode) {
 	//contructs layout of question box
 
@@ -323,7 +322,7 @@ function createQuestion(question, id, classCode) {
 	input_Yes.setAttribute("id", "group" + id);
 	input_Yes.setAttribute("type", "radio");
 	input_Yes.setAttribute("value", "yes");
-	input_Yes.setAttribute("onclick", "PlusOne(this.getAttribute('class'))");
+	input_Yes.setAttribute("onclick", "PlusOne(this)");
 	input_Yes.setAttribute("name", "group" + id);
 	input_Yes.setAttribute("class", classCode);
 	document.getElementById("group" + id).appendChild(label_Yes);
@@ -334,7 +333,7 @@ function createQuestion(question, id, classCode) {
 	input_No.setAttribute("id", "group" + id+"i");
 	input_No.setAttribute("type", "radio");
 	input_No.setAttribute("value", "no");
-	input_No.setAttribute("onclick", "MinaceOne(this.getAttribute('class'))");
+	input_No.setAttribute("onclick", "MinaceOne(this)");
 	input_No.setAttribute("class", classCode);
 	input_No.setAttribute("name", "group" + id);
 	document.getElementById("group" + id).appendChild(label_No);
@@ -365,9 +364,27 @@ function sortAndDeploy() {
 sortAndDeploy();
 
 
+
+function stateYes(elem) {
+	//click works only once, disables infinite increment onclick
+	var stateOfYesName = elem.id; //group1i
+	var stateOfYes = document.querySelectorAll("#" + stateOfYesName.slice(0, -1))[1]; //gets inputYes element
+	console.log(stateOfYes);
+	stateOfYes.className = document.querySelectorAll("#" + stateOfYesName.slice(0, -1))[0].className; //changes inputYes className to parent className
+	elem.className = "none"; //remove className, disables infinite increments onClick
+}
+
+function stateNo(elem) {
+	//click works only once, disables infinite increment onclick
+	var stateOfNo = document.getElementById(elem.id + "i"); //elem of No_Input
+	stateOfNo.className = document.querySelectorAll("#" + elem.id)[0].className; //changes inputNo className to parent className
+	console.log(stateOfNo);
+	elem.className = "none"; //remove className, disables infinite increments onClick
+}
+
 function MinaceOne(clicked_class) {
 	//reverts back to original code value
-	switch(clicked_class) {
+	switch(clicked_class.className) {
 		case "R":
 			if (RIASEC.Realistic.value > 0) {
 				RIASEC.Realistic.value -=1;
@@ -399,6 +416,8 @@ function MinaceOne(clicked_class) {
 		}
 			break;
 }
+
+stateYes(clicked_class);
 console.log("R : " + RIASEC.Realistic.value);
 console.log("I : " +RIASEC.Investigative.value);
 console.log("A : " +RIASEC.Artistic.value);
@@ -408,9 +427,10 @@ console.log("C : " +RIASEC.Conventional.value)
 console.log("----------------------------")
 }
 
+//change param later
 function PlusOne(clicked_class) {
 	//+1 on value, records amount
-	switch(clicked_class) {
+	switch(clicked_class.className) {
 		case "R":
 			RIASEC.Realistic.value +=1;
 			break;
@@ -430,6 +450,8 @@ function PlusOne(clicked_class) {
 			RIASEC.Conventional.value +=1;
 			break;
 	}
+
+	stateNo(clicked_class);
 	console.log("R : " + RIASEC.Realistic.value);
 	console.log("I : " +RIASEC.Investigative.value);
 	console.log("A : " +RIASEC.Artistic.value);
