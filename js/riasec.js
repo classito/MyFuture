@@ -528,17 +528,19 @@ function AnalyzeRIASEC() {
 			if (RIASEC[i].list[k] == "A") {
 				RIASEC[i].value += 1;
 			}
-		}
-		console.log(RIASEC[i].code + " : " + RIASEC[i].value);
 		Interest_Code.push({
 			key:   RIASEC[i].code,
 			value: RIASEC[i].value
 		});
 	}
+}
 
 	Interest_Code.sort(function (a, b) {
 		return b.value - a.value;
 	  });
+
+	console.log(Interest_Code);
+
 	for (var i in Interest_Code) {
 		if (i<=2) {
 			op+=Interest_Code[i].key;
@@ -551,3 +553,7 @@ function AnalyzeRIASEC() {
 	console.log(ipsum);
 	alert(op) //grabs array
 }
+
+document.cookie = "testing";
+console.log(document.cookie);
+
