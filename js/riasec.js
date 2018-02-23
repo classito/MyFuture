@@ -554,7 +554,8 @@ function AnalyzeRIASEC() {
 	console.log("Interest_Code");
 	alert(op) //grabs array
 	console.log(ipsum);
-	document.cookie = "RIASEC_SCORE=" + op
+	document.cookie = op
+	document.location.href = '../pages/output.html';
 }
 
 
