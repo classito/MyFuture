@@ -523,37 +523,39 @@ function AnalyzeRIASEC() {
 	var Interest_Code = [ ] //eg ("R", "A", "I")
 	var op = "";
 	var ipsum = "";
+	
 	for (var i in RIASEC) {
 		for (var k in RIASEC[i].list) {
 			if (RIASEC[i].list[k] == "A") {
 				RIASEC[i].value += 1;
 			}
+		}
+		console.log(RIASEC[i].code + " : " + RIASEC[i].value);
 		Interest_Code.push({
 			key:   RIASEC[i].code,
 			value: RIASEC[i].value
 		});
 	}
-}
 
 	Interest_Code.sort(function (a, b) {
 		return b.value - a.value;
 	  });
 
-	console.log(Interest_Code);
 
-	for (var i in Interest_Code) {
-		if (i<=2) {
-			op+=Interest_Code[i].key;
-		} else {
-			ipsum+=Interest_Code[i].key;
-		}
+	  for (var i in Interest_Code) {
+		  if (i <= 2) {
+		  op += Interest_Code[i].key
+	  } else {
+		  ipsum += Interest_Code[i].key
+	  }
 	}
 
 
-	console.log(ipsum);
+	console.log("Interest_Code");
 	alert(op) //grabs array
+	console.log(ipsum);
+	document.cookie = "RIASEC_SCORE=" + op
 }
 
-document.cookie = "testing";
-console.log(document.cookie);
+
 
