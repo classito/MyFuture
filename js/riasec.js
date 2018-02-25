@@ -11,49 +11,49 @@ var RIASEC =
 		{
 			q1:
 			{
-				question:"I like to work on cars",
+				question:"1. I like to work on cars",
 				state:1,
 				pos:0,
 				code:"R"
 			},
 			q7:
 			{
-				question:"I like to build things",
+				question:"7. I like to build things",
 				state:7,
 				pos:1,
 				code:"R"
 			},
 			q14:
 			{
-				question:"I like to take care of animals",
+				question:"8. I like to take care of animals",
 				state:14,
 				pos:2,
 				code:"R"
 			},
 			q22:
 			{
-				question:"I like putting things together or assembling things",
+				question:"22. I like putting things together or assembling things",
 				state:22,
 				pos:3,
 				code:"R"
 			},
 			q30:
 			{
-				question:"I like to cook",
+				question:"30. I like to cook",
 				state:30,
 				pos:4,
 				code:"R"
 			},
 			q32:
 			{
-				question:"I am a practical person",
+				question:"32. I am a practical person",
 				state:32,
 				pos:5,
 				code:"R"
 			},
 			q37:
 			{
-				question:"I like working outdoors",
+				question:"37. I like working outdoors",
 				state:37,
 				pos:6,
 				code:"R"
@@ -69,42 +69,42 @@ var RIASEC =
 		{
 			q2:
 			{
-				question:"I like to do puzzles",
+				question:"2. I like to do puzzles",
 				state:2,
 				pos:0,
 				code:"I"
 			},
 			q11:
 			{
-				question:"I like to do experiments",
+				question:"11. I like to do experiments",
 				state:11,
 				pos:1,
 				code:"I"
 			},
 			q18:
 			{
-				question:"I enjoy science",
+				question:"18. I enjoy science",
 				state:18,
 				pos:2,
 				code:"I"
 			},
 			q21:
 			{
-				question:"I enjoy trying to figure out how things work",
+				question:"22. I enjoy trying to figure out how things work",
 				state:22,
 				pos:3,
 				code:"I"
 			},
 			q26:
 			{
-				question:"I like to analyze things (problems/ situations)",
+				question:"26. I like to analyze things (problems/ situations)",
 				state:26,
 				pos:4,
 				code:"I"
 			},
 			q39:
 			{
-				question:"I'm good at math",
+				question:"39. I'm good at math",
 				state:39,
 				pos:5,
 				code:"I"
@@ -120,48 +120,48 @@ var RIASEC =
 		{
 			q3:
 			{
-				question:"I'm good at working independently",
+				question:"3. I'm good at working independently",
 				state:3,
 				pos:0,
 				code:"A"
 			},
 			q8:
 			{
-				question:"I like to read about art and music",
+				question:"8. I like to read about art and music",
 				state:8,
 				pos:1,
 				code:"A"
 			},
 			q17:
 			{
-				question:"I enjoy creative writing",
+				question:"17. I enjoy creative writing",
 				state:17,
 				pos:2,
 				code:"A"
 			},
 			q23:
 			{
-				question:"I am a creative person",
+				question:"23. I am a creative person",
 				state:23,
 				pos:3,
 				code:"A"
 			},
 			q27:
 			{
-				question:"I like to play instruments or sing",
+				question:"27. I like to play instruments or sing",
 				state:27,
 				pos:4,
 				code:"A"
 			},
 			q31:
 			{
-				question:"I like acting in plays",
+				question:"31. I like acting in plays",
 				state:31,
 				pos:5,
 				code:"A"
 			},
 			q41: {
-				question:"I like to draw",
+				question:"41. I like to draw",
 				state:41,
 				pos:6,
 				code:"A"
@@ -177,49 +177,49 @@ var RIASEC =
 		{
 			q4:
 			{
-				question:"I like to work in teams",
+				question:"4. I like to work in teams",
 				state:4,
 				pos:0,
 				code:"S"
 			},
 			q12:
 			{
-				question:"I like to teach or train people",
+				question:"12. I like to teach or train people",
 				state:12,
 				pos:1,
 				code:"S"
 			},
 			q13:
 			{
-				question:"I like trying to help people solve their problems",
+				question:"13. I like trying to help people solve their problems",
 				state:13,
 				pos:2,
 				code:"S"
 			},
 			q20:
 			{
-				question:"I am interested in healing people",
+				question:"20. I am interested in healing people",
 				state:20,
 				pos:3,
 				code:"S"
 			},
 			q28:
 			{
-				question:"I enjoy learning about other cultures",
+				question:"28. I enjoy learning about other cultures",
 				state:28,
 				pos:4,
 				code:"S"
 			},
 			q34:
 			{
-				question:"I like to get into discussions about issues",
+				question:"34. I like to get into discussions about issues",
 				state:34,
 				pos:5,
 				code:"S"
 			},
 			q40:
 			{
-				question:"I like helping people",
+				question:"40. I like helping people",
 				state:40,
 				pos:6,
 				code:"S"
@@ -235,49 +235,49 @@ var RIASEC =
 			{
 				q5:
 				{
-					question:"I am an ambitious person, I set goals for myself",
+					question:"5. I am an ambitious person, I set goals for myself",
 					state:5,
 					pos:0,
 					code:"E"
 				},
 				q10:
 				{
-					question:"I like to try to influence or persuade people",
+					question:"10. I like to try to influence or persuade people",
 					state:10,
 					pos:1,
 					code:"E"
 				},
 				q16:
 				{
-					question:"I like selling things",
+					question:"16. I like selling things",
 					state:16,
 					pos:2,
 					code:"E"
 				},
 				q19:
 				{
-					question:"I am quick to take on new responsibilities",
+					question:"19. I am quick to take on new responsibilities",
 					state:19,
 					pos:3,
 					code:"E"
 				},
 				q29:
 				{
-					question:"I would like to start my own business",
+					question:"29. I would like to start my own business",
 					state:29,
 					pos:4,
 					code:"E"
 				},
 				q36:
 				{
-					question:"I like to lead",
+					question:"36. I like to lead",
 					state:36,
 					pos:5,
 					code:"E"
 				},
 				q42:
 				{
-					question:"I like to give speeches",
+					question:"42. I like to give speeches",
 					state:42,
 					pos:6,
 					code:"E"
@@ -293,49 +293,49 @@ var RIASEC =
 		{
 			q6:
 			{
-				question:"I like to organize things, (files, desks/offices)",
+				question:"6. I like to organize things, (files, desks/offices)",
 				state:6,
 				pos:0,
 				code:"C"
 			},
 			q9:
 			{
-				question:"I like to have clear instructions to follow",
+				question:"9. I like to have clear instructions to follow",
 				state:9,
 				pos:1,
 				code:"C"
 			},
 			q15:
 			{
-				question:"I wouldn't mind working 8 hours per day in an office",
+				question:"19. I wouldn't mind working 8 hours per day in an office",
 				state:15,
 				pos:2,
 				code:"C"
 			},
 			q24:
 			{
-				question:"I pay attention to details",
+				question:"24. I pay attention to details",
 				state:24,
 				pos:3,
 				code:"C"
 			},
 			q25:
 			{
-				question:"I like to do filing or typing",
+				question:"25. I like to do filing or typing",
 				state:25,
 				pos:4,
 				code:"C"
 			},
 			q35:
 			{
-				question:"I am good at keeping records of my work",
+				question:"35. I am good at keeping records of my work",
 				state:35,
 				pos:5,
 				code:"C"
 			},
 			q38:
 			{
-				question:"I would like to work in an office",
+				question:"38. I would like to work in an office",
 				state:38,
 				pos:6,
 				code:"C"
@@ -517,46 +517,60 @@ function custom_compare3 (a,b) {
 	return a.value - b.value;
   }
 
-  
+
+function checkMissing(riasecObj) {
+for (var i in riasecObj) {
+	for (var k in riasecObj[i].list) {
+		if (riasecObj[i].list[k] === "M") {
+			alert("Please fill in every questions");
+			return false
+		}
+	}
+	return true;
+}
+}
+
+
+	
 //temporarily analysis
 function AnalyzeRIASEC() {
 	var Interest_Code = [ ] //eg ("R", "A", "I")
 	var op = "";
 	var ipsum = "";
-	
-	for (var i in RIASEC) {
-		for (var k in RIASEC[i].list) {
-			if (RIASEC[i].list[k] == "A") {
-				RIASEC[i].value += 1;
+	if (checkMissing(RIASEC)) {
+
+		for (var i in RIASEC) {
+			for (var k in RIASEC[i].list) {
+				if (RIASEC[i].list[k] == "A") {
+					RIASEC[i].value += 1;
+				}
 			}
+			console.log(RIASEC[i].code + " : " + RIASEC[i].value);
+			Interest_Code.push({
+				key:   RIASEC[i].code,
+				value: RIASEC[i].value
+			});
 		}
-		console.log(RIASEC[i].code + " : " + RIASEC[i].value);
-		Interest_Code.push({
-			key:   RIASEC[i].code,
-			value: RIASEC[i].value
-		});
+	
+		Interest_Code.sort(function (a, b) {
+			return b.value - a.value;
+		  });
+	
+	
+		  for (var i in Interest_Code) {
+			  if (i <= 2) {
+			  op += Interest_Code[i].key
+		  } else {
+			  ipsum += Interest_Code[i].key
+		  }
+		}
+	
+	
+		console.log("Interest_Code");
+		alert(op) //grabs array
+		console.log(ipsum);
+		document.cookie = op
+		document.location.href = '../pages/output.html';
 	}
 
-	Interest_Code.sort(function (a, b) {
-		return b.value - a.value;
-	  });
-
-
-	  for (var i in Interest_Code) {
-		  if (i <= 2) {
-		  op += Interest_Code[i].key
-	  } else {
-		  ipsum += Interest_Code[i].key
-	  }
-	}
-
-
-	console.log("Interest_Code");
-	alert(op) //grabs array
-	console.log(ipsum);
-	document.cookie = op
-	document.location.href = '../pages/output.html';
 }
-
-
-
