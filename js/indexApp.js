@@ -2,17 +2,41 @@ var displayContent //switch to index content after pre-load
 var setMotto = setInterval(MottoChange, 980);
 
 var count = 0;
-var list = ["My Choice", "My Future"];
-function MottoChange() {
-    //this transitions to choice, future
-    document.getElementById("list").innerHTML = list[count]
-    count++
-    if (count >=2) {
-        clearInterval(setMotto);
+var list = ["My Voice", "My Choice", "My Future"];
+
+function FadeInTransition(wordElem, state) {
+    var fadeInElem = document.createElement("span");
+    fadeInElem.innerHTML = wordElem;
+    fadeInElem.id = "list";
+    fadeInElem.className = "MyVCF";
+    if (state === "iterate") {
+        fadeInElem.className = "fadeInTransition";
+    } else {
+        fadeInElem.className = "LastfadeInTransition";
     }
+
+    fadeInElem.innerHTML = wordElem;
+    return fadeInElem;
 }
 
+function MottoChange() {
+    //this transitions to choice, future
+    //document.getElementById("list").innerHTML = list[count]
+    var MottoElem = document.getElementById("motto");
+     if (count === 2) {
+        MottoElem.appendChild(FadeInTransition(list[count], "last"))
+        count++
+        clearInterval(setMotto)
+    } else {
+        MottoElem.appendChild(FadeInTransition(list[count], "iterate"))
+        count++
+    }
+    MottoElem.removeChild(MottoElem.childNodes[0])
+}
+
+
 var LogoPos = 0;
+var TextPos = 0;
 function LogoLeft() {
     //moves logo to left after text animation
     var id = setInterval(LogoLeft, 5);
@@ -25,7 +49,6 @@ function LogoLeft() {
         }
     }
 
-var TextPos = 0;
 function TextRight() {
     //moves text to right after text animation
     var id2 = setInterval(TextRight, 5);
@@ -43,7 +66,7 @@ transitionLeft = setTimeout(LogoLeft, 4800); //transition
 
 function displayContentFunc() {
     //body loads
-    displayContent = setTimeout(showPage, 5000);
+    displayContent = setTimeout(showPage, 5500);
 }
 
 function showPage() {
