@@ -1,11 +1,10 @@
 #riasec {
   color: olive;
   font-size: 550%;
-  margin-top: 100px;
-  margin-left: 43%;
+  margin-top:100px;
 }
 
-p,
-h1 {
-  text-align: center;
+p, h1 {
+  text-align:center;
 }
+
