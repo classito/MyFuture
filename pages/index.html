@@ -1,29 +1,65 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>preload demo</title>
-    <link rel="stylesheet" type="text/css" href="../css/preLoad.css"/>
+    <title>My Future</title>
+    <link rel="stylesheet" type="text/css" href="../css/preLoad.css" />
+    <link rel="stylesheet" type="text/css" href="../css/indexPage.css" />
 </head>
+
+<!--Animation Cotent.-->
+
 <body onload="displayContentFunc()" style="margin:0;">
 
 <div id="loader">
     <div id="logoDisp" class="flex-container">
     </div>
 
-    <div class="flex-container">
-    <h3 id="motto" class="MyVCF"><span id="list" class="MyVCF"></span></h3>
+        <div class="flex-container">
+            <h3 id="motto" class="MyVCF">
+                <span id="list" class="MyVCF"></span>
+            </h3>
+        </div>
     </div>
-</div>
 
-<div style="display:none;" id="myDiv" class="animate-bottom">
-    <h1>Homepage</h1> <br>
-    <a href="riasecPage.html">
-        <h2>take riasec test</h2>
-    </a>
-</div>
+    <!--Contents Below loads after preload animation.-->
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <h1>Homepage</h1>
+        <br>
+        <a href="riasecPage.html">
+            <h2>take riasec test</h2>
+        </a>
 
 
-<script src="../js/indexApp.js"></script>
+        <!--Responsive Flexbox Image Gallery.-->
+        <!--temporarily imgs? -->
+        <div id="image_container">
+            <h1>Current Pathways</h1>
+            <div class="row">
+                <div class="column">
+                    <img src="../imgs/Arts_Communication.jpg">
+                    <img src="../imgs/Health_Science.jpg">
+                </div>
+
+                <div class="column">
+                    <img src="../imgs/IET.jpg">
+                    <img src="../imgs/business_academy.jpg">
+                </div>
+
+                <div class="column">
+                    <img src="../imgs/Natural_Res.jpg">
+                    <img src="../imgs/Public_Hum.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p style="font-style:italics;">classito productions ©</p>
+        </div>
+    </div>
+
+    <script src="../js/indexApp.js"></script>
 
 </body>
+
 </html>
