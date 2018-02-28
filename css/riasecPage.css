@@ -5,7 +5,7 @@
 
 .questionForm {
   display: flex;
-  flex-flow:row wrap;
+  flex-flow: row wrap;
   align-items: center;
   justify-content: center;
   min-height: 4em;
@@ -25,8 +25,6 @@ fieldset {
 }
 
 input {
-  display:inline;
+  display: inline;
   text-align: center;
 }
-
-
