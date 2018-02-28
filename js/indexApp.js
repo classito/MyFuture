@@ -1,5 +1,11 @@
 var displayContent //switch to index content after pre-load
 var setMotto = setInterval(MottoChange, 980);
+var MarauderLogoIMG = new Image();
+
+//image lag solve?
+MarauderLogoIMG.src = '../imgs/WHS_Marauder_Logo.jpg';
+MarauderLogoIMG.id = "logo"
+document.getElementById("logoDisp").appendChild(MarauderLogoIMG);
 
 var count = 0;
 var list = ["My Voice", "My Choice", "My Future"];
