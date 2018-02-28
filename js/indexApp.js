@@ -23,7 +23,7 @@ function MottoChange() {
     //this transitions to choice, future
     //document.getElementById("list").innerHTML = list[count]
     var MottoElem = document.getElementById("motto");
-     if (count === 2) {
+    if (count === 2) {
         MottoElem.appendChild(FadeInTransition(list[count], "last"))
         count++
         clearInterval(setMotto)
@@ -37,29 +37,30 @@ function MottoChange() {
 
 var LogoPos = 0;
 var TextPos = 0;
+
 function LogoLeft() {
     //moves logo to left after text animation
     var id = setInterval(LogoLeft, 5);
     var elem = document.getElementsByClassName("MyVCF")[0];
-        if (LogoPos == 900) {
-          clearInterval(id);
-        } else {
-            LogoPos+=0.5; 
-          elem.style.left = LogoPos + 'px'; 
-        }
+    if (LogoPos == 900) {
+        clearInterval(id);
+    } else {
+        LogoPos += 0.5;
+        elem.style.left = LogoPos + 'px';
     }
+}
 
 function TextRight() {
     //moves text to right after text animation
     var id2 = setInterval(TextRight, 5);
     var elem = document.getElementById("logo");
-        if (TextPos == 900) {
-          clearInterval(id2);
-        } else {
-            TextPos+=0.5; 
-          elem.style.right = TextPos + 'px'; 
-        }
-      }
+    if (TextPos == 900) {
+        clearInterval(id2);
+    } else {
+        TextPos += 0.5;
+        elem.style.right = TextPos + 'px';
+    }
+}
 
 transitionRight = setTimeout(TextRight, 4800); //transition
 transitionLeft = setTimeout(LogoLeft, 4800); //transition

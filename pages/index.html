@@ -1,172 +1,66 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-    <title>preload demo</title>
-    <link rel="stylesheet" type="text/css" href="../css/preLoad.css"/>
+    <title>My Future</title>
+    <link rel="stylesheet" type="text/css" href="../css/preLoad.css" />
+    <link rel="stylesheet" type="text/css" href="../css/indexPage.css" />
 </head>
+
+<!--Animation Cotent.-->
+
 <body onload="displayContentFunc()" style="margin:0;">
 
-<div id="loader">
-    <div class="flex-container">
-    <img id="logo" class"scale" src="../imgs/WHS_Marauder_Logo.jpg">
+    <div id="loader">
+        <div class="flex-container">
+            <img id="logo" class "scale" src="../imgs/WHS_Marauder_Logo.jpg">
+        </div>
+
+        <div class="flex-container">
+            <h3 id="motto" class="MyVCF">
+                <span id="list" class="MyVCF"></span>
+            </h3>
+        </div>
     </div>
 
-    <div class="flex-container">
-    <h3 id="motto" class="MyVCF"><span id="list" class="MyVCF"></span></h3>
+    <!--Contents Below loads after preload animation.-->
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+        <h1>Homepage</h1>
+        <br>
+        <a href="riasecPage.html">
+            <h2>take riasec test</h2>
+        </a>
+
+
+        <!--Responsive Flexbox Image Gallery.-->
+        <!--temporarily imgs? -->
+        <div id="image_container">
+            <h1>Current Pathways</h1>
+            <div class="row">
+                <div class="column">
+                    <img src="../imgs/Arts_Communication.jpg">
+                    <img src="../imgs/Health_Science.jpg">
+                </div>
+
+                <div class="column">
+                    <img src="../imgs/IET.jpg">
+                    <img src="../imgs/business_academy.jpg">
+                </div>
+
+                <div class="column">
+                    <img src="../imgs/Natural_Res.jpg">
+                    <img src="../imgs/Public_Hum.jpg">
+                </div>
+            </div>
+        </div>
+
+        <div id="footer">
+            <p style="font-style:italics;">classito productions ©</p>
+        </div>
     </div>
-</div>
 
-<div style="display:none;" id="myDiv" class="animate-bottom">
-    <h1>Homepage</h1> <br>
-    <a href="riasecPage.html">
-        <h2>take riasec test</h2>
-    </a>
-    <div class="container"> 
-        <img src="https://career.webindia123.com/career/options/images/industrial.jpg" style="width:50%;"> 
-        <div class="bottom-left">Industrial Engineering Technology</div>
-  </div> 
-
-<style>
-.container {
-    position: relative;
-    text-align: center;
-    color: black;
-}
-.bottom-left {
-    position: absolute;
-    bottom: 8px;
-    left: 325px;
-    font-size: 200%;
-    
-}
-</style> <br2>
-     <div class="container2">  <br>
-        <img src="http://hesca.org/wp-content/uploads/2016/08/health-and-science-careers-300x209.jpg" style="width:50%;"
-    </div>
-        <div class="doctor">Health and Science</div>
-  </div>
-
-<style>
-.container2 {
-    position: relative;
-    text-align: center;
-    color: black;
-    font-size: 225%;
-
-}
-.doctor {
-    position: absolute;
-    bottom: 8px;
-    left: 320px;
-}   
-br2 {
-    display: block;
-    margin: 100px 0;
-}
-</style> <br3>
-     <div class="container3">  <br>
-        <img src="https://www.neit.edu/Content/Media/main/article/right/Arts-AV-Technology-and-Communications.jpg" style="width:50%;"
-    </div>
-        <div class="music">Arts and Communication</div>
-  </div>
-
-<style>
-.container3 {
-    position: relative;
-    text-align: center;
-    color: black;
-    font-size: 225%;
-
-}
-.music {
-    position: absolute;
-    bottom: 8px;
-    left: 320px;
-}   
-br3 {
-    display: block;
-    margin: 100px 0;
-}
-</style> <br4>
-     <div class="container4">  <br>
-        <img src="http://www.connect-cee.com/images/business-academy.jpg" style="width:50%;"
-    </div>
-        <div class="money">Business</div>
-  </div>
-
-<style>
-.container4 {
-    position: relative;
-    text-align: center;
-    color: black;
-    font-size: 225%;
-
-}
-.money {
-    position: absolute;
-    bottom: 8px;
-    left: 320px;
-}   
-br4 {
-    display: block;
-    margin: 100px 0;
-}
-</style> <br5>
-     <div class="container5">  <br>
-        <img src="http://www.massey.ac.nz/massey/fms/Study/StudyAtMassey/Images/prog_images/92431_PPLBL.jpg" style="width:50%;"
-    </div>
-        <div class="Nature">Natural Resources</div>
-  </div>
-
-<style>
-.container5 {
-    position: relative;
-    text-align: center;
-    color: black;
-    font-size: 225%;
-
-}
-.Nature {
-    position: absolute;
-    bottom: 8px;
-    left: 320px;
-}   
-br5 {
-    display: block;
-    margin: 100px 0;
-}
-</style> <br6>
-     <div class="container6">  <br>
-        <img src="https://www.kaplanuniversity.edu/degree-programs/social_and_behavioral_sciences/bachelor-of-science-in-human-services-in-youth-family-services-and-administration_hero_mobile.jpg" style="width:50%;"
-    </div>
-        <div class="Service">Public and Human Services</div>
-
-<style>
-.container6 {
-    position: relative;
-    text-align: center;
-    color: black;
-    font-size: 225%;
-
-}
-.Service {
-    position: absolute;
-    bottom: 8px;
-    left: 320px;
-}   
-br6 {
-    display: block;
-    margin: 100px 0;
-}
-</style> 
-
-
-
-
-</div>
-
-
-<script src="../js/indexApp.js"></script>
+    <script src="../js/indexApp.js"></script>
 
 </body>
+
 </html>

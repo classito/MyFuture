@@ -1,64 +1,75 @@
-#loader {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 120px;
-  height: 120px;
-}
-
-
-@keyframes fadeInTransition {
-    0% { bottom:-150px;opacity:0 } 
-    50% { bottom:-50px; opacity:1 }
-    100% { bottom:-40px;; opacity:0 }
-}
-
-@keyframes LastfadeInTransition {
-    0% { bottom:-150px;opacity:0 } 
-    50% { bottom:-50px; opacity:1 }
-    100% { bottom:-45px;; opacity:1 }
-}
-
-.fadeInTransition {
-    animation: fadeInTransition 1s forwards;
-}
-.LastfadeInTransition {
-    animation: LastfadeInTransition 1s forwards;
-}
-
+/* Current Animation Sets */
 
 @-webkit-keyframes spin {
-  0% { -webkit-transform: rotate(0deg); }
-  100% { -webkit-transform: rotate(360deg); }
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
 }
 
 @keyframes spin {
-  0% { transform: rotate(0deg); }
-  100% { transform: rotate(360deg); }
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
 }
 
-/* Add animation to "page content" */
-.animate-bottom {
-  position: relative;
-  -webkit-animation-name: animatebottom;
-  -webkit-animation-duration: 1s;
-  animation-name: animatebottom;
-  animation-duration: 1s
+@keyframes fadeInTransition {
+    0% {
+        bottom: -150px;
+        opacity: 0
+    }
+    50% {
+        bottom: -50px;
+        opacity: 1
+    }
+    100% {
+        bottom: -40px;
+        ;
+        opacity: 0
+    }
 }
 
-@-webkit-keyframes animatebottom {
-  from { bottom:-100px; opacity:0 } 
-  to { bottom:0px; opacity:1 }
+@keyframes LastfadeInTransition {
+    0% {
+        bottom: -150px;
+        opacity: 0
+    }
+    50% {
+        bottom: -50px;
+        opacity: 1
+    }
+    100% {
+        bottom: -45px;
+        ;
+        opacity: 1
+    }
 }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }
 
-@keyframes animatebottom { 
-  from{ bottom:-100px; opacity:0 } 
-  to{ bottom:0; opacity:1 }
+@keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0;
+        opacity: 1
+    }
 }
 
 @keyframes scale {
@@ -76,25 +87,24 @@
     90% {
         transform: scale(0.9);
     }
-    100% {
-    }
+    100% {}
 }
 
 #myDiv {
-  display: none;
-  text-align: center;
+    display: none;
+    text-align: center;
 }
 
 #list {
-    position:absolute;
-    left:-50%;
+    position: absolute;
+    left: -50%;
 }
 
 #motto {
-    margin-top:120px;
+    margin-top: 120px;
 }
 
-@keyframes fadeOut { 
+@keyframes fadeOut {
     0% {
         opacity: 1;
     }
@@ -104,23 +114,61 @@
     100% {
         opacity: 1;
     }
-  }
+}
+
+@-webkit-keyframes animatebottom {
+    from {
+        bottom: -100px;
+        opacity: 0
+    }
+    to {
+        bottom: 0px;
+        opacity: 1
+    }
+}
+
+/* preLoad CSS */
+
+#loader {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    width: 120px;
+    height: 120px;
+}
 
 #logo {
     animation: scale 1s forwards;
-    position:absolute;
-    top:-430px;
+    position: absolute;
+    top: -430px;
     width: 400%;
-    height:450%;
+    height: 450%;
+}
+
+.animate-bottom {
+    position: relative;
+    -webkit-animation-name: animatebottom;
+    -webkit-animation-duration: 1s;
+    animation-name: animatebottom;
+    animation-duration: 1s
+}
+
+.fadeInTransition {
+    animation: fadeInTransition 1s forwards;
+}
+
+.LastfadeInTransition {
+    animation: LastfadeInTransition 1s forwards;
 }
 
 .MyVCF {
     position: absolute;
-    right:290px;
+    right: 290px;
     font-size: 100px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     white-space: nowrap;
 }
+
 .flex-container {
     display: -webkit-box;
     display: -moz-box;
