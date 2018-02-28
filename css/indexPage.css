@@ -76,3 +76,39 @@ img {
         max-width: 100%;
     }
 }
+
+
+
+
+
+
+
+/* Navigation Bar Code */
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    padding: 8px;
+    background-color: gold;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="#home">Home</a></li>
+  <li><a href="#Riasec">Riasec</a></li>
+  <li><a href="#Classes">Classes</a></li>
+  <li><a href="#Colleges">Colleges</a></li>
+  <li><a href="#WHSwebsite">WHS Website</a></li>
+</ul>
