@@ -296,19 +296,20 @@ var question = [];
 function createQuestion(question, id, classCode, qNum) {
 	//contructs layout of question box
 
-	var QuestionPrompt = document.createTextNode(question);
+	var PElem = document.createElement("P"); // </br>
+	PElem.innerHTML = question;
 	var breaking = document.createElement("br"); // </br>
 	var fieldset = document.createElement("fieldset"); // <fieldset>
 	var label_Yes = document.createElement("label"); // yes <label>
 	var label_No = document.createElement("label"); // no <label>
 	var input_Yes = document.createElement("input"); // yes <input>
 	var input_No = document.createElement("input"); // no <input>
-	var text_No = document.createTextNode("no"); //no value
-	var text_Yes = document.createTextNode("yes"); //yes value
+	var text_No = document.createTextNode("I Disagree"); //no value
+	var text_Yes = document.createTextNode("I Agree"); //yes value
 
 	fieldset.setAttribute("id", "group" + id);
 	fieldset.className += classCode;
-	fieldset.appendChild(QuestionPrompt)
+	fieldset.appendChild(PElem)
 	fieldset.appendChild(breaking)
 	document.getElementById("questionContainer").appendChild(fieldset);
 
@@ -323,6 +324,7 @@ function createQuestion(question, id, classCode, qNum) {
 	label_Yes.appendChild(text_Yes);
 	label_Yes.appendChild(input_Yes)
 	document.getElementById("group" + id).appendChild(label_Yes);
+	document.getElementById("group" + id).appendChild(breaking);
 
 	input_No.setAttribute("qNum", qNum);
 	input_No.setAttribute("id", "group" + id + "i");
@@ -364,10 +366,50 @@ function sortAndDeploy() {
 		counter++; //ID'ed indiv fieldset (eg. id="group1", "group2" ... "group32" ...)
 		createQuestion(question[i].question, counter, question[i].code, question[i].pos); //paste questions in webpage
 	}
+	createButton("submit", "Submit", "AnalyzeRIASEC()", "Submit RIASEC")
 }
-sortAndDeploy();
 
+function createButton(id, value, onclick, prompt) {
+	var bttn = document.createElement("button");
+	bttn.id = id;
+	bttn.value = value;
+	bttn.setAttribute("onclick", onclick);
+	bttn.innerHTML = prompt;
+	document.getElementById("buttonContainer").appendChild(bttn)
+}
+
+function ViewResults() {
+	window.location.href = "../pages/output.html";
+}
+
+function retakeRIASEC() {
+	var PElem = document.createElement("P");
+	PElem.innerHTML = "you've already taken RIASEC! do you want a retake?";
+	document.getElementById("questionContainer").appendChild(PElem);
+	createButton("retake", "Retake", "retakeTest()", "Retake RIASEC")
+	createButton("view", "View", "ViewResults()", "View Your Results")
+}
+
+function retakeTest() {
+	document.getElementById("questionContainer").innerHTML = " ";
+	document.getElementById("buttonContainer").innerHTML = " ";
+	sortAndDeploy();
+}
+function checkCode() {
+	if (!document.cookie.length) {
+		console.log("take it")
+		sortAndDeploy();
+	} else {
+		console.log("youve already taken it")
+		retakeRIASEC();
+	}
+}
+checkCode();
 console.log(RIASEC.Realistic.list);
+
+
+
+
 
 function changeState(thisElem) {
 	switch (thisElem.className) {
@@ -406,7 +448,6 @@ function changeState(thisElem) {
 }
 
 function changeState2(thisElem) {
-	console.log(thisElem.className);
 	switch (thisElem.className) {
 		case "R":
 			RIASEC.Realistic.list[thisElem.getAttribute("qnum")] = "B"
@@ -441,24 +482,6 @@ function changeState2(thisElem) {
 	console.log("C : " + RIASEC.Conventional.list);
 }
 
-
-function stateYes(elem) {
-	//click works only once, disables infinite increment onclick
-	var stateOfYesName = elem.id; //group1i
-	var stateOfYes = document.querySelectorAll("#" + stateOfYesName.slice(0, -1))[1]; //gets inputYes element
-	console.log(stateOfYes);
-	stateOfYes.className = document.querySelectorAll("#" + stateOfYesName.slice(0, -1))[0].className; //changes inputYes className to parent className
-	elem.className = "none"; //remove className, disables infinite increments onClick
-}
-
-function stateNo(elem) {
-	//click works only once, disables infinite increment onclick
-	var stateOfNo = document.getElementById(elem.id + "i"); //elem of No_Input
-
-	stateOfNo.className = document.querySelectorAll("#" + elem.id)[0].className; //changes inputNo className to parent className
-	console.log(stateOfNo);
-	elem.className = "none"; //remove className, disables infinite increments onClick
-}
 
 function custom_compare3(a, b) {
 	// sorts question order least -> greatest

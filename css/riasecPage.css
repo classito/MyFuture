@@ -1,8 +1,16 @@
+body {
+  margin:0;
+}
 #QuestionsContainer {
+  font-family: 'Courier New', Courier, monospace;
   align-items: center;
   justify-content: center;
 }
 
+p {
+  font-size:3vh;
+  font-family: 'Courier New', Courier, monospace;
+}
 .questionForm {
   display: flex;
   flex-flow: row wrap;
@@ -11,7 +19,24 @@
   min-height: 4em;
 }
 
+input {
+  margin-bottom:14px;
+}
+
+
+.activeState {
+  color:gold
+}
+label:hover {
+  color:gold;
+}
+
 button {
+  margin:20px;
+  padding:4vh;
+  width:250px;
+  border-radius:20%;
+  margin-bottom:10vh;
   border: 1px solid black;
   display: flex;
   justify-content: center;
@@ -28,3 +53,4 @@ input {
   display: inline;
   text-align: center;
 }
+
