@@ -3,6 +3,11 @@ body {
   margin: 0
 }
 
+
+.ActivePath {
+  color:gold;
+  background-color:blue;
+}
 #interestCode {
   letter-spacing: 5px;
   text-decoration: underline;
