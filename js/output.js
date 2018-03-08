@@ -43,6 +43,7 @@ function testapp(val) {
 		aNode.innerHTML = pathWayInfoDB.NaturalRS.pictures[0];
 		aNode2.innerHTML = pathWayInfoDB.NaturalRS.pictures[1];
 		aNode3.innerHTML = pathWayInfoDB.NaturalRS.pictures[2];
+		document.getElementById("MoreInfoBox").setAttribute("name", val);
 
 	} else if (val==="ArtsComm") {
 		document.getElementById("academyName").innerHTML= "Arts and Communication"
@@ -56,6 +57,7 @@ function testapp(val) {
 		aNode.innerHTML = pathWayInfoDB.artsNStuff.pictures[0];
 		aNode2.innerHTML = pathWayInfoDB.artsNStuff.pictures[1];
 		aNode3.innerHTML = pathWayInfoDB.artsNStuff.pictures[2];
+		document.getElementById("MoreInfoBox").setAttribute("name", val);
 	} else if (val ==="IET") {
 		document.getElementById("academyName").innerHTML="Industrial and Engineering Technology"
 		document.getElementById("about").innerHTML = pathWayInfoDB.IETStuff.about
@@ -67,6 +69,7 @@ function testapp(val) {
 		aNode.innerHTML = pathWayInfoDB.IETStuff.pictures[0];
 		aNode2.innerHTML = pathWayInfoDB.IETStuff.pictures[1];
 		aNode3.innerHTML = pathWayInfoDB.IETStuff.pictures[2];
+		document.getElementById("MoreInfoBox").setAttribute("name", val);
 	} else if (val ==="Bus") {
 		document.getElementById("academyName").innerHTML =  "Academy of Business"
 		document.getElementById("about").innerHTML = pathWayInfoDB.Business.about
@@ -78,6 +81,7 @@ function testapp(val) {
 		aNode.innerHTML = pathWayInfoDB.Business.pictures[0];
 		aNode2.innerHTML = pathWayInfoDB.Business.pictures[1];
 		aNode3.innerHTML = pathWayInfoDB.Business.pictures[2];
+		document.getElementById("MoreInfoBox").setAttribute("name", val);
 	}
 		else {
 			alert("HSS")
@@ -121,6 +125,44 @@ function demoAppend(caseString) {
 				break;
 		}
 };
+
+document.getElementById("MoreInfoBox").setAttribute("onclick", "displayMoreInfo()");
+function displayMoreInfo() {
+	val = document.getElementById("MoreInfoBox").getAttribute("name");
+
+
+
+	if (val==="NR"){
+			document.getElementById("PathwayInfo").innerHTML = " "
+			var infoBoxART = document.createElement("h1");
+			infoBoxART.innerHTML = "FLOWERS!"
+			document.getElementById("PathwayInfo").appendChild(infoBoxART);
+		} else if (val==="ArtsComm") {
+			document.getElementById("PathwayInfo").innerHTML = " "
+			var infoBoxART = document.createElement("h1");
+			infoBoxART.innerHTML = "ART!"
+			document.getElementById("PathwayInfo").appendChild(infoBoxART);
+
+		} else if (val ==="IET") {
+			document.getElementById("PathwayInfo").innerHTML = " "
+			var infoBoxART = document.createElement("h1");
+			infoBoxART.innerHTML = "ENGINEERING!!"
+			document.getElementById("PathwayInfo").appendChild(infoBoxART);
+
+		} else if (val ==="Bus") {
+			document.getElementById("PathwayInfo").innerHTML = " "
+			var infoBoxART = document.createElement("h1");
+			infoBoxART.innerHTML = "MONEY!"
+			document.getElementById("PathwayInfo").appendChild(infoBoxART);
+
+		}
+			else {
+				alert("HSS")
+			}
+
+
+
+}
 
 var testCode = ["R", "I", "A"];
 
