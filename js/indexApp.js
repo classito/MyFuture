@@ -5,6 +5,10 @@ var MarauderLogoIMG = new Image();
 MarauderLogoIMG.src = '../imgs/WHS_Marauder_Logo.jpg';
 MarauderLogoIMG.id = "logo"
 document.getElementById("logoDisp").appendChild(MarauderLogoIMG);
+//new feature. making loading screen appear once. Maybe use cookies to determine if user has seen? and if so, set duration time around 24 hours
+
+//some complicated stuff. 
+// Users who uses public computers that already took riasec test. How can we solve loading screen that contaisn the riasec code? howwwwww
 
 var count = 0;
 var list = [ ];
