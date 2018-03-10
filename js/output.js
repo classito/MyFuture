@@ -164,7 +164,7 @@ function displayMoreInfo() {
 
 }
 
-var testCode = ["R", "I", "A"];
+var testCode = ["I", "S", "C"];
 
 for (var i=0; i<= testCode.length; i++) {
 	demoAppend(testCode[i]);

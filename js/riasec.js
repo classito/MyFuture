@@ -444,6 +444,7 @@ function changeState(thisElem) {
 	console.log("S : " + RIASEC.Social.list);
 	console.log("E : " + RIASEC.Enterprising.list);
 	console.log("C : " + RIASEC.Conventional.list);
+	
 
 }
 
