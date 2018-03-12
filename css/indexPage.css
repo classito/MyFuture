@@ -9,8 +9,6 @@
 
 #image_container {
     margin-top: 5vh;
-    max-width: 582px;
-    max-height: 360px;
 }
 
 #footer {
@@ -32,7 +30,10 @@ img {
     flex-wrap: wrap;
     padding: 0 4px;
 }
-
+/*Images for pathways must have     
+    max-width: 582px;
+    max-height: 360px;
+*/
 /* Create four equal columns that sits next to each other */
 
 .column {
