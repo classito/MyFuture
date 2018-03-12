@@ -9,6 +9,8 @@
 
 #image_container {
     margin-top: 5vh;
+    max-width: 582px;
+    max-height: 360px;
 }
 
 #footer {
