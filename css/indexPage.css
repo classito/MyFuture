@@ -17,6 +17,8 @@
 
 img {
     display: inline-block;
+    max-length: 360px;
+    max-width: 582px;
     width: 100%;
 }
 
