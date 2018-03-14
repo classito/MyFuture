@@ -12,14 +12,12 @@ document.getElementById("logoDisp").appendChild(MarauderLogoIMG);
 
 var count = 0;
 var list = [ ];
-console.log(document.cookie);
 
 	if (!document.cookie.length) {
         list = ["My Voice", "My Choice", "My Future"];
 	} else {
         var compare_CODE = document.cookie.split("");
         for (var i=0; i<=compare_CODE.length-1; i++) {
-            console.log(compare_CODE[i]);
             switch(compare_CODE[i]) {
                 case "R":
                 list.push("Realistic");
@@ -106,13 +104,32 @@ function TextRight() {
 transitionRight = setTimeout(TextRight, 4800); //transition
 transitionLeft = setTimeout(LogoLeft, 4800); //transition
 
+console.log(document.cookie)
 function displayContentFunc() {
-    //body loads
-    displayContent = setTimeout(showPage, 5500);
+    if (false) {
+        displayContent = setTimeout(showPage, 5500);
+        document.cookie = "preLoad=true;"
+    } else {
+        showPage();
+    }
+
+}
+function goToRIASEC() {
+    window.location.href = "../pages/riasecPage.html";
+}
+function getCookieVar(cookieName) {
+    var cookieVars = document.cookie.split(";")
+    for (var i = 0; i<=cookieVars.length-1; i++) {
+        if (cookieVars[i].split("=")[0] === cookieName) {
+            return (cookieVars[i].split("=")[1])
+        }
+    }
+    return null
 }
 
 function showPage() {
     //disables loader and content appears
     document.getElementById("loader").style.display = "none";
     document.getElementById("myDiv").style.display = "block";
+
 }

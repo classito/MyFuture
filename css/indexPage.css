@@ -1,12 +1,22 @@
+.Bullets ul {
+    list-style-type: none;
+}
 * {
     box-sizing: border-box;
 }
-
-
+h4 {
+    font-size:36px;
+}
+#Riasec_Info {
+    margin-top:150px;
+}
 #main {
     height: 80%;
 }
-
+#About {
+    padding:50px;
+    margin-top:150px;
+}
 #image_container {
     margin-top: 5vh;
 }
@@ -79,15 +89,3 @@ img {
 }
 
 
-/*
-</head>
-<body>
-
-<ul>
-  <li><a href="#home">Home</a></li>
-  <li><a href="#Riasec">Riasec</a></li>
-  <li><a href="#Classes">Classes</a></li>
-  <li><a href="#Colleges">Colleges</a></li>
-  <li><a href="#WHSwebsite">WHS Website</a></li>
-</ul>
-*/

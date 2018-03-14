@@ -6,27 +6,34 @@ body {
 #currentLink {
     color:#ffff00;
 }
+#navBar {
+    height:26px;
+}
 
-ul {
+#navBar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
     background-color: #333;
+    color:white;
 }
 
-li {
+#navBar li {
     float: left;
 }
 
-li a {
+#navBar li a {
     display: block;
-    color: white;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
 }
 
-li a:hover {
+a {
+    color:white;
+}
+
+#navBar li a:hover {
     background-color: #111;
 }

@@ -1,8 +1,18 @@
+function getCookieVar(cookieName) {
+    var cookieVars = document.cookie.split(";")
+    for (var i = 0; i<=cookieVars.length-1; i++) {
+		console.log(cookieVars[i]);
+        if (cookieVars[i].split("=")[0] === cookieName) {
+            return (cookieVars[i].split("=")[1])
+        }
+    }
+    return null
+}
 function checkCode() {
 	if (!document.cookie.length) {
 		document.getElementById("interestCode").innerHTML = "TAKE TEST!"
 	} else {
-		document.getElementById("interestCode").innerHTML = document.cookie
+		document.getElementById("interestCode").innerHTML = getCookieVar(" RIASEC_CODE");
 	}
 }
 
