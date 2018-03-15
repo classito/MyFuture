@@ -383,6 +383,7 @@ var box3 = createBox();
 var box4 = createBox();
 var box5 = createBox();
 var box6 = createBox();
+
 var currentBoxIndex= [box1, box2, box3, box4, box5, box6];	
 
 var counter2 = 0;
