@@ -389,11 +389,7 @@ box4.className += " animated slideInDown";
 var box5 = createBox();
 box5.className += " animated slideInDown";
 var box6 = createBox();
-<<<<<<< HEAD
 box6.className += " animated slideInDown ";
-=======
-
->>>>>>> 9f11f8a48b5a75d45d64e7698ede35c7f45d03cb
 var currentBoxIndex= [box1, box2, box3, box4, box5, box6];	
 
 var counter2 = 0;
