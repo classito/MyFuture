@@ -12,6 +12,11 @@ p {
   font-family: 'Courier New', Courier, monospace;
 }
 
+
+button {
+  margin-right:50px;
+}
+
 #container {
   display:flex;
   flex-direction: row;
@@ -19,6 +24,22 @@ p {
 
 #previous {
   margin-right:0;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
 }
 
 #next {
@@ -32,12 +53,13 @@ p {
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  min-height: 4em;
+  min-height: 1em;
 }
 
 .box {
+  overflow: auto;
   border-style: solid;
-  height:auto;
+  height:500px;
   width:1000px;
   margin-bottom:50px;
 }

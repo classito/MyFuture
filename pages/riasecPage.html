@@ -4,6 +4,7 @@
     <Title>RIASEC TEST</title>
     <link rel="stylesheet" type="text/css" href="../css/riasecPage.css" />
     <link rel="stylesheet" type="text/css" href="../css/root.css" />
+    <link rel="stylesheet" type="text/css" href="../css/animate.css" />
 </head>
 
 <body>
@@ -32,7 +33,6 @@
     <br>
 
     <div id="QuestionsContainer">
-        <h1 class="questionForm">RIASEC TEST</h1>
 
         <div class="questionForm">
 
@@ -48,9 +48,13 @@
         </div>
     </div>
 
-    <div class="questionForm" id="buttonContainer">
-
+    <div class="questionForm" id="controls">
+        <button onclick="previousBox()"> <i class="arrow left"></i></button>
+        <button onclick="nextBox()"><i class="arrow right"></i></button>
     </div>
+
+    <div class="questionForm" id="buttonContainer">
+        </div>
 
     <script type="text/javascript" src="../js/riasec.js"></script>
 

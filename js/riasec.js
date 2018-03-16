@@ -378,25 +378,39 @@ var bttnContainer = document.createElement("div");
 bttnContainer.id = "container";
 
 var box1 = createBox();
+box1.className += " animated rollIn";
 var box2 = createBox();
+box2.className += " animated slideInDown";
 var box3 = createBox();
+box3.className += " animated slideInDown";
 var box4 = createBox();
+box4.className += " animated slideInDown";
+
 var box5 = createBox();
+box5.className += " animated slideInDown";
 var box6 = createBox();
+box6.className += " animated slideInDown ";
 var currentBoxIndex= [box1, box2, box3, box4, box5, box6];	
 
 var counter2 = 0;
 function nextBox() {
-	document.getElementById("questionContainer").innerHTML = "";
-	document.getElementById("questionContainer").appendChild(currentBoxIndex[counter2+1])
-	counter2++;
-	console.log(counter2);
+
+	if (counter2 <= 4) {
+		document.getElementById("questionContainer").innerHTML = "";
+		document.getElementById("questionContainer").appendChild(currentBoxIndex[counter2+1])
+		counter2++;
+		console.log(counter2);
+	}
 }
 
 function previousBox() {
-	document.getElementById("questionContainer").innerHTML = "";
-	document.getElementById("questionContainer").appendChild(currentBoxIndex[counter2-1])
-	counter2--;
+	if (counter2 == 0) {
+		console.log("no");
+	} else {
+		document.getElementById("questionContainer").innerHTML = "";
+		document.getElementById("questionContainer").appendChild(currentBoxIndex[counter2-1])
+		counter2--;
+	}
 	console.log(counter2);
 }
 
@@ -432,47 +446,32 @@ function sortAndDeploy() {
 		box1.appendChild(newArray[0][l])
 	}
 
-	bttnContainer.appendChild(bttn.cloneNode(true));
 	box1.appendChild(bttnContainer.cloneNode(true));
 
 	for (var l = 0; l <= 6; l++) {
 		box2.appendChild(newArray[1][l])
 	}
 
-	bttnContainer.innerHTML = "";
-	bttnContainer.appendChild(bttn.cloneNode(true));
-	bttnContainer.appendChild(bttn2.cloneNode(true));
 	box2.appendChild(bttnContainer.cloneNode(true));
 	
 	for (var l = 0; l <= 6; l++) {
 		box3.appendChild(newArray[2][l])
 	}
-	bttnContainer.innerHTML = "";
-	bttnContainer.appendChild(bttn.cloneNode(true));
-	bttnContainer.appendChild(bttn2.cloneNode(true));
 	box3.appendChild(bttnContainer.cloneNode(true));
 
 	for (var l = 0; l <= 6; l++) {
 		box4.appendChild(newArray[3][l])
 	}
-	bttnContainer.innerHTML = "";
-	bttnContainer.appendChild(bttn.cloneNode(true));
-	bttnContainer.appendChild(bttn2.cloneNode(true));
 	box4.appendChild(bttnContainer.cloneNode(true));
 
 	for (var l = 0; l <= 6; l++) {
 		box5.appendChild(newArray[4][l])
 	}
-	bttnContainer.innerHTML = "";
-	bttnContainer.appendChild(bttn.cloneNode(true));
-	bttnContainer.appendChild(bttn2.cloneNode(true));
 	box5.appendChild(bttnContainer.cloneNode(true));
 	for (var z = 0; z <= 5; z++) {
 		box6.appendChild(newArray[5][z])
 	}
 
-	bttnContainer.innerHTML = "";
-	bttnContainer.appendChild(bttn2.cloneNode(true));
 	box6.appendChild(bttnContainer.cloneNode(true));
 
 	document.getElementById("questionContainer").appendChild(currentBoxIndex[0]);
