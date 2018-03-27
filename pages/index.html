@@ -13,226 +13,330 @@
 
 <body onload="displayContentFunc()" style="margin:0;">
 
-    <div id="loader">
-        <div id="logoDisp" class="flex-container">
-        </div>
+   <div id="loader">
+       <div id="logoDisp" class="flex-container">
+       </div>
 
-        <div class="flex-container">
-            <h3 id="motto" class="MyVCF">
-                <span id="list" class="MyVCF"></span>
-            </h3>
-        </div>
+       <div class="flex-container">
+           <h3 id="motto" class="MyVCF">
+               <span id="list" class="MyVCF"></span>
+           </h3>
+       </div>
+   </div>
+
+   <!--Contents Below loads after preload animation.-->
+   <div style="display:none;" id="myDiv" class="animate-bottom">
+       <div id="navBar">
+          <img src="../imgs/WHS_Logo.jpg">
+           <ul>
+               <li >
+                   <a href="index.html" id="currentLink">Home</a>
+               </li>
+               <li>
+                   <a href="riasecPage.html">Take RIASEC</a>
+               </li>
+               <li>
+                   <a href="output.html">Your Results</a>
+               </li>
+               <li>
+                   <a href="#Classes">WHS Classes</a>
+               </li>
+               <li>
+                   <a href="https://en.wikipedia.org/wiki/List_of_colleges_and_universities_in_Hawaii">Colleges</a>
+               </li>
+               <li>
+                   <a href="http://www.edline.net/pages/waipahu_high_school">Visit The WHS Website</a>
+               </li>
+           </ul>
+       </div>
+       <br>
+
+
+       <!--Responsive Flexbox Image Gallery.-->
+       <!--temporarily imgs? -->
+       <!--<div id="image_container">
+           <h1>Pathways</h1>
+           <div class="row">
+               <div class="column">
+                   <div class="thumbnail">
+                       <img src="../imgs/Arts_Communication.jpg">
+                   </div>
+                   <div class="thumbnail">
+                       <img src="../imgs/Health_Science.jpg">
+                   </div>
+               </div>
+
+               <div class="column">
+                   <div class="thumbnail">
+                       <img src="../imgs/IET.jpg">
+                   </div>
+                   <div class="thumbnail">
+                       <img src="../imgs/business_academy.jpg">
+                   </div>
+               </div>
+
+               <div class="column">
+                   <div class="thumbnail">
+                       <img src="../imgs/Natural_Res.jpg">
+                   </div>
+                   <div class="thumbnail">
+                       <img src="../imgs/Public_Hum.jpg">
+                   </div>
+               </div>
+           </div>
+       </div>-->
+
+<!--Another Slide Show Code-->
+
+
+<!-- Container for the image gallery -->
+<div class="container">
+
+  <!-- Full-width images with number text -->
+  <div class="mySlides">
+    <div class="numbertext">1 / 6</div>
+      <img src="../imgs/Arts_Communication_Logo.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">2 / 6</div>
+      <img src="../imgs/business_academy_Logo.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">3 / 6</div>
+      <img src="../imgs/Health_Science_Logo.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">4 / 6</div>
+      <img src="../imgs/IET_Logo.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">5 / 6</div>
+      <img src="../imgs/Natural_Res_Logo.jpg" style="width:100%">
+  </div>
+
+  <div class="mySlides">
+    <div class="numbertext">6 / 6</div>
+      <img src="../imgs/Public_Hum_2.jpg" style="width:100%">
+  </div>
+
+  <!-- Image text -->
+  <div class="caption-container">
+    <p id="caption"></p>
+  </div>
+
+  <!-- Thumbnail images -->
+  <div class="row">
+    <div class="column">
+      <img class="demo cursor" src="../imgs/Arts_Communication_Logo.jpg" style="width:100%" onclick="currentSlide(1)" alt="Arts and Communication">
     </div>
-
-    <!--Contents Below loads after preload animation.-->
-    <div style="display:none;" id="myDiv" class="animate-bottom">
-        <div id="navBar">
-            <ul>
-                <li>
-                    <a href="index.html" id="currentLink">Home</a>
-                </li>
-                <li>
-                    <a href="riasecPage.html">Take RIASEC</a>
-                </li>
-                <li>
-                    <a href="output.html">Your Results</a>
-                </li>
-                <li>
-                    <a href="waipahuClasses.html">WHS Classes</a>
-                </li>
-                <li>
-                    <a href="collegePage.html">Colleges</a>
-                </li>
-                <li>
-                    <a href="http://www.edline.net/pages/waipahu_high_school">WHS Edline</a>
-                </li>
-            </ul>
-        </div>
-        <br>
-
-
-        <!--Responsive Flexbox Image Gallery.-->
-        <!--temporarily imgs? -->
-        <div id="image_container">
-            <h1>Pathways</h1>
-            <div class="row">
-                <div class="column">
-                    <div class="thumbnail">
-                        <img src="../imgs/Arts_Communication.jpg">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="../imgs/Health_Science.jpg">
-                    </div>
-                </div>
-
-                <div class="column">
-                    <div class="thumbnail">
-                        <img src="../imgs/IET.jpg">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="../imgs/business_academy.jpg">
-                    </div>
-                </div>
-
-                <div class="column">
-                    <div class="thumbnail">
-                        <img src="../imgs/Natural_Res.jpg">
-                    </div>
-                    <div class="thumbnail">
-                        <img src="../imgs/Public_Hum.jpg">
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!--This is where the Letter Info will be at.-->
-
-        <div id="About">
-            <h1>What Is RIASEC</h1>
-            <p>
-                The Holland Occupational Themes is a theory of personality that focuses on career and vocational choice. It groups people
-                on the basis of their suitability for six different categories of occupations. The six types yield the RIASEC
-                acronym, by which the theory is also commonly known. The theory was developed by John L. Holland over the
-                course of his career, starting in the 1950s. The typology has come to dominate the field of career counseling
-                and has been incorporated into most of the popular assessments used in the field. The RIASEC Markers Scales
-                from the Interest Item Pool were developed by Liao, Armstrong and Rounds (2008) for use in psychological
-                research as a public domain alternative to the usual assessments which are marketed commercially.
-            </p>
-            <button onclick="goToRIASEC()">Take it Now!</button>
-        </div>
-        <div id="Riasec_Info">
-            <div class="RIASEC_Row">
-                <div class="(R)Column">
-                    <div class="Header">
-                        <h4>Realistic</h4>
-                    </div>
-                    <div class="Paragraph">
-                        <p>These people are often good at mechanical or athletic jobs. Good college majors for Realistic people
-                            are…
-                        </p>
-                    </div>
-                    <div class="Bullets">
-                        <ul>
-                            <li>Agriculture</li>
-                            <li>Health Assistant</li>
-                            <li>Computer Science</li>
-                            <li>Construction</li>
-                            <li>Mechanic/Machinist</li>
-                            <li>Engineering</li>
-                            <li>Food and Hospitality</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="(I)Column">
-                    <div class="Header">
-                        <h4>Investigative</h4>
-                    </div>
-                    <div class="Paragraph">
-                        <p>These people like to watch, learn, analyze and solve problems. Good college majors for Investigative
-                            people are…</p>
-                    </div>
-                    <div class="Bullets">
-                        <ul>
-                            <li>Marine Biology</li>
-                            <li>Engineering</li>
-                            <li>Chemistry</li>
-                            <li>Zoology</li>
-                            <li>Medicine/Surgery</li>
-                            <li>Consumer Economics</li>
-                            <li>Psychology</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="(A)Column">
-                    <div class="Header">
-                        <h4>Artistic</h4>
-                    </div>
-                    <div class="Paragraph">
-                        <p>These people like to work in unstructured situations where they can use their creativity. Good majors
-                            for Artistic people are…</p>
-                    </div>
-                    <div class="Bullets">
-                        <ul>
-                            <li>Communications</li>
-                            <li>Cosmetology</li>
-                            <li>Fine and Performing Arts</li>
-                            <li>Photography</li>
-                            <li>Radio and TV</li>
-                            <li>Interior Design</li>
-                            <li>Architecture</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="(S)Column">
-                    <div class="Header">
-                        <h4>Social</h4>
-                    </div>
-                    <div class="Paragraph">
-                        <p>These people like to work with other people, rather than things. Good college majors for Social people
-                            are…
-                        </p>
-                    </div>
-                    <div class="Bullets">
-                        <ul>
-                            <li>Counseling</li>
-                            <li>Nursing</li>
-                            <li>Physical Therapy</li>
-                            <li>Travel</li>
-                            <li>Advertising</li>
-                            <li>Public Relations</li>
-                            <li>Education</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="(E)Column">
-                    <div class="Header">
-                        <h4>Enterprising</h4>
-                    </div>
-                    <div class="Paragraph">
-                        <p>These people like to work with others and enjoy persuading and and performing. Good college majors
-                            for Enterprising people are:</p>
-                    </div>
-                    <div class="Bullets">
-                        <ul>
-                            <li>Fashion Merchandising</li>
-                            <li>Real Estate</li>
-                            <li>Marketing/Sales</li>
-                            <li>Law</li>
-                            <li>Political Science</li>
-                            <li>International Trade</li>
-                            <li>Banking/Finance</li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="(C)Column">
-                    <div class="Header">
-                        <h4>Conventional</h4>
-                    </div>
-                    <div class="Paragraph">
-                        <p>These people are very detail oriented,organized and like to work with data. Good college majors for
-                            Conventional people are…</p>
-                    </div>
-                    <div class="Bullets">
-                        <ul>
-                            <li>Accounting</li>
-                            <li>Court Reporting</li>
-                            <li>Insurance</li>
-                            <li>Administration</li>
-                            <li>Medical Records</li>
-                            <li>Banking</li>
-                            <li>Data Processing</li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-        </div>
-        </h4>
-        <div id="footer">
-            <p style="font-style:italics;">classito productions ©</p>
-        </div>
+    <div class="column"> 
+      <img class="demo cursor" src="../imgs/business_academy_Logo.jpg" style="width:100%" onclick="currentSlide(2)" alt="Business">
     </div>
+    <div class="column">
+      <img class="demo cursor" src="../imgs/Health_Science_Logo.jpg" style="width:100%" onclick="currentSlide(3)" alt="Health and Science">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../imgs/IET_Logo.jpg" style="width:100%" onclick="currentSlide(4)" alt="Industrial and Engineering Technology (I.E.T.)">
+    </div>
+    <div class="column">
+      <img class="demo cursor" src="../imgs/Natural_Res_Logo.jpg" style="width:100%" onclick="currentSlide(5)" alt="Natural Resources">
+    </div> 
+    <div class="column">
+      <img class="demo cursor" src="../imgs/Public_Hum_2.jpg" style="width:100%" onclick="currentSlide(6)" alt="Public and Human Services">
+    </div>
+  </div>
+</div>
 
-    <script src="../js/indexApp.js"></script>
+
+<!--Riasec Test Information-->
+<p>The Riasec Test helps you determine what you want to be, but the you don't have to follow the results.
+      </p>
+      <p> If you truly belive that the results are what your personality is, you can get a guide by learning... 
+         <br></br>"R.I.A.S.E.C."
+   </p>
+
+<p>
+   R = (Realistic)~
+These people are often good at mechanical or athletic jobs.
+   </p>
+<p>
+   I = (Investigative)~
+These people like to watch, learn, analyze and solve problems.
+   </p>
+<p>
+   A = (Artistic)~
+These people like to work in unstructured situations where they can use their creativity.
+   </p>
+<p>
+   S = (Social)~
+These people like to work with other people, rather than things.
+   </p>
+<p>
+   E = (Enterprising)~
+These people like to work with others and enjoy persuading and and performing.
+   </p>
+<p>
+   C = (Conventional)~
+These people are very detail oriented,organizedand like to work with data.
+   </p>
+<br><br>
+
+<p>
+   By the end of the test, you will get 3 letters.
+   </p> 
+<p>
+   That is your code to see related classes in Waipahu High School to help you get a clear idea about WHS classes.
+   </p>
+<p>
+   Now that you know "R.I.A.S.E.C."...
+   </p>
+<p>
+   Find out your own code here...
+   </p>
+<a href="riasecPage.html">
+   Take RIASEC
+   </a>
+<!--This is where the Letter Info will be at.-->
+       <!--<div id="Riasec_Info">
+           <div class="RIASEC_Row">
+               <div class="(R)Column">
+                   <div class="Header">
+                       <h4>R = Realistic</h4>
+                   </div>
+                   <div class="Paragraph">
+                       <p>These people are often good at mechanical or athletic
+                       jobs. Good college majors for Realistic people are…</p>
+                   </div>
+                   <div class="Bullets">
+                       <ul>
+                           <li>Agriculture</li>
+                           <li>Health Assistant</li>
+                           <li>Computers</li>
+                           <li>Construction</li>
+                           <li>Mechanic/Machinist</li>
+                           <li>Engineering</li>
+                           <li>Food and Hospitality</li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="(I)Column">
+                   <div class="Header">
+                       <h4>I = Investigative</h4>
+                   </div>
+                   <div class="Paragraph">
+                       <p>These people like to watch, learn, analyze and solve
+                       problems. Good college majors for Investigative
+                       people are…</p>
+                   </div>
+                  <div class="Bullets">
+                       <ul>
+                           <li>Marine Biology</li>
+                           <li>Engineering</li>
+                           <li>Chemistry</li>
+                           <li>Zoology</li>
+                           <li>Medicine/Surgery</li>
+                           <li>Consumer Economics</li>
+                           <li>Psychology</li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="(A)Column">
+                   <div class="Header">
+                       <h4>A = Artistic</h4>
+                   </div>
+                   <div class="Paragraph">
+                       <p>These people like to work in unstructured situations
+                       where they can use their creativity. Good majors for
+                       Artistic people are…</p>
+                   </div>
+                   <div class="Bullets">
+                       <ul>
+                           <li>Communications</li>
+                           <li>Cosmetology</li>
+                           <li>Fine and Performing Arts</li>
+                           <li>Photography</li>
+                           <li>Radio and TV</li>
+                           <li>Interior Design</li>
+                           <li>Architecture</li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="(S)Column">
+                   <div class="Header">
+                       <h4>S = Social</h4>
+                   </div>
+                   <div class="Paragraph">
+                       <p>These people like to work with other people,
+                       rather than things. Good college majors for
+                       Social people are…</p>
+                   </div>
+                   <div class="Bullets">
+                       <ul>
+                           <li>Counseling</li>
+                           <li>Nursing</li>
+                           <li>Physical Therapy</li>
+                           <li>Travel</li>
+                           <li>Advertising</li>
+                           <li>Public Relations</li>
+                           <li>Education</li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="(E)Column">
+                   <div class="Header">
+                       <h4>E = Enterprising</h4>
+                   </div>
+                   <div class="Paragraph">
+                       <p>These people like to work with others and enjoy
+                       persuading and and performing. Good college majors
+                       for Enterprising people are:</p>
+                   </div>
+                   <div class="Bullets">
+                       <ul>
+                           <li>Fashion Merchandising</li>
+                           <li>Real Estate</li>
+                           <li>Marketing/Sales</li>
+                           <li>Law</li>
+                           <li>Political Science</li>
+                           <li>International Trade</li>
+                           <li>Banking/Finance</li>
+                       </ul>
+                   </div>
+               </div>
+               <div class="(C)Column">
+                   <div class="Header">
+                       <h4>C = Conventiona</h4>
+                   </div>
+                   <div class="Paragraph">
+                       <p>These people are very detail oriented,organized
+                       and like to work with data. Good college majors
+                       for Conventional people are…</p>
+                   </div>
+                   <div class="Bullets">
+                       <ul>
+                           <li>Accounting</li>
+                           <li>Court Reporting</li>
+                           <li>Insurance</li>
+                           <li>Administration</li>
+                           <li>Medical Records</li>
+                           <li>Banking</li>
+                           <li>Data Processing</li>
+                       </ul>
+                   </div>
+               </div>
+           </div>
+       </div>-->
+</h4>
+       <div id="footer">
+           <p style="font-style:italics;">classito productions ©</p>
+       </div>
+   </div>
+
+   <script src="../js/indexApp.js"></script>
 
 </body>
 
