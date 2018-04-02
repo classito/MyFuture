@@ -139,5 +139,9 @@ var BANK = {
 }
 
 var userValue = ["I", "E", "T"];
+
+for (var k=0; k<= userValue.length; k++) {
+
+}
 console.log(BANK.Realistic.first.pathway);
 console.log(BANK.Realistic.first.value);
