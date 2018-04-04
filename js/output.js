@@ -96,7 +96,7 @@ var user_SCORE = {
 }
 
 
-testValue = ["S", "R", "C"]
+testValue = ["R", "E", "C"];
 
 
 for (var k=0; k<= testValue.length-1; k++) {
@@ -247,25 +247,18 @@ var pathWayInfoDB = {
 
 	HealthAndScience: {
 		about: "About : science and you save people",
-		classes: "Business & Public Human Services \
-		Law, Public Safety, and Criminology \
-		Explorations in Education \
-		Early Childhood Education\
-		Elementary Education\
-		Second Education\
-		Culinary 1 and 2\
-		PHS Lab\
-		Baking and Pastry Arts\
-		Hotel Operations\
-		Public and Human Services Capstone\
-		Community Service Learning",
-		
+		classes:"oof",
 		
 		pictures : ["heart", "skeleton", "skull!"]
 	}
 }
 
 
+var unorderedList = document.createElement("ul");
+var list = document.createElement("li");
+list.innerHTML = "list test";
+unorderedList.appendChild(list);
+console.log(unorderedList);
 
 function testapp(val) {
 	if (val==="NR"){
@@ -299,7 +292,7 @@ function testapp(val) {
 	} else if (val ==="IET") {
 		document.getElementById("academyName").innerHTML="Industrial and Engineering Technology"
 		document.getElementById("about").innerHTML = pathWayInfoDB.IETStuff.about
-		document.getElementById("classes").innerHTML = pathWayInfoDB.IETStuff.classes
+		document.getElementById("classes").appendChild(unorderedList) //pathWayInfoDB.IETStuff.classes
 		var y = document.getElementById("pictureBox");
 		var aNode = y.childNodes[1];
 		var aNode2 = y.childNodes[3];
@@ -309,7 +302,7 @@ function testapp(val) {
 		aNode3.innerHTML = pathWayInfoDB.IETStuff.pictures[2];
 		document.getElementById("MoreInfoBox").setAttribute("name", val);
 	} else if (val ==="Bus") {
-		document.getElementById("academyName").innerHTML =  "Academy of Business"
+		document.getElementById("academyName").innerHTML =  "Public and Human Services"
 		document.getElementById("about").innerHTML = pathWayInfoDB.Business.about
 		document.getElementById("classes").innerHTML = pathWayInfoDB.Business.classes
 		var y = document.getElementById("pictureBox");
