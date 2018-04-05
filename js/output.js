@@ -248,21 +248,15 @@ var pathWayInfoDB = {
 
 	HealthAndScience: {
 		about: "About : science and you save people",
-		classes: "Business & Public Human Services \
-		Law, Public Safety, and Criminology \
-		Explorations in Education \
-		Early Childhood Education\
-		Elementary Education\
-		Second Education\
-		Culinary 1 and 2\
-		PHS Lab\
-		Baking and Pastry Arts\
-		Hotel Operations\
-		Public and Human Services Capstone\
-		Community Service Learning",
+		classes: ["Health Services Core", "Clinical Health", "Biotechnology", "Health and Nutrition", "Health and Nutrition 2", "Academy of Health & Sciences Capstone", "STEM Capstone"],
 		
 		
 		pictures : ["heart", "skeleton", "skull!"]
+	},
+
+	PublicAndHumanServices: {
+		about: "About : human and public stuff yeah!!!",
+		classes: ["Business & Public Human Services", "Law, Public Safety, and Criminology", "Explorations in Education", "Elementary Education", "Second Education", "Culinary 1", "Culinary 2", "PHS Lab", "Baking and Pastry Arts", "Hotel Operations", "Public and Human Services Capstone", "Community Service Learning"]
 	}
 }
 
