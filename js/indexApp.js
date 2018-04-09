@@ -42,7 +42,6 @@ var list = [ ];
         }
 	}
 
-
 function FadeInTransition(wordElem, state) {
     var fadeInElem = document.createElement("span");
     fadeInElem.innerHTML = wordElem;
@@ -145,7 +144,7 @@ function plusSlides(n) {
   showSlides(slideIndex += n);
 }
 
-// Thumbnail image controls
+// Thumbnail image controls.
 function currentSlide(n) {
   showSlides(slideIndex = n);
 }

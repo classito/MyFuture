@@ -96,7 +96,7 @@ var user_SCORE = {
 }
 
 
-testValue = ["R", "E", "C"];
+testValue = ["E", "I", "S"];
 
 
 for (var k=0; k<= testValue.length-1; k++) {
@@ -260,6 +260,9 @@ list.innerHTML = "list test";
 unorderedList.appendChild(list);
 console.log(unorderedList);
 
+
+
+
 function testapp(val) {
 	if (val==="NR"){
 		document.getElementById("academyName").innerHTML = "Natural Resources"
@@ -368,6 +371,7 @@ function demoAppend(obj) {
 
 
 document.getElementById("MoreInfoBox").setAttribute("onclick", "displayMoreInfo()");
+
 
 function displayMoreInfo() {
 

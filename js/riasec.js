@@ -1,3 +1,6 @@
+// use SCSS for boxes
+// auto make the boxes
+//style everything
 var RIASEC = {
 	Realistic: {
 
