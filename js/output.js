@@ -200,7 +200,7 @@ var pathWayInfoDB = {
   IETStuff: {
     about: "About : more math and more logic",
     classes: ["Automotive Tech", "Design Tech","3D Solid Modeling", "Architectural & Civil Engineering", "Electronic Tech", "Metals Tech", "Building and Construction",
-    , "Computers Systems", "Computer Programming", "Networking Architectural"]
+    , "Computers Systems", "Computer Programming", "Networking Architectural"],
     pictures : ["", "", ""]
   }, 
   Business: {
