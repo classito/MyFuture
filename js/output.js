@@ -1,98 +1,98 @@
 function rank_Distrubition(rankList) {
-	var tempList = [ ];
-	var list = [ ];
+  var tempList = [ ];
+  var list = [ ];
 
-	var pathwayList = {
-		IET: {
-			name: "Industrial Engineering Technology",
-			rank:1
-		},
-		HS:{
-			name: "Health and Science",
-			rank:2
-		},
-		NR:{
-			name: "Natural Resources",
-			rank:3
-		},
-		AC:{
-			name: "Arts and Communication",
-			rank:4
-		},
-		PS:{
-			name: "Public Human Services",
-			rank:5
-		}
-	}
+  var pathwayList = {
+    IET: {
+      name: "Industrial Engineering Technology",
+      rank:1
+    },
+    HS:{
+      name: "Health and Science",
+      rank:2
+    },
+    NR:{
+      name: "Natural Resources",
+      rank:3
+    },
+    AC:{
+      name: "Arts and Communication",
+      rank:4
+    },
+    PS:{
+      name: "Public Human Services",
+      rank:5
+    }
+  }
 
-	for (var i=0; i<=rankList.length-1; i++) {
+  for (var i=0; i<=rankList.length-1; i++) {
 
-		tempList.push(rankList[i])
-	}
+    tempList.push(rankList[i])
+  }
 
-	console.log(tempList);
-	for (var k=0; k<= tempList.length-1; k++) {
-		if (tempList[k] === pathwayList.IET.rank) {
-			list.push(pathwayList.IET.name);
-		} else if(tempList[k] === pathwayList.HS.rank) {
-			list.push(pathwayList.HS.name);
-		} else if (tempList[k] === pathwayList.NR.rank) {
-			list.push(pathwayList.NR.name);
-		} else if (tempList[k] === pathwayList.AC.rank) {
-			list.push(pathwayList.AC.name);
-		} else if (tempList[k] === pathwayList.PS.rank) {
-			list.push(pathwayList.PS.name);
-		}
-	}
-	return list;
+  console.log(tempList);
+  for (var k=0; k<= tempList.length-1; k++) {
+    if (tempList[k] === pathwayList.IET.rank) {
+      list.push(pathwayList.IET.name);
+    } else if(tempList[k] === pathwayList.HS.rank) {
+      list.push(pathwayList.HS.name);
+    } else if (tempList[k] === pathwayList.NR.rank) {
+      list.push(pathwayList.NR.name);
+    } else if (tempList[k] === pathwayList.AC.rank) {
+      list.push(pathwayList.AC.name);
+    } else if (tempList[k] === pathwayList.PS.rank) {
+      list.push(pathwayList.PS.name);
+    }
+  }
+  return list;
 }
 
 console.log(rank_Distrubition([5,4,3,2,1]));
 
 var pathwayBank = {
-	//1...5 (greatest -> least)
-	Realistic: {
-		rank: rank_Distrubition([3,1,2,4,5])
-	},
-	Investigative: {
-		rank: rank_Distrubition([1,2,5,3,4])
-	},
-	Artistic: {
-		rank: rank_Distrubition([4,5,3,1,2])
-	},
-	Social: {
-		rank: rank_Distrubition([2,5,1,4,3])
-	},
-	Enterprising: {
-		rank: rank_Distrubition([5,4,2,3,1])
-	},
-	Conventional: {
-		rank: rank_Distrubition([5,1,2,4,3])
-	}
+  //1...5 (greatest -> least)
+  Realistic: {
+    rank: rank_Distrubition([3,1,2,4,5])
+  },
+  Investigative: {
+    rank: rank_Distrubition([1,2,5,3,4])
+  },
+  Artistic: {
+    rank: rank_Distrubition([4,5,3,1,2])
+  },
+  Social: {
+    rank: rank_Distrubition([2,5,1,4,3])
+  },
+  Enterprising: {
+    rank: rank_Distrubition([5,4,2,3,1])
+  },
+  Conventional: {
+    rank: rank_Distrubition([5,1,2,4,3])
+  }
 }
 
 
 function scoreMe(value, score) {
-	if (obj[test][value]=== "Natural Resources") {
-		user_SCORE.NR+=score
-	} else if (obj[test][value] === "Industrial Engineering Technology") {
-		user_SCORE.IET+=score
-	} else if (obj[test][value] === "Health and Science") {
-		user_SCORE.HS+=score
-	} else if (obj[test][value] === "Arts and Communication")  {
-		user_SCORE.AC+=score
-	} else if (obj[test][value] === "Public Human Services") {
-		user_SCORE.PS+=score
-	}
+  if (obj[test][value]=== "Natural Resources") {
+    user_SCORE.NR+=score
+  } else if (obj[test][value] === "Industrial Engineering Technology") {
+    user_SCORE.IET+=score
+  } else if (obj[test][value] === "Health and Science") {
+    user_SCORE.HS+=score
+  } else if (obj[test][value] === "Arts and Communication")  {
+    user_SCORE.AC+=score
+  } else if (obj[test][value] === "Public Human Services") {
+    user_SCORE.PS+=score
+  }
 }
 
 
 var user_SCORE = {
-	IET:0,
-	HS:0,
-	PS:0,
-	NR: 0,
-	AC:0
+  IET:0,
+  HS:0,
+  PS:0,
+  NR: 0,
+  AC:0
 }
 
 
@@ -100,63 +100,63 @@ testValue = ["E", "I", "S"];
 
 
 for (var k=0; k<= testValue.length-1; k++) {
-	console.log(testValue[k]);
+  console.log(testValue[k]);
 
-	if (testValue[k] === "A") {
-		testValue[k] = "Artistic";
-		continue;
-	} else if (testValue[k] === "R") {
-		testValue[k] = "Realistic"
-		continue;
-	} else if (testValue[k] === "I") {
-		testValue[k] = "Investigative"
-		continue
-	} else if (testValue[k] === "S") {
-		testValue[k] = "Social"
-		continue
-	} else if (testValue[k] === "E") {
-		testValue[k] = "Enterprising"
-		continue
-	} else if (testValue[k] === "C") {
-		testValue[k] = "Conventional"
-		continue
-	}
+  if (testValue[k] === "A") {
+    testValue[k] = "Artistic";
+    continue;
+  } else if (testValue[k] === "R") {
+    testValue[k] = "Realistic"
+    continue;
+  } else if (testValue[k] === "I") {
+    testValue[k] = "Investigative"
+    continue
+  } else if (testValue[k] === "S") {
+    testValue[k] = "Social"
+    continue
+  } else if (testValue[k] === "E") {
+    testValue[k] = "Enterprising"
+    continue
+  } else if (testValue[k] === "C") {
+    testValue[k] = "Conventional"
+    continue
+  }
 }
 
 console.log(testValue);
 
 for (var key in pathwayBank) {
-	var obj = pathwayBank[key];
-	console.log(key)
+  var obj = pathwayBank[key];
+  console.log(key)
 
-	if (key ===testValue[0]) {
-		for (var test in obj) {
-			scoreMe(0, 5)
-			scoreMe(1, 4)
-			scoreMe(2, 3)
-			scoreMe(3, 2)
-			scoreMe(4, 1)
-		}
-	} else if (key ===testValue[1]) {
-		for (var test in obj) {
-			scoreMe(0, 5)
-			scoreMe(1, 4)
-			scoreMe(2, 3)
-			scoreMe(3, 2)
-			scoreMe(4, 1)
-		}
-	} else if (key ===testValue[2]) {
-		scoreMe(0, 5)
-		scoreMe(1, 4)
-		scoreMe(2, 3)
-		scoreMe(3, 2)
-		scoreMe(4, 1)
-	}
+  if (key ===testValue[0]) {
+    for (var test in obj) {
+      scoreMe(0, 5)
+      scoreMe(1, 4)
+      scoreMe(2, 3)
+      scoreMe(3, 2)
+      scoreMe(4, 1)
+    }
+  } else if (key ===testValue[1]) {
+    for (var test in obj) {
+      scoreMe(0, 5)
+      scoreMe(1, 4)
+      scoreMe(2, 3)
+      scoreMe(3, 2)
+      scoreMe(4, 1)
+    }
+  } else if (key ===testValue[2]) {
+    scoreMe(0, 5)
+    scoreMe(1, 4)
+    scoreMe(2, 3)
+    scoreMe(3, 2)
+    scoreMe(4, 1)
+  }
 
-	}
+  }
 
 
-	var keyValues = []
+  var keyValues = []
 
 for (var key in user_SCORE) {
   keyValues.push([ key, user_SCORE[key] ])
@@ -164,7 +164,7 @@ for (var key in user_SCORE) {
 
 
 keyValues.sort(function compare(kv1, kv2) {
-	return kv2[1] - kv1[1]
+  return kv2[1] - kv1[1]
   })
 
 
@@ -174,7 +174,7 @@ keyValues.sort(function compare(kv1, kv2) {
 function getCookieVar(cookieName) {
     var cookieVars = document.cookie.split(";")
     for (var i = 0; i<=cookieVars.length-1; i++) {
-		console.log(cookieVars[i]);
+    console.log(cookieVars[i]);
         if (cookieVars[i].split("=")[0] === cookieName) {
             return (cookieVars[i].split("=")[1])
         }
@@ -182,42 +182,43 @@ function getCookieVar(cookieName) {
     return null
 }
 function checkCode() {
-	if (!document.cookie.length) {
-		document.getElementById("interestCode").innerHTML = "TAKE TEST!"
-	} else {
-		document.getElementById("interestCode").innerHTML = getCookieVar(" RIASEC_CODE");
-	}
+  if (!document.cookie.length) {
+    document.getElementById("interestCode").innerHTML = "TAKE TEST!"
+  } else {
+    document.getElementById("interestCode").innerHTML = getCookieVar(" RIASEC_CODE");
+  }
 }
 
 checkCode();
 
 var pathWayInfoDB = {
-	artsNStuff: {
-		about: "About : you do art and make stuff",
-		classes: ["Arts and Communication Core", "Graphic Design Tech 1 and 2", "Digital Media Tech-Web Design", "Digital Media Tech-Broadcast", "Broadcast Media", "Fashion Design", "Fashion Merchandising", "Directed Studies in Arts and Communication", "Arts & Communication Capstone"],
-		pictures : ["", "", ""]
-	},
-	IETStuff: {
-		about: "About : more math and more logic",
-		classes: ["Industrial & Engineering Tech Core", "Automotive Tech 1", "Design Tech 1", "Design Tech 2", "AOE- Introduction to Engineering", "AOE- 3D Solid Modeling", "AOE- Intro to Architectural & Civil Engineering", "AOE- Principles of Engineering w/ Stem Capstone", "Intro to Engineering", "Electronic Tech 1", "Electronic Tech 2", "Metals Tech 1", "Metals Tech 2", "Building and Construction Tech 1", "Building and Construction Tech 2", "A+ Certification 1: Intro to Computers", "A+ Certification 2: Computers Systems", "A+ Certification 3: Intro to Computers", "A+ Certification 4: Computers Systems", "Computer Programming A and B(coding)", "Networking Fundamentals & Local Area Networks", "Wide Area Networks And Networking Architectures", "Cyber Security", "Directed Study in Industrial and Engineering Technology", "IET Capstone"],
-		pictures : ["", "", ""]
-	}, 
-	Business: {
-		about: "About : you make more money lol",
-		classes: ["Marketing", "Accounting", "Finance 1", "Hospitality & Tourism 1", "Hospitality & Tourism 2", "Entrepreneurship", "Beg Wlg for Travel & Tourism A and B", "Economics ", "Financial Literacy", "Computing: Tools for Info Age", "Business & Public Human Services", "Law, Public Safety, and Criminology", "Explorations in Education", "Elementary Education", "Second Education", "Culinary 1", "Culinary 2", "PHS Lab", "Baking and Pastry Arts", "Hotel Operations", "Public and Human Services Capstone", "Community Service Learning"],
-		pictures : ["", "", ""]
-	}, 
-	NaturalRS: {
-		about: "About : you make the earth more green",
-		classes: "Classes : science, plantrophy, zoology, tree class",
-		pictures : ["", "", ""]
-	},
+  artsNStuff: {
+    about: "About : you do art and make stuff",
+    classes: ["Artist", "Graphic Designer", "Digital Media Tech-Web Designer", "Digital Media Tech-Broadcaster", "Broadcast Media", "Fashion Designer", "Fashion Merchandising"],
+    pictures : ["", "", ""]
+  },
+  IETStuff: {
+    about: "About : more math and more logic",
+    classes: ["Automotive Tech", "Design Tech","3D Solid Modeling", "Architectural & Civil Engineering", "Electronic Tech", "Metals Tech", "Building and Construction",
+    , "Computers Systems", "Computer Programming", "Networking Architectural"]
+    pictures : ["", "", ""]
+  }, 
+  Business: {
+    about: "About : you make more money lol",
+    classes: ["Marketing", "Accounting", "Financing", "Hospitality & Tourism", "Entrepreneurship", "Criminology", "Elementary Education", "Second Education", "Culinary","Baking and Pastry Arts", "Hotel Operations"],
+    pictures : ["", "", ""]
+  }, 
+  NaturalRS: {
+    about: "About : you make the earth more green",
+    classes: "Classes : science, plantrophy, zoology, tree class",
+    pictures : ["", "", ""]
+  },
 
-	HealthAndScience: {
-		about: "About : science and you save people",
-		classes:["Health Services Core", "Clinical Health", "Biotechnology", "Health and Nutrition", "Health and Nutrition 2", "Academy of Health & Sciences Capstone", "STEM Capstone"],
-		pictures : ["../imgs/Health_Science.jpg", "../imgs/Nurse.jpg", "../imgs/scientist.jpg"]
-	}
+  HealthAndScience: {
+    about: "About : science and you save people",
+    classes:["Health Services Core", "Clinical Health", "Biotechnology", "Health and Nutrition", "Health and Nutrition 2", "Academy of Health & Sciences Capstone", "STEM Capstone"],
+    pictures : ["../imgs/Health_Science.jpg", "../imgs/Nurse.jpg", "../imgs/scientist.jpg"]
+  }
 }
 
 
@@ -231,182 +232,182 @@ var img_Tag2 = document.createElement("img");
 var img_Tag3 = document.createElement("img");
 
 function testapp(val) {
-	if (val==="NR"){
-		document.getElementById("academyName").innerHTML = "Natural Resources"
-		//document.getElementById("NR").className += " ActivePath"
-		document.getElementById("about").innerHTML = pathWayInfoDB.NaturalRS.about
-		console.log(pathWayInfoDB.NaturalRS.classes);
-		document.getElementById("classes").innerHTML = pathWayInfoDB.NaturalRS.classes
-		var y = document.getElementById("pictureBox");
-		var aNode = y.childNodes[1];
-		var aNode2 = y.childNodes[3];
-		var aNode3 = y.childNodes[5]; 
-		aNode.appendChild(img1);
-		aNode2.innerHTML = pathWayInfoDB.NaturalRS.pictures[1];
-		aNode3.innerHTML = pathWayInfoDB.NaturalRS.pictures[2];
+  if (val==="NR"){
+    document.getElementById("academyName").innerHTML = "Natural Resources"
+    //document.getElementById("NR").className += " ActivePath"
+    document.getElementById("about").innerHTML = pathWayInfoDB.NaturalRS.about
+    console.log(pathWayInfoDB.NaturalRS.classes);
+    document.getElementById("classes").innerHTML = pathWayInfoDB.NaturalRS.classes
+    var y = document.getElementById("pictureBox");
+    var aNode = y.childNodes[1];
+    var aNode2 = y.childNodes[3];
+    var aNode3 = y.childNodes[5]; 
+    aNode.appendChild(img1);
+    aNode2.innerHTML = pathWayInfoDB.NaturalRS.pictures[1];
+    aNode3.innerHTML = pathWayInfoDB.NaturalRS.pictures[2];
 
 
-		var OccDiv = document.createElement("DIV");
-		var str = '<ul>'
-		pathWayInfoDB.NaturalRS.classes.forEach(function(occ) {
-	str += '<li>'+ occ + '</li>';
-	}); 
+    var OccDiv = document.createElement("DIV");
+    var str = '<ul>'
+    pathWayInfoDB.NaturalRS.classes.forEach(function(occ) {
+  str += '<li>'+ occ + '</li>';
+  }); 
 
-	str += '</ul>';
+  str += '</ul>';
 
-	OccDiv.innerHTML = str;
-	document.getElementById("classes").appendChild(OccDiv);
-
-
-
-		document.getElementById("MoreInfoBox").setAttribute("name", val);
-
-	} else if (val==="ArtsComm") {
-		document.getElementById("classes").innerHTML = "";
-		document.getElementById("academyName").innerHTML= "Arts and Communication"
-		//document.getElementById("ArtsComm").className += " ActivePath"
-		document.getElementById("about").innerHTML = pathWayInfoDB.artsNStuff.about
-		
-
-
-		var OccDiv = document.createElement("DIV");
-		var str = '<ul>'
-		pathWayInfoDB.artsNStuff.classes.forEach(function(occ) {
-	str += '<li>'+ occ + '</li>';
-	}); 
-
-	str += '</ul>';
-
-	OccDiv.innerHTML = str;
-	document.getElementById("classes").appendChild(OccDiv);
-		var y = document.getElementById("pictureBox");
-		var aNode = y.childNodes[1];
-		var aNode2 = y.childNodes[3];
-		var aNode3 = y.childNodes[5];
-		aNode.innerHTML = pathWayInfoDB.artsNStuff.pictures[0];
-		aNode2.innerHTML = pathWayInfoDB.artsNStuff.pictures[1];
-		aNode3.innerHTML = pathWayInfoDB.artsNStuff.pictures[2];
-		document.getElementById("MoreInfoBox").setAttribute("name", val);
-	} else if (val ==="IET") {
-		document.getElementById("classes").innerHTML = "";
-		document.getElementById("academyName").innerHTML="Industrial and Engineering Technology"
-		document.getElementById("about").innerHTML = pathWayInfoDB.IETStuff.about
+  OccDiv.innerHTML = str;
+  document.getElementById("classes").appendChild(OccDiv);
 
 
 
-		var OccDiv = document.createElement("DIV");
-		var str = '<ul>'
-		pathWayInfoDB.IETStuff.classes.forEach(function(occ) {
-	str += '<li>'+ occ + '</li>';
-	}); 
+    document.getElementById("MoreInfoBox").setAttribute("name", val);
 
-	str += '</ul>';
-
-	OccDiv.innerHTML = str;
-	document.getElementById("classes").appendChild(OccDiv);
+  } else if (val==="ArtsComm") {
+    document.getElementById("classes").innerHTML = "";
+    document.getElementById("academyName").innerHTML= "Arts and Communication"
+    //document.getElementById("ArtsComm").className += " ActivePath"
+    document.getElementById("about").innerHTML = pathWayInfoDB.artsNStuff.about
+    
 
 
-		var y = document.getElementById("pictureBox");
-		var y = document.getElementById("pictureBox");
-		var aNode = y.childNodes[1];
-		var aNode2 = y.childNodes[3];
-		var aNode3 = y.childNodes[5];
-		aNode.innerHTML = pathWayInfoDB.IETStuff.pictures[0];
-		aNode2.innerHTML = pathWayInfoDB.IETStuff.pictures[1];
-		aNode3.innerHTML = pathWayInfoDB.IETStuff.pictures[2];
-		document.getElementById("MoreInfoBox").setAttribute("name", val)
-		;
-	} else if (val ==="Bus") {
-		document.getElementById("classes").innerHTML = "";
-		document.getElementById("academyName").innerHTML =  "Public and Human Services"
-		document.getElementById("about").innerHTML = pathWayInfoDB.Business.about
+    var OccDiv = document.createElement("DIV");
+    var str = '<ul>'
+    pathWayInfoDB.artsNStuff.classes.forEach(function(occ) {
+  str += '<li>'+ occ + '</li>';
+  }); 
 
-		var OccDiv = document.createElement("DIV");
-			var str = '<ul>'
-			pathWayInfoDB.Business.classes.forEach(function(occ) {
-		str += '<li>'+ occ + '</li>';
-		}); 
+  str += '</ul>';
 
-		str += '</ul>';
-
-		OccDiv.innerHTML = str;
-		document.getElementById("classes").appendChild(OccDiv);
-		var y = document.getElementById("pictureBox");
-		var aNode = y.childNodes[1];
-		var aNode2 = y.childNodes[3];
-		var aNode3 = y.childNodes[5];
-		aNode.innerHTML = pathWayInfoDB.Business.pictures[0];
-		aNode2.innerHTML = pathWayInfoDB.Business.pictures[1];
-		aNode3.innerHTML = pathWayInfoDB.Business.pictures[2];
-		document.getElementById("MoreInfoBox").setAttribute("name", val);
-	}
-		else if (val ==="HS"){
-			document.getElementById("classes").innerHTML = "";
-			document.getElementById("academyName").innerHTML =  "Academy of Health and Science"
-			document.getElementById("about").innerHTML = pathWayInfoDB.HealthAndScience.about
-			
-			var OccDiv = document.createElement("DIV");
-			var str = '<ul>'
-			pathWayInfoDB.HealthAndScience.classes.forEach(function(occ) {
-		str += '<li>'+ occ + '</li>';
-		}); 
-
-		str += '</ul>';
-
-		OccDiv.innerHTML = str;
-		document.getElementById("classes").appendChild(OccDiv);
+  OccDiv.innerHTML = str;
+  document.getElementById("classes").appendChild(OccDiv);
+    var y = document.getElementById("pictureBox");
+    var aNode = y.childNodes[1];
+    var aNode2 = y.childNodes[3];
+    var aNode3 = y.childNodes[5];
+    aNode.innerHTML = pathWayInfoDB.artsNStuff.pictures[0];
+    aNode2.innerHTML = pathWayInfoDB.artsNStuff.pictures[1];
+    aNode3.innerHTML = pathWayInfoDB.artsNStuff.pictures[2];
+    document.getElementById("MoreInfoBox").setAttribute("name", val);
+  } else if (val ==="IET") {
+    document.getElementById("classes").innerHTML = "";
+    document.getElementById("academyName").innerHTML="Industrial and Engineering Technology"
+    document.getElementById("about").innerHTML = pathWayInfoDB.IETStuff.about
 
 
 
-			var y = document.getElementById("pictureBox");
-			var aNode = y.childNodes[1];
-			var aNode2 = y.childNodes[3];
-			var aNode3 = y.childNodes[5];
+    var OccDiv = document.createElement("DIV");
+    var str = '<ul>'
+    pathWayInfoDB.IETStuff.classes.forEach(function(occ) {
+  str += '<li>'+ occ + '</li>';
+  }); 
 
-			img_Tag1.setAttribute("src", pathWayInfoDB.HealthAndScience.pictures[0]);
-			aNode.appendChild(img_Tag1);
-			img_Tag2.setAttribute("src", pathWayInfoDB.HealthAndScience.pictures[1]);
-			aNode2.append(img_Tag2);
-			img_Tag3.setAttribute("src", pathWayInfoDB.HealthAndScience.pictures[2]);
-			aNode3.appendChild(img_Tag3);
-			document.getElementById("MoreInfoBox").setAttribute("name", val);
-		}
-	}
+  str += '</ul>';
+
+  OccDiv.innerHTML = str;
+  document.getElementById("classes").appendChild(OccDiv);
+
+
+    var y = document.getElementById("pictureBox");
+    var y = document.getElementById("pictureBox");
+    var aNode = y.childNodes[1];
+    var aNode2 = y.childNodes[3];
+    var aNode3 = y.childNodes[5];
+    aNode.innerHTML = pathWayInfoDB.IETStuff.pictures[0];
+    aNode2.innerHTML = pathWayInfoDB.IETStuff.pictures[1];
+    aNode3.innerHTML = pathWayInfoDB.IETStuff.pictures[2];
+    document.getElementById("MoreInfoBox").setAttribute("name", val)
+    ;
+  } else if (val ==="Bus") {
+    document.getElementById("classes").innerHTML = "";
+    document.getElementById("academyName").innerHTML =  "Public and Human Services"
+    document.getElementById("about").innerHTML = pathWayInfoDB.Business.about
+
+    var OccDiv = document.createElement("DIV");
+      var str = '<ul>'
+      pathWayInfoDB.Business.classes.forEach(function(occ) {
+    str += '<li>'+ occ + '</li>';
+    }); 
+
+    str += '</ul>';
+
+    OccDiv.innerHTML = str;
+    document.getElementById("classes").appendChild(OccDiv);
+    var y = document.getElementById("pictureBox");
+    var aNode = y.childNodes[1];
+    var aNode2 = y.childNodes[3];
+    var aNode3 = y.childNodes[5];
+    aNode.innerHTML = pathWayInfoDB.Business.pictures[0];
+    aNode2.innerHTML = pathWayInfoDB.Business.pictures[1];
+    aNode3.innerHTML = pathWayInfoDB.Business.pictures[2];
+    document.getElementById("MoreInfoBox").setAttribute("name", val);
+  }
+    else if (val ==="HS"){
+      document.getElementById("classes").innerHTML = "";
+      document.getElementById("academyName").innerHTML =  "Academy of Health and Science"
+      document.getElementById("about").innerHTML = pathWayInfoDB.HealthAndScience.about
+      
+      var OccDiv = document.createElement("DIV");
+      var str = '<ul>'
+      pathWayInfoDB.HealthAndScience.classes.forEach(function(occ) {
+    str += '<li>'+ occ + '</li>';
+    }); 
+
+    str += '</ul>';
+
+    OccDiv.innerHTML = str;
+    document.getElementById("classes").appendChild(OccDiv);
+
+
+
+      var y = document.getElementById("pictureBox");
+      var aNode = y.childNodes[1];
+      var aNode2 = y.childNodes[3];
+      var aNode3 = y.childNodes[5];
+
+      img_Tag1.setAttribute("src", pathWayInfoDB.HealthAndScience.pictures[0]);
+      aNode.appendChild(img_Tag1);
+      img_Tag2.setAttribute("src", pathWayInfoDB.HealthAndScience.pictures[1]);
+      aNode2.append(img_Tag2);
+      img_Tag3.setAttribute("src", pathWayInfoDB.HealthAndScience.pictures[2]);
+      aNode3.appendChild(img_Tag3);
+      document.getElementById("MoreInfoBox").setAttribute("name", val);
+    }
+  }
 
 function appendRelatedPathways(RIASECpathName, pathID) {
-	var pathBox = document.createElement("DIV");
-	pathBox.className = "userPath";
-	pathBox.id = pathID;
-	pathBox.onclick = function () {
-		testapp(pathID);
-	};
-	var pathName = document.createElement("h1");
-	pathName.innerHTML = RIASECpathName
-	console.log(pathName);
-	pathBox.appendChild(pathName);
-	document.getElementById("pathways").appendChild(pathBox);
+  var pathBox = document.createElement("DIV");
+  pathBox.className = "userPath";
+  pathBox.id = pathID;
+  pathBox.onclick = function () {
+    testapp(pathID);
+  };
+  var pathName = document.createElement("h1");
+  pathName.innerHTML = RIASECpathName
+  console.log(pathName);
+  pathBox.appendChild(pathName);
+  document.getElementById("pathways").appendChild(pathBox);
 }
 
 
 
 function demoAppend(obj) {
-		switch (obj) {
-			case "NR":
-				appendRelatedPathways("Natural and Resources", "NR")
-				break;
-			case "IET":
-				appendRelatedPathways("IET", "IET")
-				break;
-			case "AC":
-				appendRelatedPathways("Arts and Communication", "ArtsComm")
-				break;
-			case "PS":
-				appendRelatedPathways("Public Human Services", "Bus")
-				break;
-			case "HS":
-				appendRelatedPathways("Health and Science", "HS")
-				break;
-		}
+    switch (obj) {
+      case "NR":
+        appendRelatedPathways("Natural and Resources", "NR")
+        break;
+      case "IET":
+        appendRelatedPathways("IET", "IET")
+        break;
+      case "AC":
+        appendRelatedPathways("Arts and Communication", "ArtsComm")
+        break;
+      case "PS":
+        appendRelatedPathways("Public Human Services", "Bus")
+        break;
+      case "HS":
+        appendRelatedPathways("Health and Science", "HS")
+        break;
+    }
 };
 
 
@@ -416,55 +417,55 @@ document.getElementById("MoreInfoBox").setAttribute("onclick", "displayMoreInfo(
 
 function displayMoreInfo() {
 
-	val = document.getElementById("MoreInfoBox").getAttribute("name");
-	if (val==="NR"){
-			document.getElementById("PathwayInfo").innerHTML = " "
-			var infoBoxART = document.createElement("h1");
-			infoBoxART.innerHTML = "FLOWERS!"
-			document.getElementById("PathwayInfo").appendChild(infoBoxART);
-		} else if (val==="ArtsComm") {
-			document.getElementById("PathwayInfo").innerHTML = " "
-			var infoBoxART = document.createElement("h1");
-			infoBoxART.innerHTML = "ART!"
-			document.getElementById("PathwayInfo").appendChild(infoBoxART);
+  val = document.getElementById("MoreInfoBox").getAttribute("name");
+  if (val==="NR"){
+      document.getElementById("PathwayInfo").innerHTML = " "
+      var infoBoxART = document.createElement("h1");
+      infoBoxART.innerHTML = "FLOWERS!"
+      document.getElementById("PathwayInfo").appendChild(infoBoxART);
+    } else if (val==="ArtsComm") {
+      document.getElementById("PathwayInfo").innerHTML = " "
+      var infoBoxART = document.createElement("h1");
+      infoBoxART.innerHTML = "ART!"
+      document.getElementById("PathwayInfo").appendChild(infoBoxART);
 
-		} else if (val ==="IET") {
-			document.getElementById("PathwayInfo").innerHTML = " "
-			var infoBoxART = document.createElement("h1");
-			infoBoxART.innerHTML = "ENGINEERING!!"
-			document.getElementById("PathwayInfo").appendChild(infoBoxART);
+    } else if (val ==="IET") {
+      document.getElementById("PathwayInfo").innerHTML = " "
+      var infoBoxART = document.createElement("h1");
+      infoBoxART.innerHTML = "ENGINEERING!!"
+      document.getElementById("PathwayInfo").appendChild(infoBoxART);
 
-		} else if (val ==="Bus") {
-			document.getElementById("PathwayInfo").innerHTML = " "
-			var infoBoxART = document.createElement("h1");
-			infoBoxART.innerHTML = "MONEY!"
-			document.getElementById("PathwayInfo").appendChild(infoBoxART);
+    } else if (val ==="Bus") {
+      document.getElementById("PathwayInfo").innerHTML = " "
+      var infoBoxART = document.createElement("h1");
+      infoBoxART.innerHTML = "MONEY!"
+      document.getElementById("PathwayInfo").appendChild(infoBoxART);
 
-		}
-			else {
-				alert("HSS")
-			}
+    }
+      else {
+        alert("HSS")
+      }
 
 
 
 }
 
 
-console.log(keyValues);	
+console.log(keyValues); 
 
 function sortCode() {
-	var Top3= [ ];
-	for (var o=0; o<=2; o++) {
-		Top3.push((keyValues[o][0]))
-	}
-	return Top3;
+  var Top3= [ ];
+  for (var o=0; o<=2; o++) {
+    Top3.push((keyValues[o][0]))
+  }
+  return Top3;
 }
 
 var testCode = sortCode();
 
 
 for (var i=0; i<=testCode.length-1; i++) {
-	console.log(testCode[i])	
-	demoAppend(testCode[i]);
+  console.log(testCode[i])  
+  demoAppend(testCode[i]);
 }
 
