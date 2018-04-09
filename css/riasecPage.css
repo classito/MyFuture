@@ -8,15 +8,61 @@ body {
 }
 
 p {
-  font-size:3vh;
+  font-size:2.7vh;
   font-family: 'Courier New', Courier, monospace;
 }
+
+
+button {
+  margin-right:50px;
+}
+
+#container {
+  display:flex;
+  flex-direction: row;
+}
+
+#previous {
+  margin-right:0;
+}
+
+.right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+}
+
+.left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+}
+i {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+#next {
+  margin-left:710px;
+  display:flex;
+  order:2;
+}
+
 .questionForm {
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
-  min-height: 4em;
+  min-height: 1em;
+}
+
+.box {
+  margin-top:50px;
+  overflow: auto;
+  border-style: solid;
+  height:500px;
+  width:1000px;
+  margin-bottom:50px;
 }
 
 input {
@@ -44,7 +90,6 @@ button {
 
 fieldset {
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-  margin-bottom: 10%;
   text-align: center;
   border: 0;
 }

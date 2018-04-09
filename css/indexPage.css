@@ -1,12 +1,22 @@
+.Bullets ul {
+    list-style-type: none;
+}
 * {
     box-sizing: border-box;
 }
-
-
+h4 {
+    font-size:36px;
+}
+#Riasec_Info {
+    margin-top:150px;
+}
 #main {
     height: 80%;
 }
-
+#About {
+    padding:50px;
+    margin-top:150px;
+}
 #image_container {
     margin-top: 5vh;
 }
