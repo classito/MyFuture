@@ -1,14 +1,45 @@
 var displayContent //switch to index content after pre-load
 var setMotto = setInterval(MottoChange, 980);
 var MarauderLogoIMG = new Image();
-
 //image lag solve?
 MarauderLogoIMG.src = '../imgs/WHS_Marauder_Logo.jpg';
 MarauderLogoIMG.id = "logo"
 document.getElementById("logoDisp").appendChild(MarauderLogoIMG);
 
 var count = 0;
-var list = ["My Voice", "My Choice", "My Future"];
+var list = [ ];
+console.log(document.cookie);
+
+	if (!document.cookie.length) {
+        list = ["My Voice", "My Choice", "My Future"];
+	} else {
+        var compare_CODE = document.cookie.split("");
+        for (var i=0; i<=compare_CODE.length-1; i++) {
+            console.log(compare_CODE[i]);
+            switch(compare_CODE[i]) {
+                case "R":
+                list.push("Realistic");
+                break;
+            case "I":
+                list.push("Investigative");
+                break;
+            case "A":
+                list.push("Artistic");
+                break;
+            case "S":
+                list.push("Social");
+                break;
+            case "E":
+                list.push("Enterprising");
+                break;
+            case "C":
+                list.push("Conventional");
+                break;
+
+            }
+        }
+	}
+
 
 function FadeInTransition(wordElem, state) {
     var fadeInElem = document.createElement("span");
@@ -81,3 +112,4 @@ function showPage() {
     document.getElementById("loader").style.display = "none";
     document.getElementById("myDiv").style.display = "block";
 }
+
