@@ -1,15 +1,17 @@
 <Html>
 
+    
 <Head>
-  <Title>RIASEC TEST</title>
-  <link rel="stylesheet" type="text/css" href="../css/riasecPage.css" />
-  <link rel="stylesheet" type="text/css" href="../css/root.css" />
+    <Title>RIASEC TEST</title>
+    <link rel="stylesheet" type="text/css" href="../css/riasecPage.css" />
+    <link rel="stylesheet" type="text/css" href="../css/root.css" />
+    <link rel="stylesheet" type="text/css" href="../css/animate.css" />
 </head>
 
 <body>
     <div id="navBar">
         <ul>
-            <li >
+            <li>
                 <a href="index.html">Home</a>
             </li>
             <li>
@@ -19,32 +21,41 @@
                 <a href="output.html">Your Results</a>
             </li>
             <li>
-                <a href="#Classes">WHS Classes</a>
+                <a href="classes.html">WHS Classes</a>
             </li>
             <li>
-                <a href="https://en.wikipedia.org/wiki/List_of_colleges_and_universities_in_Hawaii">Colleges</a>
+                <a href="collegePage.html">Colleges</a>
             </li>
             <li>
-                <a href="#http://www.edline.net/pages/waipahu_high_school">Visit The WHS Website</a>
+                <a href="#http://www.edline.net/pages/waipahu_high_school">WHS Edline</a>
             </li>
         </ul>
     </div>
     <br>
 
     <div id="QuestionsContainer">
-      <h1 class="questionForm">RIASEC TEST</h1>
 
-      <div class="questionForm">
+        <div class="questionForm">
 
-        <form id="questionContainer">
-          <!--riasec.js appends quetions into this form-->
-        </form>
-      </div>
+            <form id="questionContainer">
+                <!--riasec.js appends quetions into this form-->
+
+
+
+            </form>
+
+
+
+        </div>
+    </div>
+
+    <div class="questionForm" id="controls">
+        <button onclick="previousBox()"> <i class="arrow left"></i></button>
+        <button onclick="nextBox()"><i class="arrow right"></i></button>
     </div>
 
     <div class="questionForm" id="buttonContainer">
-        
-    </div>
+        </div>
 
     <script type="text/javascript" src="../js/riasec.js"></script>
 

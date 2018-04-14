@@ -1,3 +1,6 @@
+// use SCSS for boxes
+// auto make the boxes
+//style everything
 var RIASEC = {
 	Realistic: {
 
@@ -73,8 +76,8 @@ var RIASEC = {
 				code: "I"
 			},
 			q21: {
-				question: "22. I enjoy trying to figure out how things work",
-				state: 22,
+				question: "21. I enjoy trying to figure out how things work",
+				state: 21,
 				pos: 3,
 				code: "I"
 			},
@@ -337,6 +340,8 @@ function createQuestion(question, id, classCode, qNum) {
 	label_No.appendChild(text_No);
 	label_No.appendChild(input_No);
 	document.getElementById("group" + id).appendChild(label_No);
+
+	return fieldset;
 }
 
 function custom_compare(a, b) {
@@ -354,6 +359,64 @@ function GenerateList() {
 }
 GenerateList();
 
+
+function createBox() {
+	var box = document.createElement("DIV");
+	box.className += "box"
+	return box;
+
+}
+
+var bttn = document.createElement("button");
+bttn.innerHTML = "next";
+bttn.setAttribute("onclick", "nextBox()");
+bttn.id = "next"
+
+var bttn2 = document.createElement("button");
+bttn2.innerHTML = "previous";
+bttn2.setAttribute("onclick", "previousBox()");
+bttn2.id = "previous"
+
+var bttnContainer = document.createElement("div");
+bttnContainer.id = "container";
+
+var box1 = createBox();
+box1.className += " animated rollIn";
+var box2 = createBox();
+box2.className += " animated slideInDown";
+var box3 = createBox();
+box3.className += " animated slideInDown";
+var box4 = createBox();
+box4.className += " animated slideInDown";
+
+var box5 = createBox();
+box5.className += " animated slideInDown";
+var box6 = createBox();
+box6.className += " animated slideInDown ";
+var currentBoxIndex= [box1, box2, box3, box4, box5, box6];	
+
+var counter2 = 0;
+function nextBox() {
+
+	if (counter2 <= 4) {
+		document.getElementById("questionContainer").innerHTML = "";
+		document.getElementById("questionContainer").appendChild(currentBoxIndex[counter2+1])
+		counter2++;
+		console.log(counter2);
+	}
+}
+
+function previousBox() {
+	if (counter2 == 0) {
+		console.log("no");
+	} else {
+		document.getElementById("questionContainer").innerHTML = "";
+		document.getElementById("questionContainer").appendChild(currentBoxIndex[counter2-1])
+		counter2--;
+	}
+	console.log(counter2);
+}
+
 function sortAndDeploy() {
 	//activates sort function then deploys question based on sorting order
 	for (var i in RIASEC) {
@@ -361,13 +424,65 @@ function sortAndDeploy() {
 			question.push(RIASEC[i].questions[key])
 		})
 	};
-	question.sort(custom_compare)
+
+	var questionArray = []
+	question.sort(custom_compare);
 	for (var i in question) {
 		counter++; //ID'ed indiv fieldset (eg. id="group1", "group2" ... "group32" ...)
-		createQuestion(question[i].question, counter, question[i].code, question[i].pos); //paste questions in webpage
+		questionArray.push(createQuestion(question[i].question, counter, question[i].code, question[i].pos)); //paste questions in webpage
 	}
+
+
+
+	var chunk;
+	var newArray = [];
+	while (questionArray.length > 0) {
+
+		chunk = questionArray.splice(0, 7);
+		newArray.push(chunk);
+	}
+	console.log(newArray);
+
+
+	//bad code. find a more condense version of this.
+	for (var l = 0; l <= 6; l++) {
+		box1.appendChild(newArray[0][l])
+	}
+
+	box1.appendChild(bttnContainer.cloneNode(true));
+
+	for (var l = 0; l <= 6; l++) {
+		box2.appendChild(newArray[1][l])
+	}
+
+	box2.appendChild(bttnContainer.cloneNode(true));
+	
+	for (var l = 0; l <= 6; l++) {
+		box3.appendChild(newArray[2][l])
+	}
+	box3.appendChild(bttnContainer.cloneNode(true));
+
+	for (var l = 0; l <= 6; l++) {
+		box4.appendChild(newArray[3][l])
+	}
+	box4.appendChild(bttnContainer.cloneNode(true));
+
+	for (var l = 0; l <= 6; l++) {
+		box5.appendChild(newArray[4][l])
+	}
+	box5.appendChild(bttnContainer.cloneNode(true));
+	for (var z = 0; z <= 5; z++) {
+		box6.appendChild(newArray[5][z])
+	}
+
+	box6.appendChild(bttnContainer.cloneNode(true));
+
+	document.getElementById("questionContainer").appendChild(currentBoxIndex[0]);
+	console.log(questionArray);
 	createButton("submit", "Submit", "AnalyzeRIASEC()", "Submit RIASEC")
 }
+
+
 
 function createButton(id, value, onclick, prompt) {
 	var bttn = document.createElement("button");
@@ -395,6 +510,7 @@ function retakeTest() {
 	document.getElementById("buttonContainer").innerHTML = " ";
 	sortAndDeploy();
 }
+
 function checkCode() {
 	if (!document.cookie.length) {
 		console.log("take it")
@@ -444,6 +560,7 @@ function changeState(thisElem) {
 	console.log("S : " + RIASEC.Social.list);
 	console.log("E : " + RIASEC.Enterprising.list);
 	console.log("C : " + RIASEC.Conventional.list);
+
 
 }
 
@@ -540,7 +657,7 @@ function AnalyzeRIASEC() {
 		console.log("Interest_Code");
 		alert(op) //grabs array
 		console.log(ipsum);
-		document.cookie = op
+		document.cookie = "RIASEC_CODE=" + op + ";"
 		document.location.href = '../pages/output.html';
 	}
 
