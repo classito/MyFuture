@@ -75,7 +75,44 @@
                 <h5>Hawaii Pacific University</5>
                 <p>https://www.hpu.edu/academics/areas-of-study/undergraduate-programs.html</p>
     <br>
+    <div class="w3-content w3-display-container">
+        <img class="mySlides" src="../imgs2/im1.jpg" style="width:45%">
+        <img class="mySlides" src="../imgs2/im2.jpg" style="width:45%">
+        <img class="mySlides" src="../imgs2/im3.jpg" style="width:45%">
+        <img class="mySlides" src="../imgs2/im4.jpg" style="width:45%">
+        <img class="mySlides" src="../imgs2/im5.jpg" style="width:45%">
+        <img class="mySlides" src="../imgs2/im6.jpg" style="width:45%">
+        <img class="mySlides" src="../imgs2/im7.jpg" style="width:45%">
+        <img class="mySlides" src="../imgs2/im8.jpg" style="width:45%">
+        <img class="mySlides" src="../imgs2/im9.jpg" style="width:45%">
+        <img class="mySlides" src="../imgs2/im10.jpg" style="width:45%">
+        <img class="mySlides" src="../imgs2/im11.jpg" style="width:45%">
+        <img class="mySlides" src="../imgs2/im12.jpg" style="width:45%">
+        <img class="mySlides" src="../imgs2/im13.jpg" style="width:45%">
 
+        <button class="w3-button w3-black w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="w3-button w3-black w3-display-right" onclick="plusDivs(1)">&#10095;</button>
+    </div>
+
+    <script>
+        var slideIndex = 1;
+        showDivs(slideIndex);
+
+        function plusDivs(n) {
+            showDivs(slideIndex += n);
+        }
+
+    function showDivs(n) {
+        var i;
+        var x = document.getElementsByClassName("mySlides");
+        if (n > x.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = x.length}
+        for (i = 0; i < x.length; i++) {
+            x[i].style.display = "none";  
+        }
+        x[slideIndex-1].style.display = "block";  
+    }
+</script>
 </body>
 
 </html>
