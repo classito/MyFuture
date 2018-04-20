@@ -522,7 +522,7 @@ function createButton(id, value, onclick, prompt) {
 }
 
 function ViewResults() {
-	window.location.href = "../pages/output.html";
+	window.location.href = "../pages/chooseOption.html";
 }
 
 function retakeRIASEC() {
@@ -718,7 +718,7 @@ function AnalyzeRIASEC() {
 		alert(op) //grabs array
 		console.log(ipsum);
 		document.cookie = op;
-		document.location.href = '../pages/output.html';
+		document.location.href = '../pages/chooseOption.html';
 	}
 
 }
