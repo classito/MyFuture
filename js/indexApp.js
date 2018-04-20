@@ -105,14 +105,9 @@ transitionLeft = setTimeout(LogoLeft, 4800); //transition
 
 console.log(document.cookie)
 function displayContentFunc() {
-    if (false) {
         displayContent = setTimeout(showPage, 5500);
-        document.cookie = "preLoad=true;"
-    } else {
-        showPage();
-    }
+    } 
 
-}
 function goToRIASEC() {
     window.location.href = "../pages/riasecPage.html";
 }

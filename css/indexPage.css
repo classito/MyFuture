@@ -126,7 +126,9 @@ img {
 .container {
   max-width: 45%;
   position: relative;
-  margin: auto;
+    margin: auto;
+    margin-top: 400px;
+    margin-bottom: 50px;
 }
 
 /* Hide the images by default */

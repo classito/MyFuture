@@ -299,16 +299,30 @@ var question = [];
 function createQuestion(question, id, classCode, qNum) {
 	//contructs layout of question box
 
+	var Container = document.createElement("div");
+	Container.setAttribute("class", "InputContainer")
+
+	var AgreeDiv = document.createElement("div");
+	AgreeDiv.setAttribute("id", "YesBox");
+
+	var DisagreeDiv = document.createElement("div");
+	DisagreeDiv.setAttribute("id", "NoBox");
+
 	var PElem = document.createElement("P"); // </br>
+	var AgreeText = document.createElement("P");
+	AgreeText.innerHTML = ("Agree")
+	var DisagreeText = document.createElement("P");
+	DisagreeText.innerHTML = ("Disagree")
 	PElem.innerHTML = question;
 	var breaking = document.createElement("br"); // </br>
 	var fieldset = document.createElement("fieldset"); // <fieldset>
+	var div = document.createElement("div");
 	var label_Yes = document.createElement("label"); // yes <label>
 	var label_No = document.createElement("label"); // no <label>
 	var input_Yes = document.createElement("input"); // yes <input>
 	var input_No = document.createElement("input"); // no <input>
-	var text_No = document.createTextNode("I Disagree"); //no value
-	var text_Yes = document.createTextNode("I Agree"); //yes value
+
+
 
 	fieldset.setAttribute("id", "group" + id);
 	fieldset.className += classCode;
@@ -316,18 +330,10 @@ function createQuestion(question, id, classCode, qNum) {
 	fieldset.appendChild(breaking)
 	document.getElementById("questionContainer").appendChild(fieldset);
 
-	input_Yes.setAttribute("qNum", qNum);
-	input_Yes.setAttribute("id", "group" + id);
-	input_Yes.setAttribute("type", "radio");
-	input_Yes.setAttribute("value", "yes");
-	input_Yes.setAttribute("onclick", "changeState(this)");
-	input_Yes.setAttribute("name", "group" + id);
-	input_Yes.setAttribute("class", classCode);
-	document.getElementById("group" + id).appendChild(label_Yes);
-	label_Yes.appendChild(text_Yes);
-	label_Yes.appendChild(input_Yes)
-	document.getElementById("group" + id).appendChild(label_Yes);
-	document.getElementById("group" + id).appendChild(breaking);
+
+
+
+
 
 	input_No.setAttribute("qNum", qNum);
 	input_No.setAttribute("id", "group" + id + "i");
@@ -337,9 +343,27 @@ function createQuestion(question, id, classCode, qNum) {
 	input_No.setAttribute("class", classCode);
 	input_No.setAttribute("name", "group" + id);
 	document.getElementById("group" + id).appendChild(label_No);
-	label_No.appendChild(text_No);
+	label_No.appendChild(DisagreeText);
 	label_No.appendChild(input_No);
-	document.getElementById("group" + id).appendChild(label_No);
+
+	DisagreeDiv.appendChild(label_No)
+	Container.appendChild(DisagreeDiv);
+	document.getElementById("group" + id).appendChild(Container);
+	input_Yes.setAttribute("qNum", qNum);
+	input_Yes.setAttribute("id", "group" + id);
+	input_Yes.setAttribute("type", "radio");
+	input_Yes.setAttribute("value", "yes");
+	input_Yes.setAttribute("onclick", "changeState(this)");
+	input_Yes.setAttribute("name", "group" + id);
+	input_Yes.setAttribute("class", classCode);
+	document.getElementById("group" + id).appendChild(label_Yes);
+	label_Yes.appendChild(AgreeText);
+	label_Yes.appendChild(input_Yes)
+	
+	AgreeDiv.appendChild(label_Yes)
+	Container.appendChild(AgreeDiv);
+	
+
 
 	return fieldset;
 }
@@ -381,38 +405,41 @@ var bttnContainer = document.createElement("div");
 bttnContainer.id = "container";
 
 var box1 = createBox();
-box1.className += " animated rollIn";
+box1.className += " animated FlipInY";
 var box2 = createBox();
-box2.className += " animated slideInDown";
+box2.className += " animated FlipInY";
 var box3 = createBox();
-box3.className += " animated slideInDown";
+box3.className += " animated FlipInY";
 var box4 = createBox();
-box4.className += " animated slideInDown";
+box4.className += " animated FlipInY";
 
 var box5 = createBox();
-box5.className += " animated slideInDown";
+box5.className += " animated FlipInY";
 var box6 = createBox();
-box6.className += " animated slideInDown ";
-var currentBoxIndex= [box1, box2, box3, box4, box5, box6];	
+box6.className += " animated FlipInY ";
+var currentBoxIndex = [box1, box2, box3, box4, box5, box6];
 
 var counter2 = 0;
+
 function nextBox() {
-	console.log(currentBoxIndex[counter2]);
+	pos = 300;
 
 	if (counter2 <= 4) {
 		document.getElementById("questionContainer").innerHTML = "";
-		document.getElementById("questionContainer").appendChild(currentBoxIndex[counter2+1])
+		document.getElementById("questionContainer").appendChild(currentBoxIndex[counter2 + 1])
 		counter2++;
 		console.log(counter2);
 	}
 }
 
 function previousBox() {
+	pos = 300;
+
 	if (counter2 == 0) {
 		console.log("no");
-	} else {
+	} else { 	
 		document.getElementById("questionContainer").innerHTML = "";
-		document.getElementById("questionContainer").appendChild(currentBoxIndex[counter2-1])
+		document.getElementById("questionContainer").appendChild(currentBoxIndex[counter2 - 1])
 		counter2--;
 	}
 	console.log(counter2);
@@ -457,7 +484,7 @@ function sortAndDeploy() {
 	}
 
 	box2.appendChild(bttnContainer.cloneNode(true));
-	
+
 	for (var l = 0; l <= 6; l++) {
 		box3.appendChild(newArray[2][l])
 	}
@@ -480,7 +507,7 @@ function sortAndDeploy() {
 
 	document.getElementById("questionContainer").appendChild(currentBoxIndex[0]);
 	console.log(questionArray);
-	createButton("submit", "Submit", "AnalyzeRIASEC()", "Submit RIASEC")
+	createButton("submit", "Submit", "AnalyzeRIASEC()", "<span>Submit Riasec</span>")
 }
 
 
@@ -525,11 +552,12 @@ checkCode();
 console.log(RIASEC.Realistic.list);
 
 
+
+
+var pos = 300;
 function changeState(thisElem) {
-	console.log(thisElem);
-	if (thisElem.name === "group7") {
-		nextBox();	
-	}
+
+
 	switch (thisElem.className) {
 		case "R":
 			RIASEC.Realistic.list[thisElem.getAttribute("qnum")] = "A"
@@ -562,14 +590,24 @@ function changeState(thisElem) {
 	console.log("S : " + RIASEC.Social.list);
 	console.log("E : " + RIASEC.Enterprising.list);
 	console.log("C : " + RIASEC.Conventional.list);
-
-
+	console.log(thisElem.id)
+	if (thisElem.id === "group7" || thisElem.id === "group14") {
+		nextBox();
+            $('html, body').animate({
+                scrollTop: 0
+            }, 800);
+	} else {
+		$('html, body').animate({
+			scrollTop: pos
+		}, 800);
+		pos+=300;
+	}
 }
 
-function changeState2(thisElem) {
 
+
+function changeState2(thisElem) {
 	switch (thisElem.className) {
-		
 		case "R":
 			RIASEC.Realistic.list[thisElem.getAttribute("qnum")] = "B"
 			console.log(RIASEC.Realistic.list);
@@ -601,6 +639,21 @@ function changeState2(thisElem) {
 	console.log("S : " + RIASEC.Social.list);
 	console.log("E : " + RIASEC.Enterprising.list);
 	console.log("C : " + RIASEC.Conventional.list);
+	console.log(thisElem.id)
+
+	if (thisElem.id === "group7i" || thisElem.id === "group14i") {
+		nextBox();
+            $('html, body').animate({
+                scrollTop: 0
+            }, 800);
+	} else {
+		$('html, body').animate({
+			scrollTop: pos
+		}, 800);
+		pos+=300;
+	}
+
+
 }
 
 
@@ -614,8 +667,11 @@ function checkMissing(riasecObj) {
 	for (var i in riasecObj) {
 		for (var k in riasecObj[i].list) {
 			if (riasecObj[i].list[k] === "M") {
-				alert("Please fill in every questions");
-				return false
+				if (confirm("You haven't completed RIASEC! the more you answer the more accurate your data will be. Are you sure you want to continue?")) {
+					return true;
+				} else {
+					return false;
+				}
 			}
 		}
 		return true;
@@ -626,7 +682,7 @@ function checkMissing(riasecObj) {
 
 //temporarily analysis
 function AnalyzeRIASEC() {
-	var Interest_Code = ["R", "I", "A"] //eg ("R", "A", "I")
+	var Interest_Code = [] //eg ("R", "A", "I")
 	var op = "";
 	var ipsum = "";
 	if (checkMissing(RIASEC)) {
@@ -661,7 +717,7 @@ function AnalyzeRIASEC() {
 		console.log("Interest_Code");
 		alert(op) //grabs array
 		console.log(ipsum);
-		document.cookie = "RIASEC_CODE=" + op + ";"
+		document.cookie = op;
 		document.location.href = '../pages/output.html';
 	}
 

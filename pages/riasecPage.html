@@ -1,10 +1,15 @@
 <Html>
 
+
 <Head>
     <Title>RIASEC TEST</title>
     <link rel="stylesheet" type="text/css" href="../css/riasecPage.css" />
     <link rel="stylesheet" type="text/css" href="../css/root.css" />
     <link rel="stylesheet" type="text/css" href="../css/animate.css" />
+
+    <link rel="icon" type="image/png" href="../web_icon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" href="../web_icon/favicon-16x16.png" />
+    <link rel="icon" href="../web_icon/favicon.ico">
 </head>
 
 <body>
@@ -23,7 +28,7 @@
                 <a href="classes.html">WHS Classes</a>
             </li>
             <li>
-                <a href="https://en.wikipedia.org/wiki/List_of_colleges_and_universities_in_Hawaii">Colleges</a>
+                <a href="collegePage.html">Colleges</a>
             </li>
             <li>
                 <a href="#http://www.edline.net/pages/waipahu_high_school">WHS Edline</a>
@@ -48,20 +53,11 @@
         </div>
     </div>
 
-    <ul class="flex-container row">
-        <li class="flex-item">5</li>
-        <li class="flex-item">4</li>
-        <li class="flex-item">3</li>
-        <li class="flex-item">2</li>
-        <li id="main" class="flex-item">1</li>
-    </ul>
-
-
-    <div class="questionForm" id="controls">
-        <button onclick="previousBox()">
+    <div id="btnCntrl" class="questionForm" id="controls">
+        <button class="btn" onclick="previousBox()">
             <i class="arrow left"></i>
         </button>
-        <button onclick="nextBox()">
+        <button class="btn" onclick="nextBox()">
             <i class="arrow right"></i>
         </button>
     </div>
@@ -69,8 +65,16 @@
     <div class="questionForm" id="buttonContainer">
     </div>
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="../js/riasec.js"></script>
-
+    <script>
+        $(".btn").click(function () {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+    </script>
 </body>
 
 </html>
