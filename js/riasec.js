@@ -9,43 +9,43 @@ var RIASEC = {
 		list: [],
 		questions: {
 			q1: {
-				question: "1. I like to work on cars",
+				question: "I like to work on cars",
 				state: 1,
 				pos: 0,
 				code: "R"
 			},
 			q7: {
-				question: "7. I like to build things",
+				question: "I like to build things",
 				state: 7,
 				pos: 1,
 				code: "R"
 			},
 			q14: {
-				question: "14. I like to take care of animals",
+				question: "I like to take care of animals",
 				state: 14,
 				pos: 2,
 				code: "R"
 			},
 			q22: {
-				question: "22. I like putting things together or assembling things",
+				question: "I like putting things together or assembling things",
 				state: 22,
 				pos: 3,
 				code: "R"
 			},
 			q30: {
-				question: "30. I like to cook",
+				question: "I like to cook",
 				state: 30,
 				pos: 4,
 				code: "R"
 			},
 			q32: {
-				question: "32. I am a practical person",
+				question: "I am a practical person",
 				state: 32,
 				pos: 5,
 				code: "R"
 			},
 			q37: {
-				question: "37. I like working outdoors",
+				question: "I like working outdoors",
 				state: 37,
 				pos: 6,
 				code: "R"
@@ -58,37 +58,37 @@ var RIASEC = {
 		list: [],
 		questions: {
 			q2: {
-				question: "2. I like to do puzzles",
+				question: "I like to do puzzles",
 				state: 2,
 				pos: 0,
 				code: "I"
 			},
 			q11: {
-				question: "11. I like to do experiments",
+				question: "I like to do experiments",
 				state: 11,
 				pos: 1,
 				code: "I"
 			},
 			q18: {
-				question: "18. I enjoy science",
+				question: "I enjoy science",
 				state: 18,
 				pos: 2,
 				code: "I"
 			},
 			q21: {
-				question: "21. I enjoy trying to figure out how things work",
+				question: "I enjoy trying to figure out how things work",
 				state: 21,
 				pos: 3,
 				code: "I"
 			},
 			q26: {
-				question: "26. I like to analyze things (problems/ situations)",
+				question: "I like to analyze things (problems/ situations)",
 				state: 26,
 				pos: 4,
 				code: "I"
 			},
 			q39: {
-				question: "39. I'm good at math",
+				question: "I'm good at math",
 				state: 39,
 				pos: 5,
 				code: "I"
@@ -101,43 +101,43 @@ var RIASEC = {
 		list: [],
 		questions: {
 			q3: {
-				question: "3. I'm good at working independently",
+				question: "I'm good at working independently",
 				state: 3,
 				pos: 0,
 				code: "A"
 			},
 			q8: {
-				question: "8. I like to read about art and music",
+				question: "I like to read about art and music",
 				state: 8,
 				pos: 1,
 				code: "A"
 			},
 			q17: {
-				question: "17. I enjoy creative writing",
+				question: "I enjoy creative writing",
 				state: 17,
 				pos: 2,
 				code: "A"
 			},
 			q23: {
-				question: "23. I am a creative person",
+				question: "I am a creative person",
 				state: 23,
 				pos: 3,
 				code: "A"
 			},
 			q27: {
-				question: "27. I like to play instruments or sing",
+				question: "I like to play instruments or sing",
 				state: 27,
 				pos: 4,
 				code: "A"
 			},
 			q31: {
-				question: "31. I like acting in plays",
+				question: "I like acting in plays",
 				state: 31,
 				pos: 5,
 				code: "A"
 			},
 			q41: {
-				question: "41. I like to draw",
+				question: "I like to draw",
 				state: 41,
 				pos: 6,
 				code: "A"
@@ -150,43 +150,43 @@ var RIASEC = {
 		list: [],
 		questions: {
 			q4: {
-				question: "4. I like to work in teams",
+				question: "I like to work in teams",
 				state: 4,
 				pos: 0,
 				code: "S"
 			},
 			q12: {
-				question: "12. I like to teach or train people",
+				question: "I like to teach or train people",
 				state: 12,
 				pos: 1,
 				code: "S"
 			},
 			q13: {
-				question: "13. I like trying to help people solve their problems",
+				question: "I like trying to help people solve their problems",
 				state: 13,
 				pos: 2,
 				code: "S"
 			},
 			q20: {
-				question: "20. I am interested in healing people",
+				question: "I am interested in healing people",
 				state: 20,
 				pos: 3,
 				code: "S"
 			},
 			q28: {
-				question: "28. I enjoy learning about other cultures",
+				question: "I enjoy learning about other cultures",
 				state: 28,
 				pos: 4,
 				code: "S"
 			},
 			q34: {
-				question: "34. I like to get into discussions about issues",
+				question: "I like to get into discussions about issues",
 				state: 34,
 				pos: 5,
 				code: "S"
 			},
 			q40: {
-				question: "40. I like helping people",
+				question: "I like helping people",
 				state: 40,
 				pos: 6,
 				code: "S"
@@ -199,43 +199,43 @@ var RIASEC = {
 		list: [],
 		questions: {
 			q5: {
-				question: "5. I am an ambitious person, I set goals for myself",
+				question: "I am an ambitious person, I set goals for myself",
 				state: 5,
 				pos: 0,
 				code: "E"
 			},
 			q10: {
-				question: "10. I like to try to influence or persuade people",
+				question: "I like to try to influence or persuade people",
 				state: 10,
 				pos: 1,
 				code: "E"
 			},
 			q16: {
-				question: "16. I like selling things",
+				question: "I like selling things",
 				state: 16,
 				pos: 2,
 				code: "E"
 			},
 			q19: {
-				question: "19. I am quick to take on new responsibilities",
+				question: "I am quick to take on new responsibilities",
 				state: 19,
 				pos: 3,
 				code: "E"
 			},
 			q29: {
-				question: "29. I would like to start my own business",
+				question: "I would like to start my own business",
 				state: 29,
 				pos: 4,
 				code: "E"
 			},
 			q36: {
-				question: "36. I like to lead",
+				question: "I like to lead",
 				state: 36,
 				pos: 5,
 				code: "E"
 			},
 			q42: {
-				question: "42. I like to give speeches",
+				question: "I like to give speeches",
 				state: 42,
 				pos: 6,
 				code: "E"
@@ -248,43 +248,43 @@ var RIASEC = {
 		list: [],
 		questions: {
 			q6: {
-				question: "6. I like to organize things, (files, desks/offices)",
+				question: "I like to organize things, (files, desks/offices)",
 				state: 6,
 				pos: 0,
 				code: "C"
 			},
 			q9: {
-				question: "9. I like to have clear instructions to follow",
+				question: "I like to have clear instructions to follow",
 				state: 9,
 				pos: 1,
 				code: "C"
 			},
 			q15: {
-				question: "15. I wouldn't mind working 8 hours per day in an office",
+				question: "I wouldn't mind working 8 hours per day in an office",
 				state: 15,
 				pos: 2,
 				code: "C"
 			},
 			q24: {
-				question: "24. I pay attention to details",
+				question: "I pay attention to details",
 				state: 24,
 				pos: 3,
 				code: "C"
 			},
 			q25: {
-				question: "25. I like to do filing or typing",
+				question: "I like to do filing or typing",
 				state: 25,
 				pos: 4,
 				code: "C"
 			},
 			q35: {
-				question: "35. I am good at keeping records of my work",
+				question: "I am good at keeping records of my work",
 				state: 35,
 				pos: 5,
 				code: "C"
 			},
 			q38: {
-				question: "38. I would like to work in an office",
+				question: "I would like to work in an office",
 				state: 38,
 				pos: 6,
 				code: "C"
@@ -397,6 +397,7 @@ var currentBoxIndex= [box1, box2, box3, box4, box5, box6];
 
 var counter2 = 0;
 function nextBox() {
+	console.log(currentBoxIndex[counter2]);
 
 	if (counter2 <= 4) {
 		document.getElementById("questionContainer").innerHTML = "";
@@ -524,10 +525,11 @@ checkCode();
 console.log(RIASEC.Realistic.list);
 
 
-
-
-
 function changeState(thisElem) {
+	console.log(thisElem);
+	if (thisElem.name === "group7") {
+		nextBox();	
+	}
 	switch (thisElem.className) {
 		case "R":
 			RIASEC.Realistic.list[thisElem.getAttribute("qnum")] = "A"
@@ -565,7 +567,9 @@ function changeState(thisElem) {
 }
 
 function changeState2(thisElem) {
+
 	switch (thisElem.className) {
+		
 		case "R":
 			RIASEC.Realistic.list[thisElem.getAttribute("qnum")] = "B"
 			console.log(RIASEC.Realistic.list);
@@ -622,7 +626,7 @@ function checkMissing(riasecObj) {
 
 //temporarily analysis
 function AnalyzeRIASEC() {
-	var Interest_Code = [] //eg ("R", "A", "I")
+	var Interest_Code = ["R", "I", "A"] //eg ("R", "A", "I")
 	var op = "";
 	var ipsum = "";
 	if (checkMissing(RIASEC)) {
