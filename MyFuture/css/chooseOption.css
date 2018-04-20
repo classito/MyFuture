@@ -1,0 +1,31 @@
+
+
+#Pathways {
+    padding-top:30px;
+    padding-right:30px;
+    margin-right:50px;
+    text-align: center;
+    border-style:solid;
+    border-color:black;
+    border-width: 5px;
+    width:500px;
+    height:500px;
+}
+
+
+#container {
+    margin-top:9%;
+    display:flex;
+    justify-content: center;
+}
+
+#CodeOccupation {
+    padding-top:30px;
+    margin-left:50px;
+    text-align: center;
+    border-style:solid;
+    border-color:black;
+    border-width: 5px;
+    width:500px;
+    height:500px;
+}

@@ -1,0 +1,39 @@
+/* Navigation Bar Code */
+body {
+    margin:0px;
+}
+
+#currentLink {
+    color:#e6ac00;
+}
+#navBar {
+    height:26px;
+}
+
+#navBar ul {
+    list-style-type: none;
+    margin: -5px;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+    color:white;
+}
+
+#navBar li {
+    float: left;
+}
+
+#navBar li a {
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+a {
+    color:#1aa3ff;
+}
+
+#navBar li a:hover {
+    background-color: #111;
+}
