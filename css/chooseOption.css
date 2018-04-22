@@ -1,31 +1,58 @@
 
+body{
+    background-image: url(../imgs/whs_marauder_logo.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 500px 500px;
+}
 
-#Pathways {
-    padding-top:30px;
-    padding-right:30px;
+a {
+    color:#1aa3ff;
+        text-decoration: none;
+}
+
+h1{
+    margin:center;
+    font-size: 50px;
+}
+
+#Pathways{
+    padding-top:200px;
+    padding-right:50px;
     margin-right:50px;
     text-align: center;
-    border-style:solid;
-    border-color:black;
+    border-style: outset;
+    border-color:#e6ac00;
     border-width: 5px;
     width:500px;
     height:500px;
+        text-decoration: none;
+}
+
+#Pathways:hover {
+        background-color: #cc9900;
 }
 
 
 #container {
-    margin-top:9%;
+    margin-top:5%;
     display:flex;
     justify-content: center;
 }
 
-#CodeOccupation {
-    padding-top:30px;
+#CodeOccupation{
+    padding-top:200px;
     margin-left:50px;
+    padding-right:50px;
     text-align: center;
-    border-style:solid;
-    border-color:black;
+    border-style: outset;
+    border-color: #e6ac00;
     border-width: 5px;
     width:500px;
     height:500px;
+        text-decoration: none;
+}
+
+#CodeOccupation:hover {
+        background-color: #cc9900;
 }
