@@ -296,6 +296,10 @@ var RIASEC = {
 	}
 };
 
+window.onbeforeunload = function() {
+return "Data will be lost if you leave the page, are you sure?";
+};
+
 var counter = 0;
 var question = [];
 
@@ -611,7 +615,7 @@ function changeState(thisElem) {
 		$('html, body').animate({
 			scrollTop: pos
 		}, 800);
-		pos += 100;
+		pos += 150;
 	}
 }
 
@@ -661,7 +665,7 @@ function changeState2(thisElem) {
 		$('html, body').animate({
 			scrollTop: pos
 		}, 800);
-		pos += 100;
+		pos += 150;
 	}
 
 
