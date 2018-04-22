@@ -86,7 +86,7 @@ html, body {
     content: "";
     width: 100%;
     height: 100%;
-    background: rgba(255, 0, 120, 0.5);
+    background-color:#e6ac00;
     position: absolute;
    }
    .container .one-half.right {
@@ -98,7 +98,7 @@ html, body {
     content: "";
     width: 100%;
     height: 100%;
-    background: rgba(25, 120, 220, 0.5);
+    background-color:#1aa3ff;
     position: absolute;
    }
    .container .one-half.left, .container .one-half.right {
@@ -117,7 +117,7 @@ html, body {
     width: 15%;
    }
    .container.left-is-hovered .right:before {
-    background: rgba(0, 0, 0, 0.65);
+    background-color:rgba(26, 163, 255, 0.65);
     z-index: 2;
    }
    .container.right-is-hovered .right {
@@ -130,6 +130,6 @@ html, body {
     width: 15%;
    }
    .container.right-is-hovered .left:before {
-    background: rgba(0, 0, 0, 0.65);
+    background-color:rgba(230, 172, 0, 0.65);
     z-index: 2;
    }
