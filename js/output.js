@@ -1,3 +1,5 @@
+
+
 function rank_Distrubition(rankList) {
   var tempList = [ ];
   var list = [ ];
