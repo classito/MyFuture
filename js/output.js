@@ -1,3 +1,5 @@
+
+
 function rank_Distrubition(rankList) {
   var tempList = [ ];
   var list = [ ];
@@ -176,30 +178,30 @@ keyValues.sort(function compare(kv1, kv2) {
 
 var pathWayInfoDB = {
   artsNStuff: {
-    about: "About : you do art and make stuff",
-    classes: ["Artist", "Graphic Designer", "Digital Media Tech-Web Designer", "Digital Media Tech-Broadcaster", "Broadcast Media", "Fashion Designer", "Fashion Merchandising"],
+    about: "About : Students are inspired to think creative and be intellectual. You brainstorm with ideas and use it such in a way that dazzles people",
+    classes: ["Artist - Hawaii Community College", "Graphic Designer - Honolulu Community College", "Digital Media Tech-Web Designer - Hawaii Community College", "Digital Media Tech-Broadcaster - Hawaii Community College", "Broadcast Media - Hawaii Community College", "Fashion Designer - Hawaii Community College", "Fashion Merchandising - Hawaii Community College"],
     pictures : ["", "", ""]
   },
   IETStuff: {
-    about: "About : more math and more logic",
-    classes: ["Automotive Tech", "Design Tech","3D Solid Modeling", "Architectural & Civil Engineering", "Electronic Tech", "Metals Tech", "Building and Construction",
+    about: "Industrial and Engineering pathway provides student a way to inspire creativity. It teaches students how to construct and build projects from scratch.",
+    classes: ["Automotive Tech - Kauai Community College", "Design Tech - UH","3D Solid Modeling - UH", "Architectural & Civil Engineering - University of Hawaii West Ohau", "Electronic Tech - BYUH", "Metals Tech - HCC", "Building and Construction - HPA",
     , "Computers Systems", "Computer Programming", "Networking Architectural"],
     pictures : ["", "", ""]
   }, 
   Business: {
-    about: "About : you make more money lol",
-    classes: ["Marketing", "Accounting", "Financing", "Hospitality & Tourism", "Entrepreneurship", "Criminology", "Elementary Education", "Second Education", "Culinary","Baking and Pastry Arts", "Hotel Operations"],
+    about: "You learn how the real world works. You learn how to generate money and co operate with society such as businesses and the government",
+    classes: ["Marketing - HPA", "Accounting - HPA", "Financing - HCC", "Hospitality & Tourism - Leeward Communtiy College", "Entrepreneurship - Kauai Community College", "Criminology - University of Hawaii", "Elementary Education - Chaminade University", "Second Education - LCC", "Culinary - UH","Baking and Pastry Arts - HCC", "Hotel Operations - HU"],
     pictures : ["", "", ""]
   }, 
   NaturalRS: {
-    about: "About : you make the earth more green",
+    about: "Natural Reasources teaches you how to be productive on being greener. You learn the science in the real world and how to make the world a better place",
     classes: "Classes : science, plantrophy, zoology, tree class",
     pictures : ["", "", ""]
   },
 
   HealthAndScience: {
-    about: "About : science and you save people",
-    classes:["Health Services Core", "Clinical Health", "Biotechnology", "Health and Nutrition", "Health and Nutrition 2", "Academy of Health & Sciences Capstone", "STEM Capstone"],
+    about: "Health and Science teaches you the fundamentals of science and health. It teaches student how the body works, providing students a chance to know more within ourselves.",
+    classes:["Health Services Core - University of Hawaii", "Clinical Health - Leeward Communtiy College", "Biotechnology - Windward Community College", "Health and Nutrition - Kauai Community College", "Health and Nutrition 2 - Leeward Community College", "Academy of Health & Sciences Capstone - University Of Hawaii"],
     pictures : ["../imgs/Health_Science.jpg", "../imgs/Nurse.jpg", "../imgs/scientist.jpg"]
   }
 }
@@ -302,7 +304,7 @@ function testapp(val) {
     ;
   } else if (val ==="Bus") {
     document.getElementById("classes").innerHTML = "";
-    document.getElementById("academyName").innerHTML =  "Public and Human Services"
+    document.getElementById("academyName").innerHTML =  "Public and Professional Services"
     document.getElementById("about").innerHTML = pathWayInfoDB.Business.about
 
     var OccDiv = document.createElement("DIV");

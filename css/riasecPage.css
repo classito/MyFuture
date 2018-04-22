@@ -9,34 +9,30 @@ body {
   justify-content: center;
 }
 
-
+#questionIcon {
+  color:black;
+  font-size:30px;
+  border:0;
+}
 .InputContainer {
+  margin-left:5%;
   display: flex;
   flex-direction: row;
   justify-content: center;
 }
 #YesBox {
-  padding:13px;
+  font-size:32px;
   margin:30px;
-  border-radius:10%;
   height:30px;
   width:90px;
-  padding-top:15px;
-  padding-bottom:80px;
-  border-style:solid;
-  border-color:black;
 }
 
 #NoBox {
-  padding:13px;
+  font-size:32px;
   margin:30px;
-  border-radius:10%;
+  margin-right:90px;
   height:30px;
   width:90px;
-  padding-top:15px;
-  padding-bottom:80px;
-  border-style:solid;
-  border-color:black;
 }
 
 #main {
