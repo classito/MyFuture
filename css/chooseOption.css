@@ -1,58 +1,135 @@
-
-body{
-    background-image: url(../imgs/whs_marauder_logo.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: 500px 500px;
-}
-
-a {
-    color:#1aa3ff;
-        text-decoration: none;
-}
-
-h1{
-    margin:center;
-    font-size: 50px;
-}
-
-#Pathways{
-    padding-top:200px;
-    padding-right:50px;
-    margin-right:50px;
+html, body {
+    margin:0;
+    width: 100%;
+    height: 100%;
+    overflow-x: hidden;
+   }
+   
+   *,
+   *:before,
+   *:after {
+    box-sizing: border-box;
+   }
+   
+   h1 {
+    color: #fff;
+    position: relative;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    white-space: nowrap;
+   }
+   h1:after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 4px;
+    left: 0;
+    bottom: -8px;
+    background: #fff;
+    transition: 500ms all ease-in-out;
+   }
+   
+   a.cta {
+    display: block;
+    position: absolute;
+    height: 50px;
+    line-height: 50px;
+    width: 120px;
     text-align: center;
-    border-style: outset;
-    border-color:#e6ac00;
-    border-width: 5px;
-    width:500px;
-    height:500px;
-        text-decoration: none;
-}
-
-#Pathways:hover {
-        background-color: #cc9900;
-}
-
-
-#container {
-    margin-top:5%;
-    display:flex;
-    justify-content: center;
-}
-
-#CodeOccupation{
-    padding-top:200px;
-    margin-left:50px;
-    padding-right:50px;
-    text-align: center;
-    border-style: outset;
-    border-color: #e6ac00;
-    border-width: 5px;
-    width:500px;
-    height:500px;
-        text-decoration: none;
-}
-
-#CodeOccupation:hover {
-        background-color: #cc9900;
-}
+    color: #fff;
+    text-decoration: none;
+    left: 50%;
+    bottom: 20%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    border: 2px solid #fff;
+    font-size: 0.75em;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+   }
+   a.cta:before {
+    content: "";
+    background: #fff;
+    height: 0;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transition: 300ms all ease-in-out;
+   }
+   a.cta:hover:before {
+    height: 4px;
+   }
+   
+   .container {
+    background: #09f;
+    width: 100%;
+    height: 100%;
+    position: relative;
+   }
+   .container .one-half {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+   }
+   .container .one-half.left {
+    left: 0;
+    background: url("http://jurathefilm.com/wp-content/uploads/2015/02/homepage_panorama_1920.jpg") center center no-repeat;
+    background-size: cover;
+   }
+   .container .one-half.left:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 0, 120, 0.5);
+    position: absolute;
+   }
+   .container .one-half.right {
+    right: 0;
+    background: url("http://www.kocakogluyazilim.com/img/webYazilim.jpg") center center no-repeat;
+    background-size: cover;
+   }
+   .container .one-half.right:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgba(25, 120, 220, 0.5);
+    position: absolute;
+   }
+   .container .one-half.left, .container .one-half.right {
+    transition: 500ms all ease-in-out;
+   }
+   .container .one-half.left:before, .container .one-half.right:before {
+    transition: 500ms all ease-in-out;
+   }
+   .container.left-is-hovered .left {
+    width: 85%;
+   }
+   .container.left-is-hovered .left h1:after {
+    width: 100%;
+   }
+   .container.left-is-hovered .right {
+    width: 15%;
+   }
+   .container.left-is-hovered .right:before {
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 2;
+   }
+   .container.right-is-hovered .right {
+    width: 85%;
+   }
+   .container.right-is-hovered .right h1:after {
+    width: 100%;
+   }
+   .container.right-is-hovered .left {
+    width: 15%;
+   }
+   .container.right-is-hovered .left:before {
+    background: rgba(0, 0, 0, 0.65);
+    z-index: 2;
+   }

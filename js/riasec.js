@@ -296,6 +296,10 @@ var RIASEC = {
 	}
 };
 
+window.onbeforeunload = function() {
+return "Data will be lost if you leave the page, are you sure?";
+};
+
 var counter = 0;
 var question = [];
 
@@ -602,7 +606,7 @@ function changeState(thisElem) {
 	console.log("E : " + RIASEC.Enterprising.list);
 	console.log("C : " + RIASEC.Conventional.list);
 	console.log(thisElem.id)
-	if (thisElem.id === "group7" || thisElem.id === "group14") {
+	if (thisElem.id === "group7" || thisElem.id === "group14" || thisElem.id === "group21" || thisElem.id === "group28" || thisElem.id === "group35") {
 		nextBox();
 		$('html, body').animate({
 			scrollTop: 0
@@ -611,7 +615,7 @@ function changeState(thisElem) {
 		$('html, body').animate({
 			scrollTop: pos
 		}, 800);
-		pos += 100;
+		pos += 150;
 	}
 }
 
@@ -652,7 +656,7 @@ function changeState2(thisElem) {
 	console.log("C : " + RIASEC.Conventional.list);
 	console.log(thisElem.id)
 
-	if (thisElem.id === "group7i" || thisElem.id === "group14i") {
+	if (thisElem.id === "group7i" || thisElem.id === "group14i" || thisElem.id === "group21i" || thisElem.id === "group28i" || thisElem.id === "group35i") {
 		nextBox();
 		$('html, body').animate({
 			scrollTop: 0
@@ -661,7 +665,7 @@ function changeState2(thisElem) {
 		$('html, body').animate({
 			scrollTop: pos
 		}, 800);
-		pos += 100;
+		pos += 150;
 	}
 
 
