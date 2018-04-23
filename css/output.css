@@ -1,64 +1,79 @@
 body {
   height: 100%;
   margin: 0;
-  background-color:#FEFBFC;
+  background-color: #FEFBFC;
 }
-
 
 .ActivePath {
-  color:gold;
-  background-color:blue;
+  color: gold;
+  background-color: blue;
 }
+
 #interestCode {
   letter-spacing: 5px;
   text-decoration: underline;
 }
 
 #academyName {
-  padding-top:4%;
-  text-decoration: underline;
+  margin: 0;
+  font-size: 42px;
+  padding-top: 4%;
 }
 
 .userPath {
-  background: white;
-  padding:30px;
-  border: 1px #eee solid;
+  color: #FEFBFC;
+  background: #E6AC00;
+  padding: 30px;
+  padding-left: 40px;
+  border-bottom: 3px #eee solid;
+  font-size: 30px;
+}
+
+.userPath {
+  transition: all .2s ease-in-out;
+}
+
+.userPath:hover {
+  color:navy;
+  transform: scale(1.1);
 }
 
 #pictureBox {
-  display:flex;
+  display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
 
 .picture {
-  display:flex;
-  height:200px;
-  width:200px;
-  border-style:solid;
+  display: flex;
+  height: 200px;
+  width: 200px;
+  border-style: solid;
   border-color: black;
-  margin:20px;
+  margin: 20px;
   flex-direction: row;
   align-items: center;
   justify-content: center;
 }
+
 img {
-  height:200px;
-  width:200px;
-}
-h2 {
-  font-size:25px;
-  text-align:center;
+  height: 200px;
+  width: 200px;
 }
 
+h2 {
+  font-size: 25px;
+  text-align: center;
+}
 
 .flexArrow {
-  display:flex;
+  display: flex;
   flex-direction: row;
 }
+
 .userPath {
-  padding:10px;
+  padding: 10px;
 }
 
 .flex-container {
@@ -67,24 +82,38 @@ h2 {
 }
 
 #pathways {
-  margin-top:2.5px;
+  margin-right: 15px;
+  margin-top: 1px;
   height: auto;
   width: 65vh;
-  background: white;
-  border: 1px #eee solid;
+  color: #FEFBFC;
+  background: #E6AC00;
+  box-shadow: 10px 10px grey;
+}
+
+#about {
+  width: 500px;
+  border-style: solid;
+  border-color: #FEFBFC;
+  line-height: 24px;
+  font-size: 18px;
+  padding: 30px;
+  border-radius: 3%;
 }
 
 h1 {
-    font-weight: 600;
-    font-size: 18px;
-    font-family: 'Open Sans', Courier, monospace;
+  padding-left: 40px;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Open Sans', Courier, monospace;
 }
 
 #PathwayInfo {
-  margin-top:10px;
+  background-color: #1AA3FF;
+  color: #FCEAEF;
+  margin-top: 2px;
   height: 96vh;
   width: 200vh;
-  background: white;
   padding: 10px 30px;
 }
 
@@ -95,14 +124,15 @@ h1 {
 }
 
 p {
-  margin-left:30px;
+  margin-left: 30px;
 }
+
 h1 {
-  text-align: center;
+  font-weight: 600;
 }
 
 #MoreInfoBox {
-  margin-top:4vh;
-  padding-top:250px;
+  margin-top: 4vh;
+  padding-top: 250px;
   text-align: center;
 }
