@@ -127,7 +127,7 @@ img {
   max-width: 45%;
   position: relative;
     margin: auto;
-    margin-top: 325px;
+    margin-top: 400px;
     margin-bottom: 50px;
 }
 
@@ -208,4 +208,85 @@ img {
 .active,
 .demo:hover {
   opacity: 1;
+}
+
+.bundle {
+  height: 50vh;
+  overflow-x: hidden;
+  overflow-y: auto;
+  text-align: center;
+  background-image: url(http://www.self-directed-search.com/portals/4/RIASEC_graphic_just_letters-300px.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 50vw;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slide1 {
+  height: 50vh;
+  background-color: none ;
+
+}
+
+.slide2 {
+  height: 50vh;
+  background-color: none ;
+
+}
+
+.slide3 {
+  height: 50vh;
+  background-color: none ;
+
+}
+
+.slide4 {
+  height: 50vh;
+  background-color: none ;
+
+} 
+
+.slide5 {
+  height: 50vh;
+  background-color: none ;
+
+}
+
+.slide6 {
+  height: 50vh;
+  background-color: none ;
+
+}
+
+.slide1 h1,p {
+  background-color: white;
+}
+.slide2 h1 {
+  background-color: white;
+}
+.slide3 h1 {
+  background-color: white;
+}
+.slide4 h1 {
+  background-color: white;
+}
+.slide5 h1 {
+  background-color: white;
+}
+.slide6 h1 {
+  background-color: white;
+}
+
+a.tesButton {
+  
+  padding: 15px 20px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 150%;
+  background: #3366cc;
+  color: #fff;
+  border: 1px solid #3366cc;
+  border-radius: 100px;
+  width: 300px;
 }

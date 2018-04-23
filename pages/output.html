@@ -4,6 +4,7 @@
     <Title>RIASEC TEST</title>
     <link rel="stylesheet" type="text/css" href="../css/output.css" />
     <link rel="stylesheet" type="text/css" href="../css/root.css" />
+    <link rel="stylesheet" type="text/css" href="../css/animate.css" />
 </head>
 
 <body>
@@ -16,9 +17,12 @@
             <li>
               <a href="riasecPage.html">Take RIASEC</a>
             </li>
-            <li>
-                <a href="output.html" id="currentLink">Your Results</a>
-            </li>
+			<li>
+				<a href="output.html" id="currentLink">Your Pathways</a>
+			</li>
+			<li>
+				<a href="ScoreOutput.html" >Your Score</a>
+			</li>
             <li>
                 <a href="classes.html">WHS Classes</a>
             </li>
@@ -36,31 +40,27 @@
 
     <div class="flex-container">
 
-        <div id="pathways">
-            <h1 id="interestCode">take riasec first</h1>
-
+        <div id="pathways" class="animated fadeInLeft">
 
 
 
         </div>
 
 
-        <div id="PathwayInfo">
+        <div id="PathwayInfo" class="animated bounceInUp">
             <h1 id="academyName">Welcome</h1>
             <div id="pictureBox">
                 <div class="picture"></div>
                 <div class="picture"></div>
                 <div class="picture"></div>
             </div>
-            <div id="info">
+            <div id="info" >
                 <p id="about">
-                    About: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Duis at consectetur lorem donec massa sapien faucibus et.
+                    Click one of the top 3 reccomeneded pathways based on our matching algorithmn
                 </p>
                 <h2>Occupations</h2>
                 <p id="classes">
-                    Classes: Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna
-                    aliqua. Duis at consectetur lorem donec massa sapien faucibus et.
+                    This will display the current occupations based on the pathway course.
                 </p>
             </div>
             <div id="MoreInfoBox">

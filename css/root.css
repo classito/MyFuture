@@ -4,7 +4,7 @@ body {
 }
 
 #currentLink {
-    color:#ffff00;
+    color:#e6ac00;
 }
 #navBar {
     height:26px;
@@ -12,7 +12,7 @@ body {
 
 #navBar ul {
     list-style-type: none;
-    margin: 0;
+    margin: -5px;
     padding: 0;
     overflow: hidden;
     background-color: #333;
@@ -31,7 +31,7 @@ body {
 }
 
 a {
-    color:#0099ff;
+    color:#1aa3ff;
 }
 
 #navBar li a:hover {

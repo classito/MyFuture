@@ -7,6 +7,10 @@
     <link rel="stylesheet" type="text/css" href="../css/indexPage.css" />
     <link rel="stylesheet" type="text/css" href="../css/root.css" />
 
+<link rel="icon" type="image/png" href="../web_icon/favicon-32x32.png"/>
+<link rel="icon" type="image/png" href="../web_icon/favicon-16x16.png"/>
+<link rel="icon" href="../web_icon/favicon.ico">
+
 </head>
 
 <!--Animation Cotent.-->
@@ -36,8 +40,11 @@
                    <a href="riasecPage.html">Take RIASEC</a>
                </li>
                <li>
-                   <a href="output.html">Your Results</a>
-               </li>
+				<a href="output.html">Your Pathways</a>
+			</li>
+			<li>
+				<a href="output.html">Your Score</a>
+			</li>
                <li>
                    <a href="classes.html">WHS Classes</a>
                </li>
@@ -159,30 +166,42 @@
          <br></br>"R.I.A.S.E.C."
    </p>
 
-<p>
-   R = (Realistic)~
-These people are often good at mechanical or athletic jobs.
+<div class="bundle">
+    <section class="slide1">
+      <h1>Realistic</h1>
+      <p>These people are often good at mechanical or athletic jobs.</p>
+    </section>
+
+    <section class="slide2">
+      <h1>Investigative</h1>
+      <p>These people like to watch, learn, analyze and solve problems.
    </p>
-<p>
-   I = (Investigative)~
-These people like to watch, learn, analyze and solve problems.
-   </p>
-<p>
-   A = (Artistic)~
-These people like to work in unstructured situations where they can use their creativity.
-   </p>
-<p>
-   S = (Social)~
-These people like to work with other people, rather than things.
-   </p>
-<p>
-   E = (Enterprising)~
-These people like to work with others and enjoy persuading and and performing.
-   </p>
-<p>
-   C = (Conventional)~
-These people are very detail oriented,organizedand like to work with data.
-   </p>
+    </section>
+
+    <section class="slide3">
+      <h1>Artistic</h1>
+      <p>These people like to work in unstructured situations where they can use their creativity.
+      </p>
+    </section>
+
+    <section class="slide4">
+      <h1>Social</h1>
+      <p>These people like to work with other people, rather than things.
+      </p>
+    </section>
+
+    <section class="slide5">
+      <h1>Enterprising</h1>
+      <p>These people like to work with others and enjoy persuading and and performing.
+      </p>
+    </section>
+
+    <section class="slide6">
+      <h1>Conventional</h1>
+      <p>These people are very detail oriented,organized and like to work with data.
+      </p>
+    </section>
+  </div>
 <br><br>
 
 <p>
@@ -197,8 +216,9 @@ These people are very detail oriented,organizedand like to work with data.
 <p>
    Find out your own code here...
    </p>
-<a href="riasecPage.html">
-   Take RIASEC
+<a class="tesButton" type="button" value="Take RIASEC"
+    onclick="href='riasecPage.html'">
+    Riasec Test
    </a>
 <!--This is where the Letter Info will be at.-->
        <!--<div id="Riasec_Info">

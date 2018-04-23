@@ -1,11 +1,17 @@
 <Html>
 
-    
+
 <Head>
     <Title>RIASEC TEST</title>
     <link rel="stylesheet" type="text/css" href="../css/riasecPage.css" />
     <link rel="stylesheet" type="text/css" href="../css/root.css" />
     <link rel="stylesheet" type="text/css" href="../css/animate.css" />
+
+    <link rel="icon" type="image/png" href="../web_icon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" href="../web_icon/favicon-16x16.png" />
+    <link rel="icon" href="../web_icon/favicon.ico">
+    <link rel="stylesheet" type="text/css" media="screen" href="../css/pretty-checkbox.css" />
+    <link href="../css/materialdesignicons.min.css" media="all" rel="stylesheet" type="text/css" />
 </head>
 
 <body>
@@ -17,9 +23,12 @@
             <li>
                 <a href="riasecPage.html" id="currentLink">Take RIASEC</a>
             </li>
-            <li>
-                <a href="output.html">Your Results</a>
-            </li>
+			<li>
+				<a href="output.html">Your Pathways</a>
+			</li>
+			<li>
+				<a href="output.html">Your Score</a>
+			</li>
             <li>
                 <a href="classes.html">WHS Classes</a>
             </li>
@@ -32,7 +41,6 @@
         </ul>
     </div>
     <br>
-
     <div id="QuestionsContainer">
 
         <div class="questionForm">
@@ -49,16 +57,31 @@
         </div>
     </div>
 
-    <div class="questionForm" id="controls">
-        <button onclick="previousBox()"> <i class="arrow left"></i></button>
-        <button onclick="nextBox()"><i class="arrow right"></i></button>
+    <div id="btnCntrl" class="questionForm" id="controls">
+        <button class="btn" onclick="previousBox()">
+            <i class="arrow left"></i>
+        </button>
+        <button class="btn" onclick="nextBox()">
+            <i class="arrow right"></i>
+        </button>
     </div>
 
     <div class="questionForm" id="buttonContainer">
-        </div>
+    </div>
 
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script type="text/javascript" src="../js/riasec.js"></script>
-
+    <script>
+        $(".btn").click(function () {
+            $('html, body').animate({
+                scrollTop: 0
+            }, 800);
+            return false;
+        });
+    </script>
 </body>
 
 </html>

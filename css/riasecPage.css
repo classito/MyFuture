@@ -1,29 +1,103 @@
 body {
-  margin:0;
+  margin: 0;
 }
+
 #QuestionsContainer {
+  margin-top:50px;
   font-family: 'Courier New', Courier, monospace;
   align-items: center;
   justify-content: center;
 }
 
-p {
-  font-size:2.7vh;
-  font-family: 'Courier New', Courier, monospace;
+#questionIcon {
+  color:black;
+  font-size:30px;
+  border:0;
+}
+.InputContainer {
+  margin-left:5%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#YesBox {
+  font-size:32px;
+  margin:30px;
+  height:30px;
+  width:90px;
 }
 
+#NoBox {
+  font-size:32px;
+  margin:30px;
+  margin-right:90px;
+  height:30px;
+  width:90px;
+}
+
+#main {
+  color: yellow;
+}
+
+p {
+  font-weight: 600;
+  font-size: 18px;
+  font-family: 'Open Sans', Courier, monospace;
+}
+
+.flex-item {
+  background: tomato;
+  padding: 5px;
+  width: 50px;
+  height: 50px;
+  margin: 5px;
+  line-height: 50px;
+  color: white;
+  font-weight: bold;
+  font-size: 2em;
+  text-align: center;
+}
+
+.flex-container {
+  padding: 0;
+  margin-right: 150px;
+  list-style: none;
+  -ms-box-orient: horizontal;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+}
+
+.row {
+  -webkit-flex-direction: row-reverse;
+  flex-direction: row-reverse;
+}
+
+#circleContainer {
+  justify-content: flex-start;
+}
+
+.circles {
+  width: 100px;
+  height: 100px;
+  background-color: black;
+  border-radius: 100%;
+}
 
 button {
-  margin-right:50px;
+  margin-right: 50px;
 }
 
 #container {
-  display:flex;
+  display: flex;
   flex-direction: row;
 }
 
 #previous {
-  margin-right:0;
+  margin-right: 0;
 }
 
 .right {
@@ -35,6 +109,7 @@ button {
   transform: rotate(135deg);
   -webkit-transform: rotate(135deg);
 }
+
 i {
   border: solid black;
   border-width: 0 3px 3px 0;
@@ -43,9 +118,9 @@ i {
 }
 
 #next {
-  margin-left:710px;
-  display:flex;
-  order:2;
+  margin-left: 710px;
+  display: flex;
+  order: 2;
 }
 
 .questionForm {
@@ -57,45 +132,115 @@ i {
 }
 
 .box {
-  margin-top:50px;
-  overflow: auto;
-  border-style: solid;
-  height:500px;
-  width:1000px;
-  margin-bottom:50px;
+  margin-top: 50px;
+  height: auto;
+  width: 1000px;
+  margin-bottom: 50px;
 }
 
 input {
-  margin-bottom:14px;
+  margin-bottom: 14px;
 }
-
 
 .activeState {
-  color:gold
+  color: gold
 }
+
 label:hover {
-  color:gold;
+  color: gold;
+}
+
+#btnCntrl {
+  padding-left: 5%;
+}
+
+#buttonContainer {
+  padding-left: 5%;
+}
+
+.btn {
+  height:60px;
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: #4CAF50;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.btn:hover {
+  background-color: #3e8e41
+}
+
+.btn:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+#submit {
+  border-radius: 4px;
+  background-color: #f4511e;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 500px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-bottom: 90px;
+}
+
+#submit span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+#submit span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+#submit:hover span {
+  padding-right: 25px;
+}
+
+#submit:hover span:after {
+  opacity: 1;
+  right: 0;
 }
 
 button {
-  margin:20px;
-  padding:4vh;
-  width:250px;
-  border-radius:20%;
-  margin-bottom:10vh;
-  border: 1px solid black;
+  margin: 20px;
+  padding: 4vh;
+  width: 250px;
+  margin-bottom: 10vh;
   display: flex;
   justify-content: center;
 }
 
 fieldset {
+  width: 100%;
+  background: white;
+  padding: 10px 30px;
+  border: 1px #eee solid;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
   text-align: center;
-  border: 0;
 }
 
 input {
   display: inline;
   text-align: center;
 }
-
