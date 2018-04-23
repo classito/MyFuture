@@ -189,7 +189,7 @@ var RIASEC = {
 				code: "S"
 			},
 			q40: {
-				question: "I like helping people <i id='questionIcon' class='mdi account-multiple-outline'></i>",
+				question: "I like helping people <i id='questionIcon' class='mdi mdi-account-multiple-outline'></i>",
 				state: 40,
 				pos: 6,
 				code: "S"
@@ -544,13 +544,14 @@ function sortAndDeploy() {
 
 	document.getElementById("questionContainer").appendChild(currentBoxIndex[0]);
 	console.log(questionArray);
-	createButton("submit", "Submit", "AnalyzeRIASEC()", "<span>Submit Riasec</span>")
+	createButton("submit", "Submit", "AnalyzeRIASEC()", "<span>Submit Riasec</span>", "submitclass")
 }
 
 
 
-function createButton(id, value, onclick, prompt) {
+function createButton(id, value, onclick, prompt, classString) {
 	var bttn = document.createElement("button");
+	bttn.className = classString;
 	bttn.id = id;
 	bttn.value = value;
 	bttn.setAttribute("onclick", onclick);
@@ -563,11 +564,23 @@ function ViewResults() {
 }
 
 function retakeRIASEC() {
+	document.getElementById('demoTest2').style.display = "none";
 	var PElem = document.createElement("P");
-	PElem.innerHTML = "you've already taken RIASEC! do you want a retake?";
+	var PElem2 = document.createElement("P");
+	var PElem3 = document.createElement("P");
+	var code = document.cookie.split('');
+
+	PElem.innerHTML = "you've already taken RIASEC! Your score was";
+	PElem2.innerHTML = code[0] + ' ' + code[1] + ' ' + code[2];
+	PElem2.style.textAlign = 'center';
+	PElem2.style.fontSize = '50px';
+	PElem3.innerHTML = "do you want a retake?"
+	PElem3.style.textAlign = 'center';
 	document.getElementById("questionContainer").appendChild(PElem);
-	createButton("retake", "Retake", "retakeTest()", "Retake RIASEC")
-	createButton("view", "View", "ViewResults()", "View Your Results")
+	document.getElementById("questionContainer").appendChild(PElem2);
+	document.getElementById("questionContainer").appendChild(PElem3);
+	createButton("retake", "Retake", "retakeTest()", "Retake RIASEC", "retakeClass");
+	createButton("view", "View", "ViewResults()", "View Your Results", "retakeClass");
 }
 
 function retakeTest() {

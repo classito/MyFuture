@@ -1,6 +1,7 @@
 body {
   height: 100%;
-  margin: 0
+  margin: 0;
+  background-color:#FEFBFC;
 }
 
 
@@ -20,7 +21,7 @@ body {
 
 .userPath {
   background: white;
-  padding: 10px 30px;
+  padding:30px;
   border: 1px #eee solid;
 }
 
@@ -66,12 +67,11 @@ h2 {
 }
 
 #pathways {
-  margin-top:30px;
-  height: 35%;
+  margin-top:2.5px;
+  height: auto;
   width: 65vh;
   background: white;
   border: 1px #eee solid;
-
 }
 
 h1 {
