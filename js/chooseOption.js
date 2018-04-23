@@ -32,3 +32,9 @@ $r.mouseenter(function () {
     $('#PathBox').show();
     $('#PathBoxInfo').show();
 });
+
+$('#whatsNext').click(function() {
+    $('html, body').animate({
+        scrollTop: 1200
+    }, 1000);
+});
