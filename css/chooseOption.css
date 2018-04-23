@@ -24,7 +24,6 @@ body {
         position: absolute;
         top: 34%;
         left: 15%;
-
 }
 
 #PathBoxInfo {
@@ -60,9 +59,9 @@ h1 {
 }
 
 .infoP {
-        padding-left:30px;
+        padding-left: 30px;
         color: #fff;
-        font-size:18px;
+        font-size: 18px;
 }
 
 h2 {
@@ -72,7 +71,7 @@ h2 {
 
 .codeName {
         text-align: center;
-        font-weight:600;
+        font-weight: 600;
         color: #fff;
         white-space: nowrap;
 }
@@ -121,6 +120,72 @@ a.cta:before {
 
 a.cta:hover:before {
         height: 4px;
+}
+
+#showBox {
+        width: 300px;
+        position: absolute;
+        left: 39%;
+        text-align: center;
+        border: #FEFBFC;
+        border-style: solid;
+        border-width: 2px;
+}
+
+#showCode {
+        font-size: 30px;
+        text-align: center;
+        font-weight: 600;
+        color: #fff;
+}
+
+
+#whatsNext {
+        margin-top:200px;
+        position: relative;
+        border-radius: 4px;
+        background-color: #FEFBFC;
+        border: none;
+        color: #E56399;
+        text-align: center;
+        font-size: 28px;
+        padding: 20px;
+        width: 500px;
+        transition: all 0.5s;
+        cursor: pointer;
+}
+
+#whatsNext span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+}
+
+#whatsNext span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -20px;
+        transition: 0.5s;
+}
+
+#whatsNext:hover span {
+        padding-right: 25px;
+}
+
+#whatsNext:hover span:after {
+        opacity: 1;
+        right: 0;
+}
+
+#showResults {
+        text-align: center;
+        padding-top: 100px;
+        margin-top: 20px;
+        height: 1000px;
+        background-color: #E56399;
 }
 
 .container {

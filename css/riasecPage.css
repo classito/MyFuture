@@ -111,7 +111,7 @@ button {
 }
 
 i {
-  border: solid black;
+  border: solid #A74970;
   border-width: 0 3px 3px 0;
   display: inline-block;
   padding: 3px;
@@ -166,25 +166,40 @@ label:hover {
   cursor: pointer;
   outline: none;
   color: #fff;
-  background-color: #4CAF50;
+  background-color: #E6AC00;
   border: none;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
 
 .btn:hover {
-  background-color: #3e8e41
+  background-color: #E6AC00
 }
 
 .btn:active {
-  background-color: #3e8e41;
+  background-color: #E6AC00;
   box-shadow: 0 5px #666;
   transform: translateY(4px);
 }
 
 #submit {
   border-radius: 4px;
-  background-color: #f4511e;
+  background-color: #1AA3FF;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 500px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  margin-bottom: 90px;
+}
+
+.retakeClass {
+  border-radius: 4px;
+  background-color: #1AA3FF;
   border: none;
   color: #FFFFFF;
   text-align: center;
