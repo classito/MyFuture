@@ -375,22 +375,22 @@ function appendRelatedPathways(RIASECpathName, pathID) {
 
 
 
-function demoAppend(obj) {
+function demoAppend(obj, num) {
     switch (obj) {
       case "NR":
-        appendRelatedPathways("Natural and Resources", "NR")
+        appendRelatedPathways(num + ". Natural and Resources", "NR")
         break;
       case "IET":
-        appendRelatedPathways("IET", "IET")
+        appendRelatedPathways(num + ". IET", "IET")
         break;
       case "AC":
-        appendRelatedPathways("Arts and Communication", "ArtsComm")
+        appendRelatedPathways(num + ". Arts and Communication", "ArtsComm")
         break;
       case "PS":
-        appendRelatedPathways("Public Human Services", "Bus")
+        appendRelatedPathways(num + ". Public and Professional Services", "Bus")
         break;
       case "HS":
-        appendRelatedPathways("Health and Science", "HS")
+        appendRelatedPathways(num + ". Health and Science", "HS")
         break;
     }
 };
@@ -448,9 +448,10 @@ function sortCode() {
 
 var testCode = sortCode();
 
-
+var counter = 1;
 for (var i=0; i<=testCode.length-1; i++) {
   console.log(testCode[i])  
-  demoAppend(testCode[i]);
+  demoAppend(testCode[i], counter);
+  counter++;
 }
 

@@ -18,6 +18,12 @@ body {
   text-decoration: underline;
 }
 
+.userPath {
+  background: white;
+  padding: 10px 30px;
+  border: 1px #eee solid;
+}
+
 #pictureBox {
   display:flex;
   flex-direction: row;
@@ -51,7 +57,6 @@ h2 {
   flex-direction: row;
 }
 .userPath {
-  border-bottom:5px solid black;
   padding:10px;
 }
 
@@ -60,35 +65,27 @@ h2 {
   flex-direction: row;
 }
 
-@media (max-width: 800px) {
-  .flex-container {
-    display: flex;
-    flex-direction: column;
-  }
-  #pathways {
-    height: 50vh;
-    max-width: 800px;
-    background-color: red;
-  }
-  #PathwayInfo {
-    height: 100vh;
-    max-width: 100px;
-    background-color: blue;
-  }
+#pathways {
+  margin-top:30px;
+  height: 35%;
+  width: 65vh;
+  background: white;
+  border: 1px #eee solid;
+
 }
 
-#pathways {
-  height: 100vh;
-  width: 65vh;
-  border-style:solid;
-  border-width:2px;
+h1 {
+    font-weight: 600;
+    font-size: 18px;
+    font-family: 'Open Sans', Courier, monospace;
 }
 
 #PathwayInfo {
-  height: 100vh;
+  margin-top:10px;
+  height: 96vh;
   width: 200vh;
-  border-style:solid;
-  border-width:2px;
+  background: white;
+  padding: 10px 30px;
 }
 
 #riasec {

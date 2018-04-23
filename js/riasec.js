@@ -269,7 +269,7 @@ var RIASEC = {
 				code: "C"
 			},
 			q24: {
-				question: "I pay attention to details <i id='questionIcon' class='mdi mdi-magnify'></i>" ,
+				question: "I pay attention to details <i id='questionIcon' class='mdi mdi-magnify'></i>",
 				state: 24,
 				pos: 3,
 				code: "C"
@@ -296,8 +296,8 @@ var RIASEC = {
 	}
 };
 
-window.onbeforeunload = function() {
-return "Data will be lost if you leave the page, are you sure?";
+window.onbeforeunload = function () {
+	return "Data will be lost if you leave the page, are you sure?";
 };
 
 var counter = 0;
@@ -435,7 +435,29 @@ var currentBoxIndex = [box1, box2, box3, box4, box5, box6];
 
 var counter2 = 0;
 
+
+
+function buttonCheck() {
+	if (counter2 > 1) {
+		document.getElementById("demoTest").style.display = "block"
+	} else {
+		document.getElementById("demoTest").style.display = "none"
+	}
+
+	if (counter2 == 4) {
+		document.getElementById("demoTest2").style.display = "none"
+	} else {
+		document.getElementById("demoTest2").style.display = "block"
+	}
+}
+buttonCheck();
+
 function nextBox() {
+	buttonCheck();
+	if (counter2 >= 0) {
+		document.getElementById("demoTest").style.display = "block"
+	}
+
 	pos = 300;
 
 	if (counter2 <= 4) {
@@ -447,6 +469,7 @@ function nextBox() {
 }
 
 function previousBox() {
+	buttonCheck();
 	pos = 300;
 
 	if (counter2 == 0) {
