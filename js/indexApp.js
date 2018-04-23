@@ -2,7 +2,7 @@ var displayContent //switch to index content after pre-load
 var setMotto = setInterval(MottoChange, 980);
 var MarauderLogoIMG = new Image();
 //image lag solve?
-MarauderLogoIMG.src = '../imgs/WHS_Marauder_Logo.jpg';
+MarauderLogoIMG.src = '../imgs/whs_marauder_logo.jpg';
 MarauderLogoIMG.id = "logo"
 document.getElementById("logoDisp").appendChild(MarauderLogoIMG);
 //new feature. making loading screen appear once. Maybe use cookies to determine if user has seen? and if so, set duration time around 24 hours
@@ -105,14 +105,9 @@ transitionLeft = setTimeout(LogoLeft, 4800); //transition
 
 console.log(document.cookie)
 function displayContentFunc() {
-    if (false) {
         displayContent = setTimeout(showPage, 5500);
-        document.cookie = "preLoad=true;"
-    } else {
-        showPage();
-    }
+    } 
 
-}
 function goToRIASEC() {
     window.location.href = "../pages/riasecPage.html";
 }

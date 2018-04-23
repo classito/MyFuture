@@ -1,6 +1,9 @@
-// use SCSS for boxes
-// auto make the boxes
-//style everything
+//incorporate pretty-checkbox
+//incorporate status-bar
+//make autoscroll better
+
+//check chDemo for updates
+
 var RIASEC = {
 	Realistic: {
 
@@ -9,43 +12,43 @@ var RIASEC = {
 		list: [],
 		questions: {
 			q1: {
-				question: "1. I like to work on cars",
+				question: "I like to work on cars <i id='questionIcon' class='mdi mdi-car-side'></i>",
 				state: 1,
 				pos: 0,
 				code: "R"
 			},
 			q7: {
-				question: "7. I like to build things",
+				question: "I like to build things <i id='questionIcon' class='mdi mdi-hammer'></i>",
 				state: 7,
 				pos: 1,
 				code: "R"
 			},
 			q14: {
-				question: "14. I like to take care of animals",
+				question: "I like to take care of animals <i id='questionIcon' class='mdi mdi-paw'></i>",
 				state: 14,
 				pos: 2,
 				code: "R"
 			},
 			q22: {
-				question: "22. I like putting things together or assembling things",
+				question: "I like putting things together or assembling things <i id='questionIcon' class='mdi mdi-engine'></i>",
 				state: 22,
 				pos: 3,
 				code: "R"
 			},
 			q30: {
-				question: "30. I like to cook",
+				question: "I like to cook <i id='questionIcon' class='mdi mdi-silverware-spoon'></i>",
 				state: 30,
 				pos: 4,
 				code: "R"
 			},
 			q32: {
-				question: "32. I am a practical person",
+				question: "I am a practical person <i id='questionIcon' class='mdi mdi-comment'></i>",
 				state: 32,
 				pos: 5,
 				code: "R"
 			},
 			q37: {
-				question: "37. I like working outdoors",
+				question: "I like working outdoors <i id='questionIcon' class='mdi mdi-nature-people'></i>",
 				state: 37,
 				pos: 6,
 				code: "R"
@@ -58,37 +61,37 @@ var RIASEC = {
 		list: [],
 		questions: {
 			q2: {
-				question: "2. I like to do puzzles",
+				question: "I like to do puzzles <i id='questionIcon' class='mdi mdi-puzzle'></i>",
 				state: 2,
 				pos: 0,
 				code: "I"
 			},
 			q11: {
-				question: "11. I like to do experiments",
+				question: "I like to do experiments <i id='questionIcon' class='mdi mdi-flask'></i>",
 				state: 11,
 				pos: 1,
 				code: "I"
 			},
 			q18: {
-				question: "18. I enjoy science",
+				question: "I enjoy science <i id='questionIcon' class='mdi mdi-atom'></i>",
 				state: 18,
 				pos: 2,
 				code: "I"
 			},
 			q21: {
-				question: "21. I enjoy trying to figure out how things work",
+				question: "I enjoy trying to figure out how things work <i id='questionIcon' class='mdi mdi-cogs'></i>",
 				state: 21,
 				pos: 3,
 				code: "I"
 			},
 			q26: {
-				question: "26. I like to analyze things (problems/ situations)",
+				question: "I like to analyze things (problems/ situations) <i id='questionIcon' class='mdi mdi-comment-question-outline'></i>",
 				state: 26,
 				pos: 4,
 				code: "I"
 			},
 			q39: {
-				question: "39. I'm good at math",
+				question: "I'm good at math <i id='questionIcon' class='mdi mdi-math-compass'></i>",
 				state: 39,
 				pos: 5,
 				code: "I"
@@ -101,43 +104,43 @@ var RIASEC = {
 		list: [],
 		questions: {
 			q3: {
-				question: "3. I'm good at working independently",
+				question: "I'm good at working independently <i id='questionIcon' class='mdi mdi-human-male'></i>",
 				state: 3,
 				pos: 0,
 				code: "A"
 			},
 			q8: {
-				question: "8. I like to read about art and music",
+				question: "I like to read about art and music <i id='questionIcon' class='mdi mdi-music'></i>",
 				state: 8,
 				pos: 1,
 				code: "A"
 			},
 			q17: {
-				question: "17. I enjoy creative writing",
+				question: "I enjoy creative writing <i id='questionIcon' class='mdi mdi-pen'></i>",
 				state: 17,
 				pos: 2,
 				code: "A"
 			},
 			q23: {
-				question: "23. I am a creative person",
+				question: "I am a creative person <i id='questionIcon' class='mdi mdi-human-handsup'></i>",
 				state: 23,
 				pos: 3,
 				code: "A"
 			},
 			q27: {
-				question: "27. I like to play instruments or sing",
+				question: "I like to play instruments or sing <i id='questionIcon' class='mdi mdi-guitar-acoustic'></i>",
 				state: 27,
 				pos: 4,
 				code: "A"
 			},
 			q31: {
-				question: "31. I like acting in plays",
+				question: "I like acting in plays <i id='questionIcon' class='mdi mdi-karate'></i>",
 				state: 31,
 				pos: 5,
 				code: "A"
 			},
 			q41: {
-				question: "41. I like to draw",
+				question: "I like to draw <i id='questionIcon' class='mdi mdi-pencil'></i>",
 				state: 41,
 				pos: 6,
 				code: "A"
@@ -150,43 +153,43 @@ var RIASEC = {
 		list: [],
 		questions: {
 			q4: {
-				question: "4. I like to work in teams",
+				question: "I like to work in teams <i id='questionIcon' class='mdi mdi-account-multiple'></i>",
 				state: 4,
 				pos: 0,
 				code: "S"
 			},
 			q12: {
-				question: "12. I like to teach or train people",
+				question: "I like to teach or train people <i id='questionIcon' class='mdi mdi-teach'></i>",
 				state: 12,
 				pos: 1,
 				code: "S"
 			},
 			q13: {
-				question: "13. I like trying to help people solve their problems",
+				question: "I like trying to help people solve their problems <i id='questionIcon' class='mdi mdi-account-settings-variant'></i>",
 				state: 13,
 				pos: 2,
 				code: "S"
 			},
 			q20: {
-				question: "20. I am interested in healing people",
+				question: "I am interested in healing people <i id='questionIcon' class='mdi mdi-medical-bag'></i>",
 				state: 20,
 				pos: 3,
 				code: "S"
 			},
 			q28: {
-				question: "28. I enjoy learning about other cultures",
+				question: "I enjoy learning about other cultures <i id='questionIcon' class='mdi mdi-human-male-female'></i>",
 				state: 28,
 				pos: 4,
 				code: "S"
 			},
 			q34: {
-				question: "34. I like to get into discussions about issues",
+				question: "I like to get into discussions about issues <i id='questionIcon' class='mdi mdi-alert'></i>",
 				state: 34,
 				pos: 5,
 				code: "S"
 			},
 			q40: {
-				question: "40. I like helping people",
+				question: "I like helping people <i id='questionIcon' class='mdi account-multiple-outline'></i>",
 				state: 40,
 				pos: 6,
 				code: "S"
@@ -199,43 +202,43 @@ var RIASEC = {
 		list: [],
 		questions: {
 			q5: {
-				question: "5. I am an ambitious person, I set goals for myself",
+				question: "I am an ambitious person, I set goals for myself <i id='questionIcon' class='mdi mdi-star'></i>",
 				state: 5,
 				pos: 0,
 				code: "E"
 			},
 			q10: {
-				question: "10. I like to try to influence or persuade people",
+				question: "I like to try to influence or persuade people <i id='questionIcon' class='mdi mdi-account-group'></i>",
 				state: 10,
 				pos: 1,
 				code: "E"
 			},
 			q16: {
-				question: "16. I like selling things",
+				question: "I like selling things <i id='questionIcon' class='mdi mdi-package-variant'></i>",
 				state: 16,
 				pos: 2,
 				code: "E"
 			},
 			q19: {
-				question: "19. I am quick to take on new responsibilities",
+				question: "I am quick to take on new responsibilities <i id='questionIcon' class='mdi mdi-autorenew'></i>",
 				state: 19,
 				pos: 3,
 				code: "E"
 			},
 			q29: {
-				question: "29. I would like to start my own business",
+				question: "I would like to start my own business <i id='questionIcon' class='mdi mdi-domain'></i>",
 				state: 29,
 				pos: 4,
 				code: "E"
 			},
 			q36: {
-				question: "36. I like to lead",
+				question: "I like to lead <i id='questionIcon' class='mdi mdi-human-greeting'></i>",
 				state: 36,
 				pos: 5,
 				code: "E"
 			},
 			q42: {
-				question: "42. I like to give speeches",
+				question: "I like to give speeches <i id='questionIcon' class='mdi mdi-microphone-variant'></i>",
 				state: 42,
 				pos: 6,
 				code: "E"
@@ -248,43 +251,43 @@ var RIASEC = {
 		list: [],
 		questions: {
 			q6: {
-				question: "6. I like to organize things, (files, desks/offices)",
+				question: "I like to organize things (files, desks/offices) <i id='questionIcon' class='mdi mdi-folder-open'></i>",
 				state: 6,
 				pos: 0,
 				code: "C"
 			},
 			q9: {
-				question: "9. I like to have clear instructions to follow",
+				question: "I like to have clear instructions to follow <i id='questionIcon' class='mdi mdi-file-document'></i>",
 				state: 9,
 				pos: 1,
 				code: "C"
 			},
 			q15: {
-				question: "15. I wouldn't mind working 8 hours per day in an office",
+				question: "I wouldn't mind working 8 hours per day in an office <i id='questionIcon' class='mdi mdi-tie'></i>",
 				state: 15,
 				pos: 2,
 				code: "C"
 			},
 			q24: {
-				question: "24. I pay attention to details",
+				question: "I pay attention to details <i id='questionIcon' class='mdi mdi-magnify'></i>" ,
 				state: 24,
 				pos: 3,
 				code: "C"
 			},
 			q25: {
-				question: "25. I like to do filing or typing",
+				question: "I like to do filing or typing <i id='questionIcon' class='mdi mdi-file-document-box'></i>",
 				state: 25,
 				pos: 4,
 				code: "C"
 			},
 			q35: {
-				question: "35. I am good at keeping records of my work",
+				question: "I am good at keeping records of my work <i id='questionIcon' class='mdi mdi-folder-multiple'></i>",
 				state: 35,
 				pos: 5,
 				code: "C"
 			},
 			q38: {
-				question: "38. I would like to work in an office",
+				question: "I would like to work in an office <i id='questionIcon' class='mdi mdi-laptop'></i>",
 				state: 38,
 				pos: 6,
 				code: "C"
@@ -293,22 +296,46 @@ var RIASEC = {
 	}
 };
 
+window.onbeforeunload = function() {
+return "Data will be lost if you leave the page, are you sure?";
+};
+
 var counter = 0;
 var question = [];
 
 function createQuestion(question, id, classCode, qNum) {
 	//contructs layout of question box
+	var iconY = document.createElement("i")
+	iconY.setAttribute("class", "icon mdi mdi-check");
+	var iconN = document.createElement("i");
+	iconN.setAttribute("class", "icon mdi mdi-close");
+	var successDiv = document.createElement("div");
+	successDiv.setAttribute("class", "state p-success")
+	var DangerDiv = document.createElement("div");
+	DangerDiv.setAttribute("class", "state p-danger");
+	var Container = document.createElement("div");
+	Container.setAttribute("class", "InputContainer")
+
+	var AgreeDiv = document.createElement("div");
+	AgreeDiv.setAttribute("id", "YesBox");
+	AgreeDiv.setAttribute("class", "pretty p-icon p-round p-plain p-smooth")
+
+	var DisagreeDiv = document.createElement("div");
+	DisagreeDiv.setAttribute("id", "NoBox");
+	DisagreeDiv.setAttribute("class", "pretty p-icon p-round p-plain p-smooth")
 
 	var PElem = document.createElement("P"); // </br>
 	PElem.innerHTML = question;
 	var breaking = document.createElement("br"); // </br>
 	var fieldset = document.createElement("fieldset"); // <fieldset>
+	var div = document.createElement("div");
 	var label_Yes = document.createElement("label"); // yes <label>
+	label_Yes.innerHTML = " ";
 	var label_No = document.createElement("label"); // no <label>
+	label_No.innerHTML = " ";
 	var input_Yes = document.createElement("input"); // yes <input>
 	var input_No = document.createElement("input"); // no <input>
-	var text_No = document.createTextNode("I Disagree"); //no value
-	var text_Yes = document.createTextNode("I Agree"); //yes value
+
 
 	fieldset.setAttribute("id", "group" + id);
 	fieldset.className += classCode;
@@ -316,18 +343,10 @@ function createQuestion(question, id, classCode, qNum) {
 	fieldset.appendChild(breaking)
 	document.getElementById("questionContainer").appendChild(fieldset);
 
-	input_Yes.setAttribute("qNum", qNum);
-	input_Yes.setAttribute("id", "group" + id);
-	input_Yes.setAttribute("type", "radio");
-	input_Yes.setAttribute("value", "yes");
-	input_Yes.setAttribute("onclick", "changeState(this)");
-	input_Yes.setAttribute("name", "group" + id);
-	input_Yes.setAttribute("class", classCode);
-	document.getElementById("group" + id).appendChild(label_Yes);
-	label_Yes.appendChild(text_Yes);
-	label_Yes.appendChild(input_Yes)
-	document.getElementById("group" + id).appendChild(label_Yes);
-	document.getElementById("group" + id).appendChild(breaking);
+
+
+
+
 
 	input_No.setAttribute("qNum", qNum);
 	input_No.setAttribute("id", "group" + id + "i");
@@ -337,9 +356,28 @@ function createQuestion(question, id, classCode, qNum) {
 	input_No.setAttribute("class", classCode);
 	input_No.setAttribute("name", "group" + id);
 	document.getElementById("group" + id).appendChild(label_No);
-	label_No.appendChild(text_No);
-	label_No.appendChild(input_No);
-	document.getElementById("group" + id).appendChild(label_No);
+	DangerDiv.appendChild(iconN)
+	DangerDiv.appendChild(label_No)
+	DisagreeDiv.appendChild(input_No)
+	DisagreeDiv.appendChild(DangerDiv);
+	Container.appendChild(DisagreeDiv);
+	document.getElementById("group" + id).appendChild(Container);
+	input_Yes.setAttribute("qNum", qNum);
+	input_Yes.setAttribute("id", "group" + id);
+	input_Yes.setAttribute("type", "radio");
+	input_Yes.setAttribute("value", "yes");
+	input_Yes.setAttribute("onclick", "changeState(this)");
+	input_Yes.setAttribute("name", "group" + id);
+	input_Yes.setAttribute("class", classCode);
+	document.getElementById("group" + id).appendChild(label_Yes);
+	successDiv.appendChild(iconY)
+	successDiv.appendChild(label_Yes)
+	AgreeDiv.appendChild(input_Yes)
+	AgreeDiv.appendChild(successDiv);
+	//label_Yes.appendChild(input_Yes)
+	Container.appendChild(AgreeDiv);
+
+
 
 	return fieldset;
 }
@@ -381,37 +419,41 @@ var bttnContainer = document.createElement("div");
 bttnContainer.id = "container";
 
 var box1 = createBox();
-box1.className += " animated rollIn";
+box1.className += " animated FlipInY";
 var box2 = createBox();
-box2.className += " animated slideInDown";
+box2.className += " animated FlipInY";
 var box3 = createBox();
-box3.className += " animated slideInDown";
+box3.className += " animated FlipInY";
 var box4 = createBox();
-box4.className += " animated slideInDown";
+box4.className += " animated FlipInY";
 
 var box5 = createBox();
-box5.className += " animated slideInDown";
+box5.className += " animated FlipInY";
 var box6 = createBox();
-box6.className += " animated slideInDown ";
-var currentBoxIndex= [box1, box2, box3, box4, box5, box6];	
+box6.className += " animated FlipInY ";
+var currentBoxIndex = [box1, box2, box3, box4, box5, box6];
 
 var counter2 = 0;
+
 function nextBox() {
+	pos = 300;
 
 	if (counter2 <= 4) {
 		document.getElementById("questionContainer").innerHTML = "";
-		document.getElementById("questionContainer").appendChild(currentBoxIndex[counter2+1])
+		document.getElementById("questionContainer").appendChild(currentBoxIndex[counter2 + 1])
 		counter2++;
 		console.log(counter2);
 	}
 }
 
 function previousBox() {
+	pos = 300;
+
 	if (counter2 == 0) {
 		console.log("no");
 	} else {
 		document.getElementById("questionContainer").innerHTML = "";
-		document.getElementById("questionContainer").appendChild(currentBoxIndex[counter2-1])
+		document.getElementById("questionContainer").appendChild(currentBoxIndex[counter2 - 1])
 		counter2--;
 	}
 	console.log(counter2);
@@ -456,7 +498,7 @@ function sortAndDeploy() {
 	}
 
 	box2.appendChild(bttnContainer.cloneNode(true));
-	
+
 	for (var l = 0; l <= 6; l++) {
 		box3.appendChild(newArray[2][l])
 	}
@@ -479,7 +521,7 @@ function sortAndDeploy() {
 
 	document.getElementById("questionContainer").appendChild(currentBoxIndex[0]);
 	console.log(questionArray);
-	createButton("submit", "Submit", "AnalyzeRIASEC()", "Submit RIASEC")
+	createButton("submit", "Submit", "AnalyzeRIASEC()", "<span>Submit Riasec</span>")
 }
 
 
@@ -494,7 +536,7 @@ function createButton(id, value, onclick, prompt) {
 }
 
 function ViewResults() {
-	window.location.href = "../pages/output.html";
+	window.location.href = "../pages/chooseOption.html";
 }
 
 function retakeRIASEC() {
@@ -526,8 +568,11 @@ console.log(RIASEC.Realistic.list);
 
 
 
+var pos = 300;
 
 function changeState(thisElem) {
+
+
 	switch (thisElem.className) {
 		case "R":
 			RIASEC.Realistic.list[thisElem.getAttribute("qnum")] = "A"
@@ -560,9 +605,21 @@ function changeState(thisElem) {
 	console.log("S : " + RIASEC.Social.list);
 	console.log("E : " + RIASEC.Enterprising.list);
 	console.log("C : " + RIASEC.Conventional.list);
-
-
+	console.log(thisElem.id)
+	if (thisElem.id === "group7" || thisElem.id === "group14" || thisElem.id === "group21" || thisElem.id === "group28" || thisElem.id === "group35") {
+		nextBox();
+		$('html, body').animate({
+			scrollTop: 0
+		}, 800);
+	} else {
+		$('html, body').animate({
+			scrollTop: pos
+		}, 800);
+		pos += 150;
+	}
 }
+
+
 
 function changeState2(thisElem) {
 	switch (thisElem.className) {
@@ -597,6 +654,21 @@ function changeState2(thisElem) {
 	console.log("S : " + RIASEC.Social.list);
 	console.log("E : " + RIASEC.Enterprising.list);
 	console.log("C : " + RIASEC.Conventional.list);
+	console.log(thisElem.id)
+
+	if (thisElem.id === "group7i" || thisElem.id === "group14i" || thisElem.id === "group21i" || thisElem.id === "group28i" || thisElem.id === "group35i") {
+		nextBox();
+		$('html, body').animate({
+			scrollTop: 0
+		}, 800);
+	} else {
+		$('html, body').animate({
+			scrollTop: pos
+		}, 800);
+		pos += 150;
+	}
+
+
 }
 
 
@@ -610,8 +682,11 @@ function checkMissing(riasecObj) {
 	for (var i in riasecObj) {
 		for (var k in riasecObj[i].list) {
 			if (riasecObj[i].list[k] === "M") {
-				alert("Please fill in every questions");
-				return false
+				if (confirm("You haven't completed RIASEC! the more you answer the more accurate your data will be. Are you sure you want to continue?")) {
+					return true;
+				} else {
+					return false;
+				}
 			}
 		}
 		return true;
@@ -657,8 +732,8 @@ function AnalyzeRIASEC() {
 		console.log("Interest_Code");
 		alert(op) //grabs array
 		console.log(ipsum);
-		document.cookie = "RIASEC_CODE=" + op + ";"
-		document.location.href = '../pages/output.html';
+		document.cookie = op;
+		document.location.href = '../pages/chooseOption.html';
 	}
 
 }
