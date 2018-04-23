@@ -26,30 +26,35 @@ var pathwayList = {
 
 var pathWayInfoDB = {
   artsNStuff: {
-    about: "About : Students are inspired to think creative and be intellectual. You brainstorm with ideas and use it such in a way that dazzles people",
+    about: 'People who like to work with "ideas and things." They tend to be "creative, open, inventive, original, perceptive, sensitive, independent and emotional." They rebel against "structure and rules" and dislike "tasks involving people or physical skills."',
     classes: ["Artist", "Graphic Designer", "Digital Media Tech-Web Designer", "Digital Media Tech-Broadcaster", "Broadcast Media", "Fashion Designer", "Fashion Merchandising"],
     pictures: ["", "", ""]
   },
   IETStuff: {
-    about: "Industrial and Engineering pathway provides student a way to inspire creativity. It teaches students how to construct and build projects from scratch.",
+    about: 'People who prefer "to think and observe rather than act," and "to organize and understand information rather than to persuade." They are also drawn to working with "data" over working with "people."',
     classes: ["Automotive Tech", "Design Tech", "3D Solid Modeling", "Architectural & Civil Engineering", "Electronic Tech", "Metals Tech", "Building and Construction", , "Computers Systems", "Computer Programming", "Networking Architectural"],
     pictures: ["", "", ""]
   },
   Business: {
-    about: "You learn how the real world works. You learn how to generate money and co operate with society such as businesses and the government",
+    about: 'People who like to work with "people" and who "seem to satisfy their needs in teaching or helping situations." They tend to be "drawn more to seek close relationships with other people and are less apt to want to be really intellectual or physical."',
     classes: ["Marketing", "Accounting", "Financing", "Hospitality & Tourism", "Entrepreneurship", "Criminology", "Elementary Education", "Second Education", "Culinary", "Baking and Pastry Arts", "Hotel Operations"],
     pictures: ["", "", ""]
   },
   NaturalRS: {
-    about: "Natural Reasources teaches you how to be productive on being greener. You learn the science in the real world and how to make the world a better place",
+    about: 'People who like to work with "things" and are "assertive and competitive." They tend to focus on "activities requiring motor coordination, skill and strength" and "prefer to work a problem through by doing something, rather than talking about it, or sitting and thinking about it."',
     classes: "Classes : science, plantrophy, zoology, tree class",
     pictures: ["", "", ""]
   },
 
   HealthAndScience: {
-    about: "Health and Science teaches you the fundamentals of science and health. It teaches student how the body works, providing students a chance to know more within ourselves.",
+    about: 'People who like to work with "people and data." They tend to be "good talkers, and use this skill to lead or persuade others." They are also drawn to high power situations, valuing "power, money and status."',
     classes: ["Health Services Core", "Clinical Health", "Biotechnology", "Health and Nutrition", "Health and Nutrition 2", "Academy of Health & Sciences Capstone", "STEM Capstone"],
-    pictures: ["", ".", ""]
+    pictures: ["", "", ""]
+  },
+  PS: {
+    about: 'People who prefer to work with "data" and who "like rules and regulations and emphasize self-control...they like structure and order, and dislike unstructured or unclear work and interpersonal situations." They also value "power" and "status."',
+    classes: ["Health Services Core", "Clinical Health", "Biotechnology", "Health and Nutrition", "Health and Nutrition 2", "Academy of Health & Sciences Capstone", "STEM Capstone"],
+    pictures: ["", "", ""]
   }
 }
 
@@ -62,17 +67,8 @@ function testapp(val) {
     document.getElementById("about").innerHTML = pathWayInfoDB.NaturalRS.about
     console.log(pathWayInfoDB.NaturalRS.classes);
     document.getElementById("classes").innerHTML = pathWayInfoDB.NaturalRS.classes
-    var y = document.getElementById("pictureBox");
-    var aNode = y.childNodes[1];
-    var aNode2 = y.childNodes[3];
-    var aNode3 = y.childNodes[5];
-    aNode.appendChild(img1);
-    aNode2.innerHTML = pathWayInfoDB.NaturalRS.pictures[1];
-    aNode3.innerHTML = pathWayInfoDB.NaturalRS.pictures[2];
-
-
     var OccDiv = document.createElement("DIV");
-    var str = '<ul>'
+    var str = '<ul>';
     pathWayInfoDB.NaturalRS.classes.forEach(function (occ) {
       str += '<li>' + occ + '</li>';
     });
@@ -80,9 +76,11 @@ function testapp(val) {
     str += '</ul>';
 
     OccDiv.innerHTML = str;
+    var OccTitle = document.createElement('h3')
+    OccTitle.innerHTML = "Related Occupations";
+    OccDiv.innerHTML = str;
+    document.getElementById("classes").appendChild(OccTitle);
     document.getElementById("classes").appendChild(OccDiv);
-
-
 
     document.getElementById("MoreInfoBox").setAttribute("name", val);
 
@@ -101,16 +99,12 @@ function testapp(val) {
     });
 
     str += '</ul>';
-
     OccDiv.innerHTML = str;
+    var OccTitle = document.createElement('h3')
+    OccTitle.innerHTML = "Related Occupations";
+    OccDiv.innerHTML = str;
+    document.getElementById("classes").appendChild(OccTitle);
     document.getElementById("classes").appendChild(OccDiv);
-    var y = document.getElementById("pictureBox");
-    var aNode = y.childNodes[1];
-    var aNode2 = y.childNodes[3];
-    var aNode3 = y.childNodes[5];
-    aNode.innerHTML = pathWayInfoDB.artsNStuff.pictures[0];
-    aNode2.innerHTML = pathWayInfoDB.artsNStuff.pictures[1];
-    aNode3.innerHTML = pathWayInfoDB.artsNStuff.pictures[2];
     document.getElementById("MoreInfoBox").setAttribute("name", val);
   } else if (val === "IET") {
     document.getElementById("classes").innerHTML = "";
@@ -127,18 +121,11 @@ function testapp(val) {
 
     str += '</ul>';
 
+    var OccTitle = document.createElement('h3')
+    OccTitle.innerHTML = "Related Occupations";
     OccDiv.innerHTML = str;
+    document.getElementById("classes").appendChild(OccTitle);
     document.getElementById("classes").appendChild(OccDiv);
-
-
-    var y = document.getElementById("pictureBox");
-    var y = document.getElementById("pictureBox");
-    var aNode = y.childNodes[1];
-    var aNode2 = y.childNodes[3];
-    var aNode3 = y.childNodes[5];
-    aNode.innerHTML = pathWayInfoDB.IETStuff.pictures[0];
-    aNode2.innerHTML = pathWayInfoDB.IETStuff.pictures[1];
-    aNode3.innerHTML = pathWayInfoDB.IETStuff.pictures[2];
     document.getElementById("MoreInfoBox").setAttribute("name", val);
   } else if (val === "Bus") {
     document.getElementById("classes").innerHTML = "";
@@ -152,16 +139,11 @@ function testapp(val) {
     });
 
     str += '</ul>';
-
+    var OccTitle = document.createElement('h3')
+    OccTitle.innerHTML = "Related Occupations";
     OccDiv.innerHTML = str;
+    document.getElementById("classes").appendChild(OccTitle);
     document.getElementById("classes").appendChild(OccDiv);
-    var y = document.getElementById("pictureBox");
-    var aNode = y.childNodes[1];
-    var aNode2 = y.childNodes[3];
-    var aNode3 = y.childNodes[5];
-    aNode.innerHTML = pathWayInfoDB.Business.pictures[0];
-    aNode2.innerHTML = pathWayInfoDB.Business.pictures[1];
-    aNode3.innerHTML = pathWayInfoDB.Business.pictures[2];
     document.getElementById("MoreInfoBox").setAttribute("name", val);
   } else if (val === "HS") {
     document.getElementById("classes").innerHTML = "";
@@ -176,22 +158,30 @@ function testapp(val) {
 
     str += '</ul>';
 
+    var OccTitle = document.createElement('h3')
+    OccTitle.innerHTML = "Related Occupations";
     OccDiv.innerHTML = str;
+    document.getElementById("classes").appendChild(OccTitle);
     document.getElementById("classes").appendChild(OccDiv);
+    console.log(OccDiv);
+    document.getElementById("MoreInfoBox").setAttribute("name", val);
+  } else if (val === "PS") {
+    document.getElementById("classes").innerHTML = "";
+    document.getElementById("academyName").innerHTML = "Conventional"
+    document.getElementById("about").innerHTML = pathWayInfoDB.HealthAndScience.about
 
+    var OccDiv = document.createElement("DIV");
+    var str = '<ul>'
+    pathWayInfoDB.HealthAndScience.classes.forEach(function (occ) {
+      str += '<li>' + occ + '</li>';
+    });
 
-
-    var y = document.getElementById("pictureBox");
-    var aNode = y.childNodes[1];
-    var aNode2 = y.childNodes[3];
-    var aNode3 = y.childNodes[5];
-
-    img_Tag1.setAttribute("src", pathWayInfoDB.HealthAndScience.pictures[0]);
-    aNode.appendChild(img_Tag1);
-    img_Tag2.setAttribute("src", pathWayInfoDB.HealthAndScience.pictures[1]);
-    aNode2.append(img_Tag2);
-    img_Tag3.setAttribute("src", pathWayInfoDB.HealthAndScience.pictures[2]);
-    aNode3.appendChild(img_Tag3);
+    str += '</ul>';
+    var OccTitle = document.createElement('h3')
+    OccTitle.innerHTML = "Related Occupations";
+    OccDiv.innerHTML = str;
+    document.getElementById("classes").appendChild(OccTitle);
+    document.getElementById("classes").appendChild(OccDiv);
     document.getElementById("MoreInfoBox").setAttribute("name", val);
   }
 }
@@ -230,7 +220,7 @@ function demoAppend(obj) {
       appendRelatedPathways("Enterprising", "HS")
       break;
     case "C":
-      appendRelatedPathways("Conventional", "HS")
+      appendRelatedPathways("Conventional", "PS")
       break;
   }
 };
