@@ -2,7 +2,8 @@ $l = $('.left');
 $r = $('.right');
 
 
-
+var cat = localStorage.getItem("myCat");
+console.log(cat);
 var code = document.cookie.split('');
 document.getElementById('showMeCode').innerHTML = code[0] + ' ' + code[1] + ' ' + code[2] //eg R I A
 

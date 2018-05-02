@@ -14,3 +14,12 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+
+var cat = localStorage.getItem("Realistic");
+alert('test');
+console.log(cat);
+
+if (cat[0] === "A") {
+    document.getElementById('autos').style.color="blue";
+}

@@ -27,7 +27,7 @@ var pathwayList = {
 var pathWayInfoDB = {
   artsNStuff: {
     about: 'People who like to work with "ideas and things." They tend to be "creative, open, inventive, original, perceptive, sensitive, independent and emotional." They rebel against "structure and rules" and dislike "tasks involving people or physical skills."',
-    classes: ["Artist", "Graphic Designer", "Digital Media Tech-Web Designer", "Digital Media Tech-Broadcaster", "Broadcast Media", "Fashion Designer", "Fashion Merchandising"],
+    classes: ["Web Designer", "Artist", "Graphic Designer", "Digital Media Tech-Web Designer", "Digital Media Tech-Broadcaster", "Broadcast Media", "Fashion Designer", "Fashion Merchandising"],
     pictures: ["", "", ""]
   },
   IETStuff: {
