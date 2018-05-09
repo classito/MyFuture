@@ -357,3 +357,7 @@ a.tesButton {
 #lastP {
   margin-bottom: 50px;
 }  
+
+body {
+  font-family: "Trebuchet MS";
+}
