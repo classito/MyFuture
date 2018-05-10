@@ -41,10 +41,11 @@
     padding: 0px 12px;
     width: 70%;
     border-left: none;
-    height: 620px;
+    height: 93vh;
     overflow: scroll;
+    overflow-x: hidden;
+    font-family: "Trebuchet MS"; 
 }
-
 
 
 
