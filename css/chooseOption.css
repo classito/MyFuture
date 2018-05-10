@@ -47,6 +47,10 @@ body {
         left: 63.4%;
 }
 
+p.infoP {
+        font-family: "Trebuchet MS";
+}
+
 h1 {
         color: #fff;
         position: relative;
@@ -63,6 +67,7 @@ h1 {
         color: #fff;
         font-size: 18px;
 }
+
 
 h2 {
         color: #fff;
@@ -153,6 +158,7 @@ a.cta:hover:before {
         width: 500px;
         transition: all 0.5s;
         cursor: pointer;
+        font-family: "Trebuchet MS";
 }
 
 #whatsNext span {
