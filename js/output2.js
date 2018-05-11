@@ -147,7 +147,7 @@ function testapp(val) {
     document.getElementById("MoreInfoBox").setAttribute("name", val);
   } else if (val === "HS") {
     document.getElementById("classes").innerHTML = "";
-    document.getElementById("academyName").innerHTML = "Invistigative"
+    document.getElementById("academyName").innerHTML = "Enterprising"
     document.getElementById("about").innerHTML = pathWayInfoDB.HealthAndScience.about
 
     var OccDiv = document.createElement("DIV");
