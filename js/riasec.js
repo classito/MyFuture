@@ -765,8 +765,8 @@ function AnalyzeRIASEC() {
 		}
 
 
+		localStorage.setItem("R", RIASEC.Realistic.list);
 		console.log("Interest_Code");
-		alert(op) //grabs array
 		console.log(ipsum);
 		document.cookie = op;
 		document.location.href = '../pages/chooseOption.html';
