@@ -195,8 +195,8 @@ var pathWayInfoDB = {
   }, 
   NaturalRS: {
     about: "Natural Reasources teaches you how to be productive on being greener. You learn the science in the real world and how to make the world a better place",
-    classes: "Classes : science, plantrophy, zoology, tree class",
-    pictures : ["", "", ""]
+    classes: ["Health Services Core - University of Hawaii", "Clinical Health - Leeward Communtiy College", "Biotechnology - Windward Community College", "Health and Nutrition - Kauai Community College", "Health and Nutrition 2 - Leeward Community College", "Academy of Health & Sciences Capstone - University Of Hawaii"],
+    pictures : ["../imgs/Health_Science.jpg", "../imgs/Nurse.jpg", "../imgs/scientist.jpg"]
   },
 
   HealthAndScience: {
@@ -239,11 +239,8 @@ function testapp(val) {
   }); 
 
   str += '</ul>';
-
   OccDiv.innerHTML = str;
   document.getElementById("classes").appendChild(OccDiv);
-
-
 
     document.getElementById("MoreInfoBox").setAttribute("name", val);
 

@@ -42,7 +42,7 @@ var pathWayInfoDB = {
   },
   NaturalRS: {
     about: 'People who like to work with "things" and are "assertive and competitive." They tend to focus on "activities requiring motor coordination, skill and strength" and "prefer to work a problem through by doing something, rather than talking about it, or sitting and thinking about it."',
-    classes: "Classes : science, plantrophy, zoology, tree class",
+    classes: ["Biology", "AP Biology", "Biotechnology", "Health and Nutrition", "Academy of Natural Science Capstone"],
     pictures: ["", "", ""]
   },
 
