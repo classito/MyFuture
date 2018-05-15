@@ -178,29 +178,29 @@ keyValues.sort(function compare(kv1, kv2) {
 
 var pathWayInfoDB = {
   artsNStuff: {
-    about: "About : Students are inspired to think creative and be intellectual. You brainstorm with ideas and use it such in a way that dazzles people",
+    about: "The Arts and Communication Pathway nurtures individual and professional success by providing students with experiences, knowledge, and skills using principles of design in the visual and performing arts.",
     classes: ["Artist - Hawaii Community College", "Graphic Designer - Honolulu Community College", "Digital Media Tech-Web Designer - Hawaii Community College", "Digital Media Tech-Broadcaster - Hawaii Community College", "Broadcast Media - Hawaii Community College", "Fashion Designer - Hawaii Community College", "Fashion Merchandising - Hawaii Community College"],
     pictures : ["", "", ""]
   },
   IETStuff: {
-    about: "Industrial and Engineering pathway provides student a way to inspire creativity. It teaches students how to construct and build projects from scratch.",
+    about: "Industrial and Engineering pathway provides student a way to inspire creativity. It teaches students how to construct and build projects from scratch. The IET Pathway prepares students for the technological workforce community by fostering: Innovation, Reliabilty, and Integrity.",
     classes: ["Automotive Tech - Kauai Community College", "Design Tech - UH","3D Solid Modeling - UH", "Architectural & Civil Engineering - University of Hawaii West Ohau", "Electronic Tech - BYUH", "Metals Tech - HCC", "Building and Construction - HPA",
     , "Computers Systems", "Computer Programming", "Networking Architectural"],
     pictures : ["", "", ""]
   }, 
   Business: {
-    about: "You learn how the real world works. You learn how to generate money and co operate with society such as businesses and the government",
+    about: "You learn how the real world works. You learn how to generate money and co operate with society such as businesses and the government. The Vision of this College and Career Pathway is for Students to gain hands on experience in the field they are interested in, basic information and skills, and an awareness of the expectations of the occupations in this Pathway.",
     classes: ["Marketing - HPA", "Accounting - HPA", "Financing - HCC", "Hospitality & Tourism - Leeward Communtiy College", "Entrepreneurship - Kauai Community College", "Criminology - University of Hawaii", "Elementary Education - Chaminade University", "Second Education - LCC", "Culinary - UH","Baking and Pastry Arts - HCC", "Hotel Operations - HU"],
     pictures : ["", "", ""]
   }, 
   NaturalRS: {
-    about: "Natural Reasources teaches you how to be productive on being greener. You learn the science in the real world and how to make the world a better place",
+    about: "The Academy of Natural Resources prepares all students to become environmentally conscious citizens who practice good environmental stewardship throughour their lifetime and become contributors to a sustainable world.",
     classes: ["Health Services Core - University of Hawaii", "Clinical Health - Leeward Communtiy College", "Biotechnology - Windward Community College", "Health and Nutrition - Kauai Community College", "Health and Nutrition 2 - Leeward Community College", "Academy of Health & Sciences Capstone - University Of Hawaii"],
     pictures : ["../imgs/Health_Science.jpg", "../imgs/Nurse.jpg", "../imgs/scientist.jpg"]
   },
 
   HealthAndScience: {
-    about: "Health and Science teaches you the fundamentals of science and health. It teaches student how the body works, providing students a chance to know more within ourselves.",
+    about: "Health & Sciences Academy is to create a nurturing environment that encourages high expectations for success through relevant and rigorous interdisciplinary learning experiences as it prepares all students for college and career success.",
     classes:["Health Services Core - University of Hawaii", "Clinical Health - Leeward Communtiy College", "Biotechnology - Windward Community College", "Health and Nutrition - Kauai Community College", "Health and Nutrition 2 - Leeward Community College", "Academy of Health & Sciences Capstone - University Of Hawaii"],
     pictures : ["../imgs/Health_Science.jpg", "../imgs/Nurse.jpg", "../imgs/scientist.jpg"]
   }
