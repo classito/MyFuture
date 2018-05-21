@@ -116,3 +116,7 @@ h1{
 mark{
     background-color: #cc9900;
 }
+
+body {
+  font-family: "Trebuchet MS";
+}

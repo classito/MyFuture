@@ -775,6 +775,7 @@ function AnalyzeRIASEC() {
 		}
 
 
+		localStorage.setItem("R", RIASEC.Realistic.list);
 		console.log("Interest_Code");
 		console.log(ipsum);
 		localStorage.setItem('Realistic', RIASEC.Realistic.list);

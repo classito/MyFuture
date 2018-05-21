@@ -16,10 +16,12 @@ function openCity(evt, cityName) {
 document.getElementById("defaultOpen").click();
 
 
-var cat = localStorage.getItem("Realistic");
-alert('test');
-console.log(cat);
+var data = localStorage.getItem("R");
 
-if (cat[0] === "A") {
-    document.getElementById('autos').style.color="blue";
+if (data[0] === "A") {
+    var test = document.createElement("p");
+    test.innerHTML = "Automotive Tech"
+    document.getElementById("auto").style.color="gold";
+    document.getElementById("rec").appendChild(test);
 }
+
