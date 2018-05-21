@@ -1,6 +1,14 @@
 * {box-sizing: border-box}
 
 
+h4 {
+    text-align: center;
+}
+
+#rec {
+    text-align: center;
+}
+
 /* Style the tab */
 .tab {
     float: left;
@@ -41,12 +49,11 @@
     padding: 0px 12px;
     width: 70%;
     border-left: none;
-    height: 620px;
+    height: 93vh;
     overflow: scroll;
+    overflow-x: hidden;
+    font-family: "Trebuchet MS"; 
 }
-
-
-
 
 /*Fade Animation (w3schools) */
 

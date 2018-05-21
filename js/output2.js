@@ -27,33 +27,34 @@ var pathwayList = {
 var pathWayInfoDB = {
   artsNStuff: {
     about: 'People who like to work with "ideas and things." They tend to be "creative, open, inventive, original, perceptive, sensitive, independent and emotional." They rebel against "structure and rules" and dislike "tasks involving people or physical skills."',
-    classes: ["Web Designer", "Artist", "Graphic Designer", "Digital Media Tech-Web Designer", "Digital Media Tech-Broadcaster", "Broadcast Media", "Fashion Designer", "Fashion Merchandising"],
+
+    classes: ["Artist", "Graphic Designer", "Digital Media Tech-Web Designer", "Digital Media Tech-Broadcaster", "Broadcast Media", "Fashion Designer", "Fashion Merchandising", "AOE- 3D Solid Modeling", "Photography", "Electronics", "Building and Construction", "Cyber Security"],
     pictures: ["", "", ""]
   },
   IETStuff: {
     about: 'People who prefer "to think and observe rather than act," and "to organize and understand information rather than to persuade." They are also drawn to working with "data" over working with "people."',
-    classes: ["Automotive Tech", "Design Tech", "3D Solid Modeling", "Architectural & Civil Engineering", "Electronic Tech", "Metals Tech", "Building and Construction", , "Computers Systems", "Computer Programming", "Networking Architectural"],
+    classes: ["Automotive Tech", "Design Tech", "3D Solid Modeling", "Architectural & Civil Engineering", "Electronic Tech", "Metals Tech", "Building and Construction", , "Computers Systems", "Computer Programming", "Networking Architectural", "Electronic Tech"],
     pictures: ["", "", ""]
   },
   Business: {
     about: 'People who like to work with "people" and who "seem to satisfy their needs in teaching or helping situations." They tend to be "drawn more to seek close relationships with other people and are less apt to want to be really intellectual or physical."',
-    classes: ["Marketing", "Accounting", "Financing", "Hospitality & Tourism", "Entrepreneurship", "Criminology", "Elementary Education", "Second Education", "Culinary", "Baking and Pastry Arts", "Hotel Operations"],
+    classes: ["Marketing", "Accounting", "Financing", "Hospitality & Tourism", "Entrepreneurship", "Criminology", "Elementary Education", "Second Education", "Culinary", "Baking and Pastry Arts", "Hotel Operations", "Environmental Resources Management", "Beg Wlg for Travel & Tourism A and B", "Marketing"],
     pictures: ["", "", ""]
   },
   NaturalRS: {
     about: 'People who like to work with "things" and are "assertive and competitive." They tend to focus on "activities requiring motor coordination, skill and strength" and "prefer to work a problem through by doing something, rather than talking about it, or sitting and thinking about it."',
-    classes: "Classes : science, plantrophy, zoology, tree class",
+    classes: ["Biology", "AP Biology", "Biotechnology", "Health and Nutrition", "Academy of Natural Science Capstone","Culinary", "Automotive", "Entrepreneurship", "Natural Resources Production", "Coding", "Cyber-Security", "A+ Certification 2: Computers Systems","Networking Fundamentals & Local Area Networks"],
     pictures: ["", "", ""]
   },
 
   HealthAndScience: {
     about: 'People who like to work with "people and data." They tend to be "good talkers, and use this skill to lead or persuade others." They are also drawn to high power situations, valuing "power, money and status."',
-    classes: ["Health Services Core", "Clinical Health", "Biotechnology", "Health and Nutrition", "Health and Nutrition 2", "Academy of Health & Sciences Capstone", "STEM Capstone"],
+    classes: ["Health Services Core", "Clinical Health", "Biotechnology", "Health and Nutrition", "Health and Nutrition 2", "Academy of Health & Sciences Capstone", "STEM Capstone", "Entrepreneurship", "Economics", "Financial Literacy", "Environmental Resources Management"],
     pictures: ["", "", ""]
   },
   PS: {
     about: 'People who prefer to work with "data" and who "like rules and regulations and emphasize self-control...they like structure and order, and dislike unstructured or unclear work and interpersonal situations." They also value "power" and "status."',
-    classes: ["Health Services Core", "Clinical Health", "Biotechnology", "Health and Nutrition", "Health and Nutrition 2", "Academy of Health & Sciences Capstone", "STEM Capstone"],
+    classes: ["Health Services Core", "Clinical Health", "Biotechnology", "Health and Nutrition", "Health and Nutrition 2", "Academy of Health & Sciences Capstone", "STEM Capstone", "Computing: Tools for Info Age", "Natural Resources Business Development", "Broadcast Media"],
     pictures: ["", "", ""]
   }
 }
@@ -147,7 +148,7 @@ function testapp(val) {
     document.getElementById("MoreInfoBox").setAttribute("name", val);
   } else if (val === "HS") {
     document.getElementById("classes").innerHTML = "";
-    document.getElementById("academyName").innerHTML = "Invistigative"
+    document.getElementById("academyName").innerHTML = "Enterprising"
     document.getElementById("about").innerHTML = pathWayInfoDB.HealthAndScience.about
 
     var OccDiv = document.createElement("DIV");
