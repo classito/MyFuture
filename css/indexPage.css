@@ -10,6 +10,14 @@ h4 {
 #Riasec_Info {
     margin-top:150px;
 }
+
+#logohead {
+        background-image: url("../imgs/WHS_Logo.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
 #main {
     height: 80%;
 }

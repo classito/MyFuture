@@ -98,10 +98,6 @@ var user_SCORE = {
 }
 
 testValue = document.cookie.split("");
-
-function parseCookie() {
-
-}
 console.log(document.cookie);
 
 
