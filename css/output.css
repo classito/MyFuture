@@ -9,6 +9,13 @@ body {
   background-color: blue;
 }
 
+.circle {
+  width:50px;
+  height:50px;
+  border-radius: 100%;
+  background-color: red;
+}
+
 #interestCode {
   letter-spacing: 5px;
   text-decoration: underline;
@@ -136,11 +143,18 @@ h1 {
   padding-top: 250px;
   text-align: center;
 }
+<<<<<<< HEAD
 
+=======
+>>>>>>> c38ea64137d142290a8a966a3ffb98b249d65a79
 p#about {
   font-family: "Trebuchet MS";
 }
 
 p#classes {
   font-family: "Trebuchet MS";
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> c38ea64137d142290a8a966a3ffb98b249d65a79

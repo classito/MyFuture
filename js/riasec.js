@@ -4,6 +4,7 @@
 
 //check chDemo for updates
 
+
 var RIASEC = {
 	Realistic: {
 
@@ -452,7 +453,16 @@ function buttonCheck() {
 }
 buttonCheck();
 
+var progressStat = 0;
+var pBox1 = document.getElementById('progressBox1');
+var pBox2 = document.getElementById('progressBox2');
+var pBox3 = document.getElementById('progressBox3');
+var pBox4 = document.getElementById('progressBox4');
+var pBox5 = document.getElementById('progressBox5');
+var progressBoxes = [pBox1, pBox2, pBox3, pBox4, pBox5];
 function nextBox() {
+	progressBoxes[progressStat].style.color = "yellow";
+	progressStat +=1;
 	buttonCheck();
 	if (counter2 >= 0) {
 		document.getElementById("demoTest").style.display = "block"
@@ -765,9 +775,16 @@ function AnalyzeRIASEC() {
 		}
 
 
+		localStorage.setItem("R", RIASEC.Realistic.list);
 		console.log("Interest_Code");
-		alert(op) //grabs array
 		console.log(ipsum);
+		localStorage.setItem('Realistic', RIASEC.Realistic.list);
+		localStorage.setItem('Investigative', RIASEC.Investigative.list);
+		localStorage.setItem('Artistic', RIASEC.Artistic.list);
+		localStorage.setItem('Social', RIASEC.Social.list);
+		localStorage.setItem('Enterprising', RIASEC.Enterprising.list);
+		localStorage.setItem('Conventional', RIASEC.Conventional.list);
+
 		document.cookie = op;
 		document.location.href = '../pages/chooseOption.html';
 	}
