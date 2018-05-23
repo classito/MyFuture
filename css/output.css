@@ -136,3 +136,11 @@ h1 {
   padding-top: 250px;
   text-align: center;
 }
+
+p#about {
+  font-family: "Trebuchet MS";
+}
+
+p#classes {
+  font-family: "Trebuchet MS";
+}
