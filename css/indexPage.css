@@ -10,6 +10,14 @@ h4 {
 #Riasec_Info {
     margin-top:150px;
 }
+
+#logohead {
+        background-image: url("../imgs/WHS_Logo.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
 #main {
     height: 80%;
 }
@@ -211,148 +219,148 @@ img {
 }
 
 .bundle {
-  height: 50vh;
-  overflow-x: hidden;
-  overflow-y: auto;
-  text-align: left;
-  background-image: url(http://www.self-directed-search.com/portals/4/RIASEC_graphic_just_letters-300px.png);
-  background-repeat: no-repeat;
-  background-position: left;
-  width: 70vw;
-  margin-left: auto;
-  margin-right: auto;
+
+ height: 50vh;
+ overflow-x: hidden;
+ overflow-y: auto;
+ text-align: left;
+ background-image: url(http://www.self-directed-search.com/portals/4/RIASEC_graphic_just_letters-300px.png
+);
+ background-repeat: no-repeat;
+ background-position: left;
+ width: 70vw;
+ margin-left: auto;
+ margin-right: auto;
+
+ font-family: "Trebuchet MS";
 }
 
 .slide1 {
-  height: 5vh;
-  background-color: none ;
-  padding-left: 320px;
+ height: 5vh;
+ background-color: none ;
+ padding-left: 320px;
 }
 
 .slide1 h1 {
-  color: red;
-  margin-bottom: 0px;
+ color: red;
+ margin-bottom: 0px;
 }
 
 .slide1 p {
-  margin-top: 0px;
-  
+ margin-top: 0px;
+ 
 }
 
 .slide2 {
-  height: 5vh;
-  background-color: none ;
-  padding-left: 320px;
+ height: 5vh;
+ background-color: none ;
+ padding-left: 320px;
 }
 
 .slide2 h1 {
-  color: #F7A748;
-  margin-bottom: 0px;
+ color: #F7A748;
+ margin-bottom: 0px;
+  
+  
 }
 
 
 .slide2 p {
-  margin-top: 0px;
-  
+ margin-top: 0px;
+ 
 }
 
 .slide3 {
-  height: 5vh;
-  background-color: none ;
-  padding-left: 320px;
+ height: 5vh;
+ background-color: none ;
+ padding-left: 320px;
 }
 
 .slide3 h1 {
-  color: #FFDA45;
-  margin-bottom: 0px;
-}
-
-.slide3 p {
-  margin-top: 0px;
-  
-}
-
-.slide4 {
-  height: 5vh;
-  background-color: none ;
-  padding-left: 320px;
-} 
-
-.slide4 h1 {
-  color: #4D9851;
-  margin-bottom: 0px;
-}
-
-.slide4 p {
-  margin-top: 0px;
-  
-}
-
-.slide5 {
-  height: 5vh;
-  background-color: none ;
-  padding-left: 320px;
-}
-
-.slide5 h1 {
-  color: #4692E7;
-  margin-bottom: 0px;
-}
-
-.slide5 p {
-  margin-top: 0px;
-  m
-}
-
-.slide6 {
-  height: 5vh;
-  background-color: none ;
-  padding-left: 320px;
-}
-
-.slide6 h1{
-  color: #A68FF7;
+ color: #FFDA45;
  margin-bottom: 0px;
 }
 
+.slide3 p {
+ margin-top: 0px;
+ 
+}
+
+.slide4 {
+ height: 5vh;
+ background-color: none ;
+ padding-left: 320px;
+}
+
+.slide4 h1 {
+ color: #4D9851;
+ margin-bottom: 0px;
+}
+
+.slide4 p {
+ margin-top: 0px;
+ 
+}
+
+.slide5 {
+ height: 5vh;
+ background-color: none ;
+ padding-left: 320px;
+}
+
+.slide5 h1 {
+ color: #4692E7;
+ margin-bottom: 0px;
+}
+
+.slide5 p {
+ margin-top: 0px;
+ m
+}
+
+.slide6 {
+ height: 5vh;
+ background-color: none ;
+ padding-left: 320px;
+}
+
+.slide6 h1{
+ color: #A68FF7;
+margin-bottom: 0px;
+}
+
 .slide6 p {
-  margin-top: 0px;
+ margin-top: 0px;
 
 }
 /*
 .slide1 h1,p {
-  background-color: white;
-}
-.slide2 h1 {
-  background-color: white;
-}
-.slide3 h1 {
-  background-color: white;
-}
-.slide4 h1 {
-  background-color: white;
-}
-.slide5 h1 {
-  background-color: white;
-}
-.slide6 h1 {
-  background-color: white;
-}*/
+
 
 
 a.tesButton {
-  padding: 8px 20px;
-  cursor: pointer;
-  font-weight: bold;
-  font-size: 150%;
-  background: #353D8A; /*#3366cc*/
-  color: #fff;
-  border: 1px solid #3366cc;
-  border-radius: 100px;
-  width: 300px;
+
+
+ padding: 8px 20px;
+ cursor: pointer;
+ font-weight: bold;
+ font-size: 150%;
+ background: #353D8A; /*#3366cc*/
+ color: #fff;
+ border: 1px solid #3366cc;
+ border-radius: 100px;
+ width: 300px;
+
 }
 
 
 #lastP {
-   margin-bottom: 50px;
+  margin-bottom: 50px;
+}  
+
+body {
+  font-family: "Trebuchet MS";
+
 }
+
+

@@ -47,6 +47,10 @@ body {
         left: 63.4%;
 }
 
+p.infoP {
+        font-family: "Trebuchet MS";
+}
+
 h1 {
         color: #fff;
         position: relative;
@@ -63,6 +67,7 @@ h1 {
         color: #fff;
         font-size: 18px;
 }
+
 
 h2 {
         color: #fff;
@@ -146,13 +151,15 @@ a.cta:hover:before {
         border-radius: 4px;
         background-color: #FEFBFC;
         border: none;
-        color: #353D8A;
+
+        color: #1A1978;
         text-align: center;
         font-size: 28px;
         padding: 20px;
         width: 500px;
         transition: all 0.5s;
         cursor: pointer;
+        font-family: "Trebuchet MS";
 }
 
 #whatsNext span {
@@ -185,7 +192,8 @@ a.cta:hover:before {
         padding-top: 100px;
         margin-top: 20px;
         height: 1000px;
-        background-color: #353D8A;
+
+        background-color: #1A1978;
 }
 
 .container {

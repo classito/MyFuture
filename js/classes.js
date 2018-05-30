@@ -14,3 +14,14 @@ function openCity(evt, cityName) {
 
 // Get the element with id="defaultOpen" and click on it
 document.getElementById("defaultOpen").click();
+
+
+var data = localStorage.getItem("R");
+
+if (data[0] === "A") {
+    var test = document.createElement("p");
+    test.innerHTML = "Automotive Tech"
+    document.getElementById("auto").style.color="gold";
+    document.getElementById("rec").appendChild(test);
+}
+
