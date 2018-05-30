@@ -1,9 +1,9 @@
 //incorporate pretty-checkbox
-//incorporate status-bar
+//incorporate status-bar - fix it now
 //make autoscroll better
 
 //check chDemo for updates
-
+var bar = document.getElementById('riasecProgress')
 var RIASEC = {
 	Realistic: {
 
@@ -466,6 +466,7 @@ function nextBox() {
 		counter2++;
 		console.log(counter2);
 	}
+
 }
 
 function previousBox() {
@@ -773,3 +774,13 @@ function AnalyzeRIASEC() {
 	}
 
 }
+
+document.addEventListener("DOMContentLoaded", function(event) {
+	/* DOM is ready, so we can query for its elements */
+	var barValue = document.getElementById("riasecProgress").value;
+	
+	/*additional code for comment*/
+	document.getElementById('demoTest2').addEventListener("click", function(event){
+	  document.getElementById("riasecProgress").value += 7;
+	});
+  })
