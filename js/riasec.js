@@ -463,8 +463,6 @@ var pBox4 = document.getElementById('progressBox4');
 var pBox5 = document.getElementById('progressBox5');
 var progressBoxes = [pBox1, pBox2, pBox3, pBox4, pBox5];
 function nextBox() {
-	progressBoxes[progressStat].style.color = "yellow";
-	progressStat +=1;
 	buttonCheck();
 	if (counter2 >= 0) {
 		document.getElementById("demoTest").style.display = "block"
