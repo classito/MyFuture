@@ -144,13 +144,14 @@ a.cta:hover:before {
         color: #fff;
 }
 
-
+/* #353D8A */
 #whatsNext {
         margin-top:200px;
         position: relative;
         border-radius: 4px;
         background-color: #FEFBFC;
         border: none;
+
         color: #1A1978;
         text-align: center;
         font-size: 28px;
@@ -191,6 +192,7 @@ a.cta:hover:before {
         padding-top: 100px;
         margin-top: 20px;
         height: 1000px;
+
         background-color: #1A1978;
 }
 

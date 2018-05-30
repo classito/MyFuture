@@ -219,6 +219,7 @@ img {
 }
 
 .bundle {
+
  height: 50vh;
  overflow-x: hidden;
  overflow-y: auto;
@@ -230,10 +231,8 @@ img {
  width: 70vw;
  margin-left: auto;
  margin-right: auto;
-<<<<<<< HEAD
+
  font-family: "Trebuchet MS";
-=======
->>>>>>> c38ea64137d142290a8a966a3ffb98b249d65a79
 }
 
 .slide1 {
@@ -261,6 +260,8 @@ img {
 .slide2 h1 {
  color: #F7A748;
  margin-bottom: 0px;
+  
+  
 }
 
 
@@ -334,26 +335,12 @@ margin-bottom: 0px;
 }
 /*
 .slide1 h1,p {
- background-color: white;
-}
-.slide2 h1 {
- background-color: white;
-}
-.slide3 h1 {
- background-color: white;
-}
-.slide4 h1 {
- background-color: white;
-}
-.slide5 h1 {
- background-color: white;
-}
-.slide6 h1 {
- background-color: white;
-}*/
+
 
 
 a.tesButton {
+
+
  padding: 8px 20px;
  cursor: pointer;
  font-weight: bold;
@@ -363,6 +350,7 @@ a.tesButton {
  border: 1px solid #3366cc;
  border-radius: 100px;
  width: 300px;
+
 }
 
 
@@ -372,8 +360,7 @@ a.tesButton {
 
 body {
   font-family: "Trebuchet MS";
-<<<<<<< HEAD
+
 }
-=======
-}
->>>>>>> c38ea64137d142290a8a966a3ffb98b249d65a79
+
+
